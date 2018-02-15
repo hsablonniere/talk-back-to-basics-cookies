@@ -1,2 +1,64 @@
 = #RetourAuxSources : Les Cookies HTTP
 
+== Research topics
+
+* Cookie
+** Classic Flags
+** SameSite
+** cookie prefix…
+* Same Origin Policy
+* Security
+** Auth
+** XSS
+** CSRF
+* WebAPIs
+** XHR
+** fetch()
+** ServiceWorker
+
+== Links
+
+* https://www.nczonline.net/blog/2009/05/05/http-cookies-explained/
+* https://overcast.fm/+Bj7xcOvMs
+* http://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
+* https://tools.ietf.org/html/draft-abarth-cake-00
+* https://cookiepedia.co.uk/supercookies
+* https://www.cookielaw.org/the-cookie-law/
+* http://browsercookielimits.squawky.net/
+* http://unrestful.io/2015/06/21/cookies.html
+* https://www.makeuseof.com/tag/what-are-supercookies-and-why-are-they-dangerous/
+* http://www.radicalresearch.co.uk/lab/hstssupercookies
+* https://www.radicalresearch.co.uk/
+* http://www.slate.com/articles/technology/bitwise/2013/09/how_google_uses_cookies_it_s_so_much_more_complicated_than_we_think.html
+* https://www.google.com/policies/technologies/types/
+* https://www.elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect
+* http://wonko.com/post/why-you-probably-shouldnt-use-cookies-to-store-session-data
+* https://danq.me/2012/04/24/visitor-tracking-without-cookies/
+* http://blog.bentkowski.info/2016/07/firefox-same-origin-policy-bypass-cve.html?m=1
+* https://github.com/mpgn/ByP-SOP/blob/master/README.md
+* http://aosabook.org/en/500L/the-same-origin-policy.html
+* https://www.owasp.org/index.php/HttpOnly
+* https://curl.haxx.se/docs/http-cookies.html
+* https://developers.google.com/web/updates/2016/06/2-cookie-handoff
+* https://adexchanger.com/data-driven-thinking/in-defense-of-the-cookie/?utm_campaign=Lou%20Montulli%20Tactics&utm_medium=social&utm_source=twitter
+* https://www.montulli-blog.com/
+
+== Ideas
+
+* Give the real cookie recipe ;-)
+* Do some real demos with very simple server examples
+* Use interactive diagrams
+* Use sounds :p
+* Send a survey to get "normal people" knowledge
+* People I could/should interview
+** Lou Montulli
+** Brendan Eich https://twitter.com/BrendanEich
+** Mike West https://twitter.com/mikewest
+** Anne van Kesteren https://twitter.com/annevk
+** Jeremy Keith https://twitter.com/adactio
+** Paul Irish https://twitter.com/paul_irish
+** Sam Dutton https://twitter.com/sw12
+** Mathias Bynens https://twitter.com/mathias
+** Domenic Denicola https://twitter.com/domenic
+** Ben Kelly https://twitter.com/wanderview
+** Andreas Bovens https://twitter.com/andreasbovens
