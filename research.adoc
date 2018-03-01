@@ -43,6 +43,34 @@
 * https://adexchanger.com/data-driven-thinking/in-defense-of-the-cookie/?utm_campaign=Lou%20Montulli%20Tactics&utm_medium=social&utm_source=twitter
 * https://www.montulli-blog.com/
 * https://www.youtube.com/channel/UC10MbwdpwQh8hTfNirlu7iQ
+* https://security.stackexchange.com/questions/38001/xss-prevention-through-content-security-policy
+* https://www.html5rocks.com/en/tutorials/security/content-security-policy/
+* https://blog.sendsafely.com/using-content-security-policy-to-prevent-cross-site-scripting-xss
+* https://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
+* https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/
+* http://www.cookiecentral.com/cookie5.htm
+* https://blog.mozilla.org/security/2018/01/31/preventing-data-leaks-by-stripping-path-information-in-http-referrers/
+* https://meta.stackexchange.com/questions/44717/is-gravatar-a-privacy-risk
+* https://www.reddit.com/r/privacy/
+* https://www.reddit.com/r/privacy/comments/3sou8v/beware_of_ads_that_use_inaudible_sound_to_link/
+* https://senglehardt.com/papers/www15_cookie_surveil.pdf
+* https://freedom-to-tinker.com/2014/12/19/how-cookies-can-be-used-for-global-surveillance/
+* http://webpolicy.org/2013/10/30/the-web-is-flat/
+* https://joshduck.com/blog/2010/01/29/abusing-the-cache-tracking-users-without-cookies/
+* http://webpolicy.org/2013/02/22/the-new-firefox-cookie-policy/
+* https://panopticlick.eff.org/
+* https://www.eff.org/deeplinks/2015/07/xkeyscore-expose-reaffirms-need-rid-web-tracking-cookies
+* https://www.reddit.com/r/privacy/comments/6kdlw6/whys_all_the_fuss_with_3rd_party_cookies_when/
+* http://nocookielaw.com/
+* https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite
+* https://www.adambarth.com/papers/2011/bortz-barth-czeskis.pdf
+* https://w3c.github.io/webappsec-clear-site-data/
+
+* https://gist.github.com/securityMB/d9e84bd3c7c245895360808360b9dc4e
+* https://jakearchibald.com/2018/third-party-css-is-not-safe/
+* https://vimeo.com/100264064#t=1290s
+* https://www.youtube.com/watch?v=eb3suf4REyI
+* http://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf
 
 == Ideas
 
@@ -50,8 +78,10 @@
 * Do some real demos with very simple server examples
 * Use interactive diagrams
 * Use sounds :p
+* cookie used by famous sites (and conference websites)
 * Send a survey to get "normal people" knowledge
 * People I could/should interview
+* https://unsearcher.org/enforcing-cookie-consent-with-content-security-policy
 ** Lou Montulli
 ** Brendan Eich https://twitter.com/BrendanEich
 ** Mike West https://twitter.com/mikewest
