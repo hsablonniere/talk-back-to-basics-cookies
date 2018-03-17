@@ -6,13 +6,13 @@ Les cookies HTTP sont partout ! Pas une journée sans qu’un site nous demande 
 +
 On confond les règles auxquelles ils sont soumis au sein des navigateurs. On fait des amalgames avec les sessions côté serveur. Ces petits trous dans le gigantesque éventail de connaissances du développeur moderne ont parfois des impacts non négligeables sur la sécurité de nos applications et sur la préservation de notre vie privée en tant qu’utilisateur du Web.
 +
-Au menu de cette session, je vous propose de (re)découvrir les cookies HTTP par l’exemple et la pratique. Nous reviendrons sur leurs origines et nous verrons en détails le fonctionnement au sein des navigateurs et des serveurs. Enfin, nous aborderons les aspects les plus récent dans le domaine (SameSite, cookie prefix...). Ce talk sera plus généralement l’occasion de parler de sécurité, de tracking et de vie privée.
+Au menu de cette session, je vous propose de (re)découvrir les cookies HTTP par l’exemple et la pratique. Nous reviendrons sur leurs origines et nous verrons en détails le fonctionnement au sein des navigateurs et des serveurs. Enfin, nous aborderons les aspects les plus récents dans le domaine (SameSite, cookie prefix...). Ce talk sera plus généralement l’occasion de parler de sécurité, de tracking et de vie privée.
 
 Take aways::
 * J’en sais un peu plus sur l’origine et l’historique des cookies HTTP
 * J’ai ENFIN vraiment compris comment ça marche côté browser et côté serveur (et comment ils sont utilisés par différents frameworks, systèmes et technos)
 * J’en sais plus le tracking en général
-* J’ai découvert les nouveautés des cookies (SameSite, cookie prefix…) et comment ils se comporte avec des API modernes du browser comme fetch()
+* J’ai découvert les nouveautés des cookies (SameSite, cookie prefix…) et comment ils se comportent avec des API modernes du browser comme fetch()
 
 Infos supplémentaires::
 Ce talk contiendra des démos pour mettre en avant le fonctionnement des cookies à proprement parler mais aussi de celui de certaines attaques. Le sujet paraît simple et connu mais je constate régulièrement qu’il est mal maitrisé et qu’il y a un besoin de revenir aux bases dans ce domaine.
