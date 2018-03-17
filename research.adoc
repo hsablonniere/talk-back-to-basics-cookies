@@ -19,6 +19,7 @@
 == Links
 
 * https://www.nczonline.net/blog/2009/05/05/http-cookies-explained/
+* https://www.nczonline.net/blog/2008/05/17/browser-cookie-restrictions/
 * https://overcast.fm/+Bj7xcOvMs
 * http://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
 * https://tools.ietf.org/html/draft-abarth-cake-00
@@ -49,6 +50,7 @@
 * https://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
 * https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/
 * http://www.cookiecentral.com/cookie5.htm
+* http://www.cookiecentral.com/faq/#2.5
 * https://blog.mozilla.org/security/2018/01/31/preventing-data-leaks-by-stripping-path-information-in-http-referrers/
 * https://meta.stackexchange.com/questions/44717/is-gravatar-a-privacy-risk
 * https://www.reddit.com/r/privacy/
@@ -77,6 +79,43 @@
 * https://www.youtube.com/watch?v=WlmKwIe9z1Q
 * https://www.youtube.com/watch?v=d0D3d0ZM-rI
 
+* https://speakerdeck.com/triblondon/headers-for-hackers
+
+* https://msdn.microsoft.com/en-us/library/ms533046.aspx
+
+* https://www.owasp.org/index.php/HttpOnly#Browsers_Supporting_HTTPOnly
+
+== Misc
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
+https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers
+https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet
+
+https://caniuse.com/#feat=subresource-integrity
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+https://www.owasp.org/index.php/Testing_for_cookies_attributes_(OTG-SESS-002)
+https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
+https://link.springer.com/chapter/10.1007/978-3-642-22137-8_13
+
+specific domain for user generated content
+
+origin flash vs browser avec un @
+
+cookie IP + GDPR
+
+Safari
+
+* https://webkit.org/blog/8142/intelligent-tracking-prevention-1-1/
+* https://nakedsecurity.sophos.com/2015/02/02/anatomy-of-a-browser-dilemma-how-hsts-supercookies-make-you-choose-between-privacy-or-security/
+* http://www.businessinsider.fr/us/super-cookies-hsts-security-private-2015-1
+* https://arstechnica.com/information-technology/2015/10/unpatched-browser-weaknesses-can-be-exploited-to-track-millions-of-web-users/
+* https://webkit.org/blog/8146/protecting-against-hsts-abuse/
+* https://bugzilla.mozilla.org/show_bug.cgi?id=1298370
+
+
 == Ideas
 
 * Give the real cookie recipe ;-)
@@ -98,3 +137,11 @@
 ** Domenic Denicola https://twitter.com/domenic
 ** Ben Kelly https://twitter.com/wanderview
 ** Andreas Bovens https://twitter.com/andreasbovens
+
+== Story
+
+I want to talk to :
+
+* The web developers in the room
+* The web users/cititzens in the room
+* 
