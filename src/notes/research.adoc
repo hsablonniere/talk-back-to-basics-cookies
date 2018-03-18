@@ -139,11 +139,3 @@ Safari
 ** Domenic Denicola https://twitter.com/domenic
 ** Ben Kelly https://twitter.com/wanderview
 ** Andreas Bovens https://twitter.com/andreasbovens
-
-== Story
-
-I want to talk to :
-
-* The web developers in the room
-* The web users/cititzens in the room
-* 

@@ -1,0 +1,47 @@
+== Story
+
+=== Dans la peau d'un dev qui veut sécuriser son site Web
+
+* Origine des cookies
+    * window.name
+* Fonctionnement des cookies
+    * expiration
+    * domaine
+    * path
+    * flags
+    * prefixes
+* Vulnérabilités & problèmes
+    * XSS
+    * CSRF
+    * SOP (what Cross Site means)
+    * CORS
+* Usages
+    * Web: XHR, fetch, (ServiceWorker)
+    * oAuth
+    * Framework SSR
+    * Framework SOP
+* Alternatives ?
+    * WebStorage
+
+=== Dans la peau d'un dev qui veut tracker des gens
+
+* Referer
+* ETag
+* HSTS
+* Other super-cookies
+
+=== Dans la peau d'un utilisateur du Web soucieux de sa vie privée
+
+* Réglages navigateur
+    * Cookies (expiration, tiers)
+    * Referer policy
+    * Policies FireFox
+    * Policies Safari
+* Où (et comment) sont stockés les cookies sur la machine ?
+* Outils
+    * HTTPS Everywhere
+    * uBlock
+    * Ghostery
+* Point CNIL
+* WiFi gratuit
+* Navigation privée
