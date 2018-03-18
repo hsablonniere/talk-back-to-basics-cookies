@@ -84,6 +84,8 @@
 * https://msdn.microsoft.com/en-us/library/ms533046.aspx
 
 * https://www.owasp.org/index.php/HttpOnly#Browsers_Supporting_HTTPOnly
+* https://dev.to/rdegges/please-stop-using-local-storage-1i04
+* https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1898390
 
 == Misc
 
