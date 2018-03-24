@@ -1,0 +1,15 @@
+= Interviews
+
+People I could/should interview:
+
+* Lou Montulli
+* Brendan Eich https://twitter.com/BrendanEich
+* Mike West https://twitter.com/mikewest
+* Anne van Kesteren https://twitter.com/annevk
+* Jeremy Keith https://twitter.com/adactio
+* Paul Irish https://twitter.com/paul_irish
+* Sam Dutton https://twitter.com/sw12
+* Mathias Bynens https://twitter.com/mathias
+* Domenic Denicola https://twitter.com/domenic
+* Ben Kelly https://twitter.com/wanderview
+* Andreas Bovens https://twitter.com/andreasbovens

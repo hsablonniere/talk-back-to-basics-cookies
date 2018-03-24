@@ -1,62 +1,127 @@
-= #RetourAuxSources : Les Cookies HTTP
+= Research
 
-== Research topics
+== Links (articles, videos, talks, papers...)
 
-* Cookie
-** Classic Flags
-** SameSite
-** cookie prefix…
-* Same Origin Policy
-* Security
-** Auth
-** XSS
-** CSRF
-* WebAPIs
-** XHR
-** fetch()
-** ServiceWorker
-
-== Links
+=== Annotated
 
 * https://www.nczonline.net/blog/2009/05/05/http-cookies-explained/
+** Very very good recap about cookies and flags
+
 * https://www.nczonline.net/blog/2008/05/17/browser-cookie-restrictions/
-* https://overcast.fm/+Bj7xcOvMs
-* http://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
-* https://tools.ietf.org/html/draft-abarth-cake-00
-* https://cookiepedia.co.uk/supercookies
-* https://www.cookielaw.org/the-cookie-law/
-* http://browsercookielimits.squawky.net/
-* http://unrestful.io/2015/06/21/cookies.html
-* https://www.makeuseof.com/tag/what-are-supercookies-and-why-are-they-dangerous/
-* http://www.radicalresearch.co.uk/lab/hstssupercookies
-* https://www.radicalresearch.co.uk/
-* http://www.slate.com/articles/technology/bitwise/2013/09/how_google_uses_cookies_it_s_so_much_more_complicated_than_we_think.html
-* https://www.google.com/policies/technologies/types/
-* https://www.elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect
-* http://wonko.com/post/why-you-probably-shouldnt-use-cookies-to-store-session-data
-* https://danq.me/2012/04/24/visitor-tracking-without-cookies/
-* http://blog.bentkowski.info/2016/07/firefox-same-origin-policy-bypass-cve.html?m=1
-* https://github.com/mpgn/ByP-SOP/blob/master/README.md
-* http://aosabook.org/en/500L/the-same-origin-policy.html
-* https://www.owasp.org/index.php/HttpOnly
-* https://curl.haxx.se/docs/http-cookies.html
-* https://developers.google.com/web/updates/2016/06/2-cookie-handoff
-* https://adexchanger.com/data-driven-thinking/in-defense-of-the-cookie/?utm_campaign=Lou%20Montulli%20Tactics&utm_medium=social&utm_source=twitter
-* https://www.montulli-blog.com/
+** Cookie size limits
+** Short article and old
+
 * https://www.youtube.com/channel/UC10MbwdpwQh8hTfNirlu7iQ
+** Internet History podcast
+*** episode with Lou Montulli: https://overcast.fm/+Bj7xcOvMs
+
+* About Lou Montulli
+** http://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
+*** He developed Lynx and worked on Netscape
+*** He developed http://www.fishcam.com/
+*** Interesting discussion about the product responsability in a team
+*** Article is very long
+** https://adexchanger.com/data-driven-thinking/in-defense-of-the-cookie/
+*** IMPORTANT: Very interesting quote by Lou Montulli
+** https://www.montulli-blog.com/
+*** Not much on cookies :-(
+
+* https://tools.ietf.org/html/draft-abarth-cake-00
+** Origin Cookies (draft)
+
+* https://cookiepedia.co.uk/supercookies
+** Supercookies and zombie cookies
+
+* https://www.cookielaw.org/the-cookie-law/
+** EU Cookie Law
+** seem to say that other kind of tracking system are also concerned
+
+* http://unrestful.io/2015/06/21/cookies.html
+** HTTP2 session and cookies
+
+* https://www.makeuseof.com/tag/what-are-supercookies-and-why-are-they-dangerous/
+** Supercookies but Not very technical :-(
+
+* http://www.radicalresearch.co.uk/lab/hstssupercookies
+** http://web.archive.org/web/20171228004525/radicalresearch.co.uk/lab/hstssupercookies
+** HSTS super cookies
+
+* http://www.slate.com/articles/technology/bitwise/2013/09/how_google_uses_cookies_it_s_so_much_more_complicated_than_we_think.html
+** For general people :-(
+** Disconnect extension
+
+* https://www.google.com/policies/technologies/types/
+** List of cookies used by Google
+
+* http://wonko.com/post/why-you-probably-shouldnt-use-cookies-to-store-session-data
+** Problems with using Cookies as session data
+
+* https://danq.me/2012/04/24/visitor-tracking-without-cookies/
+** Tracking with redirects and ids in JavaScript
+
+* http://blog.bentkowski.info/2016/07/firefox-same-origin-policy-bypass-cve.html?m=1
+** Firefox - Same-Origin Policy bypass (CVE-2015-7188)
+
+* https://www.youtube.com/watch?v=8t5-A4ASTIU
+** AppSec EU15 - Nicolas Gregoire - Server-Side Browsing Considered Harmful
+
+* https://github.com/mpgn/ByP-SOP/blob/master/README.md
+** SOP bypass via DNS
+
+* http://aosabook.org/en/500L/the-same-origin-policy.html
+** Very long article on the origins and history of SOP
+
+* https://www.owasp.org/index.php/HttpOnly
+** Details on the HttpOnly flag
+*** According to a daily blog article by Jordan Wiens, “No cookie for you!”, HttpOnly cookies were first implemented in 2002 by Microsoft Internet Explorer developers for Internet Explorer 6 SP1.
+
+* https://curl.haxx.se/docs/http-cookies.html
+** explains cookiejar file format
+** details about cookies and CURL
+
+* https://curl.haxx.se/rfc/cookie_spec.html
+** Original cookie spec by Netscape in 1994
+
+* https://developers.google.com/web/updates/2016/06/2-cookie-handoff
+** Propositon by some Google devs to do use SW to do long sessions
+
 * https://security.stackexchange.com/questions/38001/xss-prevention-through-content-security-policy
-* https://www.html5rocks.com/en/tutorials/security/content-security-policy/
-* https://blog.sendsafely.com/using-content-security-policy-to-prevent-cross-site-scripting-xss
-* https://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
-* https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/
+** Basic SO on XSS and CSP
+
 * http://www.cookiecentral.com/cookie5.htm
+** FAQ, why cookies in the 1st place, useless :-(
+
 * http://www.cookiecentral.com/faq/#2.5
+** 2.5 Will cookies fill up my hard drive?
+*** Counter measures (answers are really old) :-(
+
 * https://blog.mozilla.org/security/2018/01/31/preventing-data-leaks-by-stripping-path-information-in-http-referrers/
+** Firefox decided to strip down referrer in Private Browsing (after leaks on healthcare.gov)
+** https://www.eff.org/deeplinks/2015/01/healthcare.gov-sends-personal-data
+*** https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/2/#55d1bafa47e8
+** https://blogs.dropbox.com/dropbox/2014/05/web-vulnerability-affecting-shared-links/
+*** IMPORTANT: Interesting cased of Dropbox !!
+** https://www.facebook.com/notes/facebook-engineering/protecting-privacy-with-referrers/392382738919
+*** IMPORTANT: Very interesting explanation of how facebook strips referers
+
+* https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.36
+** Referer header is misspelled
+
 * https://meta.stackexchange.com/questions/44717/is-gravatar-a-privacy-risk
+** Gravatar security risk?
+** Hard to learn specifics... :-(
+
 * https://www.reddit.com/r/privacy/
+** General Stuffs on privacy
+
 * https://www.reddit.com/r/privacy/comments/3sou8v/beware_of_ads_that_use_inaudible_sound_to_link/
-* https://senglehardt.com/papers/www15_cookie_surveil.pdf
+** Meh :-(
+
 * https://freedom-to-tinker.com/2014/12/19/how-cookies-can-be-used-for-global-surveillance/
+** Cookie explanation with some kind of sequence diagram
+
+=== TODO
+
 * http://webpolicy.org/2013/10/30/the-web-is-flat/
 * https://joshduck.com/blog/2010/01/29/abusing-the-cache-tracking-users-without-cookies/
 * http://webpolicy.org/2013/02/22/the-new-firefox-cookie-policy/
@@ -66,50 +131,45 @@
 * http://nocookielaw.com/
 * https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite
 * https://www.adambarth.com/papers/2011/bortz-barth-czeskis.pdf
+* https://senglehardt.com/papers/www15_cookie_surveil.pdf
 * https://w3c.github.io/webappsec-clear-site-data/
-
+* https://jonathanmayer.org/papers_data/bau13.pdf
+* https://briansmith.org/referrer-01
+* https://www.w3.org/TR/referrer-policy/
+* https://wiki.mozilla.org/Security/Referrer
+* http://lcamtuf.coredump.cx/postxss/
+* https://web.archive.org/web/20160322051544/http://www.w2spconf.com/2012/papers/w2sp12-final11.pdf
 * https://gist.github.com/securityMB/d9e84bd3c7c245895360808360b9dc4e
 * https://jakearchibald.com/2018/third-party-css-is-not-safe/
 * https://vimeo.com/100264064#t=1290s
 * https://www.youtube.com/watch?v=eb3suf4REyI
 * http://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf
-
 * https://www.youtube.com/watch?v=YBBqtrJmMRc
 * https://www.youtube.com/watch?v=nMIaDiCXquc
 * https://www.youtube.com/watch?v=WlmKwIe9z1Q
 * https://www.youtube.com/watch?v=d0D3d0ZM-rI
-
 * https://speakerdeck.com/triblondon/headers-for-hackers
-
-* https://msdn.microsoft.com/en-us/library/ms533046.aspx
-
+* https://msdn.microsoft.com/en-us/library/ms533046. aspx
 * https://www.owasp.org/index.php/HttpOnly#Browsers_Supporting_HTTPOnly
 * https://dev.to/rdegges/please-stop-using-local-storage-1i04
 * https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1898390
-
-== Misc
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
-https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
-https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers
-https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
-https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet
-
-https://caniuse.com/#feat=subresource-integrity
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
-https://www.owasp.org/index.php/Testing_for_cookies_attributes_(OTG-SESS-002)
-https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
-https://link.springer.com/chapter/10.1007/978-3-642-22137-8_13
-
-specific domain for user generated content
-
-origin flash vs browser avec un @
-
-cookie IP + GDPR
-
-Safari
-
+* https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API
+* https://nakedsecurity.sophos.com/2014/11/05/how-to-clear-out-cookies-flash-cookies-and-local-storage/
+* https://robertheaton.com/2017/10/17/we-see-you-democratizing-de-anonymization/
+* https://trac.webkit.org/wiki/Fingerprinting
+* http://www.stateofdigital.com/top-15-of-eric-schmidts-remarkable-quotes/
+* https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+* https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
+* https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers
+* https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+* https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet
+* https://caniuse.com/#feat=subresource-integrity
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+* https://www.owasp.org/index.php/Testing_for_cookies_attributes_(OTG-SESS-002)
+* https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
+* https://link.springer.com/chapter/10.1007/978-3-642-22137-8_13
 * https://webkit.org/blog/8142/intelligent-tracking-prevention-1-1/
 * https://nakedsecurity.sophos.com/2015/02/02/anatomy-of-a-browser-dilemma-how-hsts-supercookies-make-you-choose-between-privacy-or-security/
 * http://www.businessinsider.fr/us/super-cookies-hsts-security-private-2015-1
@@ -117,25 +177,29 @@ Safari
 * https://webkit.org/blog/8146/protecting-against-hsts-abuse/
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1298370
 
+* CSP
+** https://www.html5rocks.com/en/tutorials/security/content-security-policy/
+** https://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
+** https://blog.sendsafely.com/using-content-security-policy-to-prevent-cross-site-scripting-xss
+** https://mikewest.org/2011/10/content-security-policy-a-primer
 
-== Ideas
+== Demos & POC
 
-* Give the real cookie recipe ;-)
-* Do some real demos with very simple server examples
-* Use interactive diagrams
-* Use sounds :p
-* cookie used by famous sites (and conference websites)
-* Send a survey to get "normal people" knowledge
-* People I could/should interview
-* https://unsearcher.org/enforcing-cookie-consent-with-content-security-policy
-** Lou Montulli
-** Brendan Eich https://twitter.com/BrendanEich
-** Mike West https://twitter.com/mikewest
-** Anne van Kesteren https://twitter.com/annevk
-** Jeremy Keith https://twitter.com/adactio
-** Paul Irish https://twitter.com/paul_irish
-** Sam Dutton https://twitter.com/sw12
-** Mathias Bynens https://twitter.com/mathias
-** Domenic Denicola https://twitter.com/domenic
-** Ben Kelly https://twitter.com/wanderview
-** Andreas Bovens https://twitter.com/andreasbovens
+* https://www.elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect
+** redirect tracking
+** Not very practical
+** Demo is not up anymore :-(
+
+  * http://browsercookielimits.squawky.net/
+  ** Live tester of cookie limits
+
+* https://samy.pl/evercookie/
+* https://robertheaton.com/2014/01/20/cookieless-user-tracking-for-douchebags/
+* tracking via code in JS https://robertheaton.com/2014/01/20/cookieless-user-tracking-for-douchebags/
+* http://lucb1e.com/rp/cookielesscookies/
+* https://panopticlick.eff.org/about
+* www.nikcub.com/posts/persistant-and-unblockable-cookies-using-http-headers
+** https://web.archive.org/web/20170110024537/https://www.nikcub.com/posts/persistant-and-unblockable-cookies-using-http-headers/
+** https://utcc.utoronto.ca/~cks/space/blog/web/BrowsersAndLastModified?showcomments
+** https://web.archive.org/web/20161025091022/https://ashkansoltani.org/2011/08/11/respawn-redux-flash-cookies/
+* http://www.arctic.org/~dean/tracking-without-cookies.html

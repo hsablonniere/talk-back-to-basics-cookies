@@ -1,6 +1,6 @@
-== Story
+= Story
 
-=== Dans la peau d'un dev qui veut sécuriser son site Web
+== Dans la peau d'un dev qui veut sécuriser son site Web
 
 * Origine des cookies
     * window.name
@@ -23,14 +23,14 @@
 * Alternatives ?
     * WebStorage
 
-=== Dans la peau d'un dev qui veut tracker des gens
+== Dans la peau d'un dev qui veut tracker des gens
 
 * Referer
 * ETag
 * HSTS
 * Other super-cookies
 
-=== Dans la peau d'un utilisateur du Web soucieux de sa vie privée
+== Dans la peau d'un utilisateur du Web soucieux de sa vie privée
 
 * Réglages navigateur
     * Cookies (expiration, tiers)
@@ -45,3 +45,5 @@
 * Point CNIL
 * WiFi gratuit
 * Navigation privée
+
+p3p?

@@ -1,0 +1,7 @@
+= Browsers & cookies
+
+== Cookie storage location
+
+* Ubuntu
+** Firefox: ~/.mozilla/firefox/xxxxxxxx.default/cookies.sqlite
+** Chrome: ~/.config/google-chrome/Default/Cookies

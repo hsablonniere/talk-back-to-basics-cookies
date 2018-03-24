@@ -1,0 +1,8 @@
+= Ideas for the talk in general
+
+* Give the real cookie recipe ;-)
+* Do some real demos with very simple server examples
+* Use interactive diagrams
+* Use sounds :p
+* cookie used by famous sites (and conference websites)
+* Send a survey to get "normal people" knowledge

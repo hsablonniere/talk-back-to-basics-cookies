@@ -1,6 +1,1 @@
 = TODO
-
-* init slides
-** init first slide
-** init theme
-* init test server

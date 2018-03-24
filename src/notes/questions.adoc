@@ -1,4 +1,0 @@
-* Where are cookies stored?
-* What are possible properties and flags for cookies?
-* What is the `Set-Cookie2` header
-email
