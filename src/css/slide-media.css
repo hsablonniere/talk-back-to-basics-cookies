@@ -1,9 +1,10 @@
 .slide--media {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.slide--media img {
+.slide--media_img {
   background-color: #000;
   object-fit: cover;
   width: 100%;
@@ -12,7 +13,7 @@
   min-width: 0;
 }
 
-.slide--media.contain img {
+.slide--media.contain .slide--media_img {
   object-fit: contain;
 }
 
@@ -21,4 +22,21 @@
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
+}
+
+.slide--media_author {
+  --height: 1rem;
+  --padding: 0.5rem;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  height: var(--height);
+  left: 0;
+  line-height: var(--height);
+  padding: var(--padding);
+  position: absolute;
+  text-shadow: 0 0 0.1rem black;
+  bottom: calc(calc(-1 * calc(var(--padding) * 2)) - var(--height));
+  transform-origin: left top;
+  transform: rotate(-90deg);
 }

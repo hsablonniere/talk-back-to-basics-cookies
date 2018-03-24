@@ -9,7 +9,7 @@ module.exports = (node) => {
     ...node.getRoles(),
   ];
   return `<section id="${attrs.id}" class="${classes.join(' ')}">
-  <img src="${attrs.target}" width="500px">
-  <figcaption>${node.title}</figcaption>
+  <img class="slide--media_img" src="${attrs.target}" width="500px">
+  <div class="slide--media_author">Photo by ${attrs.author}</div>
 </section>`;
 };

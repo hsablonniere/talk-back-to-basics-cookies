@@ -9,10 +9,15 @@ Hubert Sablonnière
 :date: 30 mars 2018
 
 [#poster-intro, slide=poster]
-Intro poster
+Intro
 
 [#section-dev]
 == Dans la peau d'un développeur
+
+// http://facesofopensource.com/lou-montulli/
+// http://www.peteradamsphoto.com/lou-montulli-2/
+[.contain]
+image::img/loumontulli.jpg[author="Peter Adams"]
 
 [#section-tracker]
 == Dans la peau d'un tracker
@@ -22,5 +27,4 @@ Intro poster
 
 
 [#poster-outro, slide=poster]
-Outro poster
-
+Outro
