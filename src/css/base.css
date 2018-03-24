@@ -1,0 +1,12 @@
+body {
+  background-color: #000;
+}
+
+.slide {
+  background-color: #fff;
+}
+
+.slide[data-position="before"],
+.slide[data-position="after"] {
+  display: none;
+}

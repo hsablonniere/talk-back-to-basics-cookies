@@ -1,0 +1,9 @@
+.slide--section {
+  display: flex;
+  font-size: 5rem;
+}
+
+.slide--section_title {
+  margin: auto;
+  text-align: center;
+}

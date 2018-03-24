@@ -1,0 +1,26 @@
+= #RetourAuxSources : Les Cookies HTTP
+Hubert Sablonnière
+:author-twitter: @hsablonniere
+:author-avatar: hsablonniere-profil-2017.jpg
+:author-company: Clever Cloud
+:author-company-logo: clever-cloud-logo.svg
+:hashtags: #RetourAuxSources #Cookies
+:event: BreizhCamp
+:date: 30 mars 2018
+
+[#poster-intro, slide=poster]
+Intro poster
+
+[#section-dev]
+== Dans la peau d'un développeur
+
+[#section-tracker]
+== Dans la peau d'un tracker
+
+[#section-web-citizen]
+== Dans la peau d'un citoyen du Web
+
+
+[#poster-outro, slide=poster]
+Outro poster
+

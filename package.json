@@ -1,0 +1,15 @@
+{
+    "name": "talk-back-to-basics-cookies",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "node lib/build-prod.js",
+        "dev": "node lib/run-dev-mode.js"
+    },
+    "dependencies": {
+        "asciidoctor.js": "latest",
+        "browser-sync": "^2.23.6",
+        "chokidar": "^2.0.2",
+        "del": "^3.0.0",
+        "fs-extra": "^5.0.0"
+    }
+}
