@@ -1,0 +1,20 @@
+.slide--question {
+  align-items: center;
+  background-color: var(--color-ccc);
+  display: flex;
+  justify-content: center;
+}
+
+.slide--question_text {
+  color: var(--color-f);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.slide--question_text code {
+  color: var(--color-e);
+}

@@ -1,0 +1,61 @@
+.slide--poster {
+  background-color: var(--color-bbbb);
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide--poster_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.4;
+  height: 18rem;
+  text-align: center;
+}
+
+.slide--poster_pretitle {
+  color: var(--color-f);
+  font-size: 4rem;
+}
+
+.slide--poster_title {
+  color: var(--color-e);
+  font-size: 6.5rem;
+}
+
+.slide--poster_details {
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--color-dd);
+  display: flex;
+  flex: 1 1 0;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.slide--poster_details::after {
+  background-image: url(../img/poster-cookies.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  content: ' ';
+  flex: 1 1 0;
+  height: 100%;
+  order: 1;
+}
+
+.slide--poster_details_author {
+  text-align: left;
+  order: 0;
+}
+
+.slide--poster_details_event {
+  text-align: right;
+  order: 2;
+}

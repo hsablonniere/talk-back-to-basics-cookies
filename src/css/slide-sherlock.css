@@ -1,0 +1,41 @@
+.slide--sherlock {
+  background-color: var(--color-a);
+  background-image: url(../img/sherlock.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  position: relative;
+}
+
+.slide--sherlock_sentenceWrapper {
+  align-items: center;
+  background-image: url(../img/sherlock-bubble.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+  line-height: 1;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: absolute;
+  right: 9rem;
+  text-align: center;
+  top: 3rem;
+  width: 25rem;
+}
+
+.sherlock .slide--sherlock_sentenceWrapper {
+  left: 9rem;
+  right: auto;
+  background-image: url(../img/sherlock-bubble-left.svg);
+}
+
+.slide--sherlock_sentence {
+  font-family: "Just Another Hand", sans-serif;
+  color: var(--color-f);
+  font-size: 4.2rem;
+}

@@ -1,0 +1,29 @@
+.slide--text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Sans Narrow', sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide--text code {
+  font-family: "Operator Mono Medium", sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+}
+
+.slide--text_keyword {
+  color: var(--color-bb);
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.slide--text_subtext {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.slide--text_subtext code {
+  color: #666;
+}

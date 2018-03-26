@@ -14,6 +14,14 @@
 * https://www.youtube.com/channel/UC10MbwdpwQh8hTfNirlu7iQ
 ** Internet History podcast
 *** episode with Lou Montulli: https://overcast.fm/+Bj7xcOvMs
+*** http://www.internethistorypodcast.com/2014/03/chapter-1-supplemental-1-an-interview-with-lou-montulli/
+
+* Wow, those links by Lou himself are gold
+* http://www.montulli.org/theoriginofthe%3Cblink%3Etag
+* https://web.archive.org/web/20130828103625/http://www.montulli-blog.com:80/2013/05/the-reasoning-behind-web-cookies.html
+* https://web.archive.org/web/20130912000824/http://www.montulli-blog.com:80/2013/05/why-blocking-3rd-party-cookies-could-be.html
+* https://medium.com/@meryldakin/a-briefing-on-web-cookies-d21b77a8d691
+* https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html
 
 * About Lou Montulli
 ** http://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
@@ -25,6 +33,9 @@
 *** IMPORTANT: Very interesting quote by Lou Montulli
 ** https://www.montulli-blog.com/
 *** Not much on cookies :-(
+
+* https://en.wikipedia.org/wiki/First_International_Conference_on_the_World-Wide_Web#World_Wide_Web_Hall_of_Fame_Inductees
+** Hall of fame: 6 people
 
 * https://tools.ietf.org/html/draft-abarth-cake-00
 ** Origin Cookies (draft)
@@ -120,8 +131,53 @@
 * https://freedom-to-tinker.com/2014/12/19/how-cookies-can-be-used-for-global-surveillance/
 ** Cookie explanation with some kind of sequence diagram
 
+* https://freedom-to-tinker.com/2009/07/07/if-youre-going-track-me-please-use-cookies/
+** It's easy to see what cookies are doing, alternatives are very hard to grasp with
+
+* https://curl.haxx.se/rfc/cookie_spec.html
+** IMPORTANT: Really interesting facts about the first 2 RFCs
+
+* https://daniel.haxx.se/blog/2010/01/20/cookie-order/
+** Details about drafts of future RFC 6265
+
+* https://lcamtuf.blogspot.fr/2010/10/http-cookies-or-how-not-to-design.html
+** IMPORTANT: Really interesting facts about the specs
+** The problem of the top domain
+*** https://publicsuffix.org/
+*** https://dxr.mozilla.org/mozilla-central/source/netwerk/dns/effective_tld_names.dat
+**** https://wiki.mozilla.org/Public_Suffix_List
+**** https://bugzilla.mozilla.org/show_bug.cgi?id=9422
+**** https://bugzilla.mozilla.org/show_bug.cgi?id=252342
+**** https://bugzilla.mozilla.org/show_bug.cgi?id=342314
+*** https://chromium.googlesource.com/chromium/src/net/+/master/base/registry_controlled_domains/effective_tld_names.dat
+*** https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat
+**** https://github.com/WebKit/webkit/blob/master/Source/WebCore/platform/soup/PublicSuffixSoup.cpp
+** Contains an answer by Lou :-)
+*** Cookies predates JavaScript, Java, XML, AJAX, SSL, FLash, Frames, Java, HTTP 1.1
+** Team of 14 persons on august of 94
+
+* http://www.adambarth.com/papers/2011/bortz-barth-czeskis.pdf
+** Origin-cookies paper
+
+* https://vsecurity.com//download/papers/WeaningTheWebOffOfSessionCookies.pdf
+** Session cookies versus HTTP Digest Auth...
+
+* https://lcamtuf.blogspot.fr/2010/08/cookies-v-people.html
+** Technical third party blocking does not solve problems
+** Privacy is hard
+
+* https://www.w3.org/Security/wiki/Same_Origin_Policy
+
+* https://edwardsnowden.com/wp-content/uploads/2013/10/tor-stinks-presentation.pdf
+
 === TODO
 
+* https://stackoverflow.com/questions/8028511/what-is-cross-site-script-inclusion-xssi
+* https://info.contextis.com/acton/attachment/24535/f-026d/1/-/-/-/-/Pixel%20Perfect%20Timing%20Attacks%20with%20HTML5.pdf
+* https://im5tu.io/article/2017/06/ensuring-samesite-cookies-with-url-rewrite/
+* https://blog.dareboost.com/en/2017/06/secure-cookies-samesite-attribute/
+* https://blog.dareboost.com/en/2016/12/secure-cookies-secure-httponly-flags/
+* https://en.wikipedia.org/wiki/Cross-site_cooking
 * http://webpolicy.org/2013/10/30/the-web-is-flat/
 * https://joshduck.com/blog/2010/01/29/abusing-the-cache-tracking-users-without-cookies/
 * http://webpolicy.org/2013/02/22/the-new-firefox-cookie-policy/
@@ -176,12 +232,32 @@
 * https://arstechnica.com/information-technology/2015/10/unpatched-browser-weaknesses-can-be-exploited-to-track-millions-of-web-users/
 * https://webkit.org/blog/8146/protecting-against-hsts-abuse/
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1298370
+* https://en.wikipedia.org/wiki/P3P
 
 * CSP
 ** https://www.html5rocks.com/en/tutorials/security/content-security-policy/
 ** https://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
 ** https://blog.sendsafely.com/using-content-security-policy-to-prevent-cross-site-scripting-xss
 ** https://mikewest.org/2011/10/content-security-policy-a-primer
+** https://developers.google.com/web/fundamentals/security/csp/
+
+* https://twitter.com/mikewest/status/959837490009067520
+
+* https://cwe.mitre.org/data/definitions/352.html
+* https://cwe.mitre.org/data/definitions/384.html
+
+* https://www.ghacks.net/2017/11/22/how-to-enable-first-party-isolation-in-firefox/
+* https://www.theverge.com/2018/3/27/17167094/mozilla-firefox-facebook-container-tracker-blocker
+
+* https://patents.google.com/patent/US5774670A/en
+* http://www.freepatentsonline.com/5774670.html
+* http://www.patentbuddy.com/Patent/5774670
+* https://portal.uspto.gov/pair/PublicPair
+* https://assignment.uspto.gov/patent/index.html#/patent/search/resultAbstract?id=5774670&type=patNum
+* https://en.wikipedia.org/wiki/Netscape
+* http://www.zdnet.com/article/what-microsofts-aolnetscape-patent-purchases-mean/
+* https://www.sjoerdlangkemper.nl/2016/04/14/preventing-csrf-with-samesite-cookie-attribute/
+* https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/
 
 == Demos & POC
 
@@ -190,8 +266,8 @@
 ** Not very practical
 ** Demo is not up anymore :-(
 
-  * http://browsercookielimits.squawky.net/
-  ** Live tester of cookie limits
+* http://browsercookielimits.squawky.net/
+** Live tester of cookie limits
 
 * https://samy.pl/evercookie/
 * https://robertheaton.com/2014/01/20/cookieless-user-tracking-for-douchebags/
@@ -203,3 +279,5 @@
 ** https://utcc.utoronto.ca/~cks/space/blog/web/BrowsersAndLastModified?showcomments
 ** https://web.archive.org/web/20161025091022/https://ashkansoltani.org/2011/08/11/respawn-redux-flash-cookies/
 * http://www.arctic.org/~dean/tracking-without-cookies.html
+
+* https://github.com/mikewest/rfc6265-biz

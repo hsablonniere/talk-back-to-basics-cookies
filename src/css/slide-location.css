@@ -1,0 +1,17 @@
+.slide--location {
+  background-color: var(--color-a);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.slide--location_location {
+  color: var(--color-f);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: bold;
+  white-space: pre;
+}

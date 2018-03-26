@@ -1,0 +1,24 @@
+.slide--table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1rem;
+}
+
+.slide--table table {
+}
+
+.slide--table th {
+  text-align: left;
+}
+
+.slide--table th,
+.slide--table td {
+  padding: 0 0.5rem;
+}
+
+.slide--table .tableblock {
+  margin: 0;
+}

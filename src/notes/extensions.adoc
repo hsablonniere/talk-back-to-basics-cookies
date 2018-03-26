@@ -6,3 +6,4 @@
 * https://www.eff.org/https-everywhere
 * https://www.ublock.org/
 * https://adblockplus.org/fr/
+* https://noscript.net/

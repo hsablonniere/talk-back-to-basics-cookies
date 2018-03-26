@@ -1,0 +1,41 @@
+.slide--listing {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide--listing_title {
+  color: var(--color-ccc);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.slide--listing_codeBlock {
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+@media (min-aspect-ratio: 14/9) {
+  .slide--listing_codeBlock {
+    font-size: 1.6rem;
+  }
+}
+
+.cookie-key {
+  color: var(--color-bbb);
+}
+
+.cookie-value {
+  color: var(--color-ddd);
+}
+
+.cookie-sign {
+  color: #333;
+  font-weight: normal;
+}

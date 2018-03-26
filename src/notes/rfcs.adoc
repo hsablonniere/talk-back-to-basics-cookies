@@ -2,8 +2,9 @@
 
 == Before RFC
 
-* https://curl.haxx.se/rfc/cookie_spec.html
+* http://web.archive.org/web/20020803110822/http://wp.netscape.com/newsref/std/cookie_spec.html
 ** Original cookie spec by Netscape in 1994
+** https://curl.haxx.se/rfc/cookie_spec.html
 
 == Published
 
@@ -11,12 +12,15 @@
 ** https://tools.ietf.org/html/rfc1011
 * 2109 1997-02 HTTP State Management Mechanism
 ** https://tools.ietf.org/html/rfc2109
+* 2965 2000-10 HTTP State Management Mechanism
+** https://tools.ietf.org/html/rfc2965
 * 4987 2007-08 TCP SYN Flooding Attacks and Common Mitigations
 ** https://tools.ietf.org/html/rfc4987
 * 6013 2011-01 TCP Cookie Transactions (TCPCT)
 ** https://tools.ietf.org/html/rfc6013
 * 6265 2011-04 HTTP State Management Mechanism
 ** https://tools.ietf.org/html/rfc6265
+** https://daniel.haxx.se/blog/2011/04/28/the-cookie-rfc-6265/
 * 6896 2013-03 SCS: KoanLogic's Secure Cookie Sessions for HTTP
 ** https://tools.ietf.org/html/rfc6896
 * 7873 2016-05 Domain Name System (DNS) Cookies
@@ -29,4 +33,14 @@
 
 == Drafts:
 
-* https://tools.ietf.org/html/draft-west-cookie-prefixes-05
+* https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-02
+** The new one with prefix and samesite
+* https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01
+** Deprecate
+* https://tools.ietf.org/html/draft-abarth-cake-01
+** Old
+* https://tools.ietf.org/html/draft-west-origin-cookies-01
+** https://web.archive.org/web/20180203171426/http://w2spconf.com/2011/papers/session-integrity.pdf
+* https://tools.ietf.org/html/draft-ietf-httpbis-cookie-prefixes-00
+* https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00
+* https://tools.ietf.org/html/draft-thomson-http-omnomnom-00

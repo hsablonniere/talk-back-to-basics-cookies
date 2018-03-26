@@ -1,9 +1,25 @@
 .slide--section {
+  background-color: var(--color-bbbb);
   display: flex;
-  font-size: 5rem;
+  flex-direction: column;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide--section_pretitle {
+  color: var(--color-f);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .slide--section_title {
-  margin: auto;
+  color: var(--color-e);
+  font-size: 5rem;
   text-align: center;
+  line-height: 1.4;
+  font-weight: bold;
+  padding: 0 8rem;
 }

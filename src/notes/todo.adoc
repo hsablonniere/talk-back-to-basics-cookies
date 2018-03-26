@@ -1,1 +1,42 @@
 = TODO
+
+== Story/Slide
+
+// * OWASP
+// * HSTS
+* CORS
+* XHR
+* Fetch
+* brevet
+* CSP
+// * Demo xss example with localstorage
+// * Demo cookie préfix
+* Démo window.name cross site
+* Schéma pour introduire le tracking
+* referer policies
+* discours de la fin wifi publics
+* discours de la fin cnil
+* discours de la navig privée
+
+== Prépa avant talk
+
+* Desktop 1: Ouvrir Chrome avec la preview
+* Desktop 2: Ouvrir firefox avec fishcam
+* Desktop 3: Terminal noir sur blanc pour elinks
+* Desktop 4: Ouvrir firefox latest profil default avec devtools ouvert et cookies simples
+* Desktop 5: Ouvrir Chrome latest profil cookie avec devtools ouvert
+
+== Improvements
+
+== Démos
+
+* Démo CSRF
+* Démo samesite
+* Démo document.cookie
+* Démo window.name
+* Démo Web Storage
+* Démo tracking cookie tiers avec referer
+* Démo tracking etag avec referer
+* Démo du réglage des cookies tiers
+* Démo du réglage des referers
+* Démo du fichier contenant les cookies

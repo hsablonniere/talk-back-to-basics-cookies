@@ -16,6 +16,7 @@ module.exports = (node) => {
 </head>
 <body>
 ${node.getContent()}
+<audio id="sherlock-sound" src="videos/sherlock.ogg"></audio>
 </body>
 </html>`;
 };
