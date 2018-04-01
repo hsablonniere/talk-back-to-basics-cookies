@@ -17,7 +17,6 @@ Le sujet se concentre sur un vieux truc inventé dans les années 90 (que vous c
 [.question]#Acceptez-vous de poursuivre la présentation ?#
 Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, il est encore temps de changer de salle...
 
-
 [#london-pre, slide=location]
 &nbsp;
 
@@ -25,15 +24,11 @@ Si vous voulez savoir comment déployer dans la blockchain des microservices Kot
 Il y a quelques mois...
 221b Baker Street
 Londres
-// Marylebone, Londres
-// NW1 6XE
 
-// image::img/screenshots/patents-google-com-patent-us5774670a-en.jpg[]
-
-[#sherlock-intro, slide=sherlock]
+[#sherlock-intro-00, slide=sherlock]
 I'm almost there...
 
-[#sherlock-intro, slide=sherlock]
+[#sherlock-intro-01, slide=sherlock]
 What's up Sherlock?
 
 [#sherlock-intro-02.sherlock, slide=sherlock]
@@ -45,28 +40,28 @@ Such fashion victims!
 [#sherlock-intro-04, slide=sherlock]
 It seems logical, isn't&nbsp;it?
 
-[#sherlock-intro-03.sherlock, slide=sherlock]
+[#sherlock-intro-05.sherlock, slide=sherlock]
 They're missing the great investigation!
 
-[#sherlock-intro-04, slide=sherlock]
+[#sherlock-intro-06, slide=sherlock]
 Which one?
 
-[#sherlock-intro-04.sherlock, slide=sherlock]
+[#sherlock-intro-07.sherlock, slide=sherlock]
 HTTP cookies of&nbsp;course!
 
-[#sherlock-intro-04.sherlock, slide=sherlock]
+[#sherlock-intro-08.sherlock, slide=sherlock]
 I asked Hubert to investigate...
 
-[#sherlock-intro-04, slide=sherlock]
+[#sherlock-intro-09, slide=sherlock]
 The fucking froggy?
 
-[#sherlock-intro-04.sherlock, slide=sherlock]
+[#sherlock-intro-10.sherlock, slide=sherlock]
 Yes but he's a&nbsp;redhead.
 
-[#sherlock-intro-04.sherlock, slide=sherlock]
+[#sherlock-intro-11.sherlock, slide=sherlock]
 Facts, facts, facts!
 
-[#sherlock-intro-04, slide=sherlock]
+[#sherlock-intro-12, slide=sherlock]
 Interesting...
 
 [#poster-welcome, slide=poster]
@@ -76,14 +71,14 @@ Bonjour à tous
 [#clever-cloud.logo]
 image::img/cc-rocket-man.png[]
 
-[source#public-suffix-list, slide=code]
+[source#go-to-stand, slide=code]
 ----
 if (true) {
   toi.passerAuStand('Clever Cloud');
 }
 ----
 
-[#demo-simple-cookie, slide=blank]
+[#transition-to-cookie, slide=blank]
 Enchaînement vers cookies
 
 [#back-to-1994.contain]
@@ -104,8 +99,8 @@ fishcam : des poissons en live depuis 1994
 [#lynx, slide=text]
 Lynx : navigateur mode texte
 
-[#lynx-screenshot.top]
-image::img/screenshots/en-wikipedia-org-wiki-lynx-web-browser.jpg[]
+[#lynx]
+image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
 [#blink-tag, slide=text]
 [.blink]`<blink>` : la meilleure balise de tous les temps !
@@ -127,8 +122,6 @@ image::img/loumontulli.jpg[author="Peter Adams"]
 
 [#question-what-are-cookies, slide=question]
 C'est quoi un cookie HTTP ?
-
-// Diagramme séquence (simple) avec juste des bulles de discussion
 
 [#cookies-flow-01.contain]
 image::img/cookies-flow-01.svg[]
@@ -178,12 +171,6 @@ image::img/rfcs-02.svg[]
 [#rfcs-03.contain]
 image::img/rfcs-03.svg[]
 
-// [#rfcs-04.contain]
-// image::img/rfcs-04.svg[]
-//
-// [#rfcs-05.contain]
-// image::img/rfcs-05.svg[]
-
 [#question-cookie-storage-duration, slide=question]
 Combien de temps  est stocké un cookie ?
 
@@ -203,7 +190,7 @@ Set-Cookie: name=value; Max-Age=86400
 [#demo-persistent-cookie, slide=blank]
 Démo de cookie persistent
 
-[#question-what-are-cookies, slide=question]
+[#question-how-to-delete-cookies, slide=question]
 Comment le serveur  supprime un cookie ?
 
 .Supprimer un cookie
@@ -254,43 +241,38 @@ Un cookie pour `.com` ?
 [#no-dot-com-cookie.contain]
 video::videos/no.mp4#t=4[]
 
-[#screenshot-bugzilla-issue-dot-co-dot-uk.top]
-image::img/screenshots/bugzilla-mozilla-org-show-bug-cgi-id-252342.jpg[]
+[#mozilla-issue-252342]
+image::img/screenshots/mozilla-issue-252342.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=252342"]
 
-[#screenshot-bugzill-331510.top]
-image::img/screenshots/bugzilla-mozilla-org-show-bug-cgi-id-331510.jpg[]
+[#mozilla-issue-331510]
+image::img/screenshots/mozilla-issue-331510.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=331510"]
 
-[#screenshot-bugzilla-342314.top]
-image::img/screenshots/bugzilla-mozilla-org-show-bug-cgi-id-342314.jpg[]
+[#mozilla-issue-342314]
+image::img/screenshots/mozilla-issue-342314.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=342314"]
 
-// [#screenshot-bugzilla-mozilla-org-show-bug-cgi-id-9422.top]
-// image::img/screenshots/bugzilla-mozilla-org-show-bug-cgi-id-9422.jpg[]
+[#mozilla-public-suffix-list]
+image::img/screenshots/mozilla-public-suffix-list.jpg[url="https://wiki.mozilla.org/Public_Suffix_List"]
 
-[#screenshot-wiki-mozilla-org-public-suffix-list.top]
-image::img/screenshots/wiki-mozilla-org-public-suffix-list.jpg[]
-
-.https://publicsuffix.org
-[#screenshot-publicsuffix-org.top]
-image::img/screenshots/publicsuffix-org.jpg[]
+[#publicsuffix-org]
+image::img/screenshots/publicsuffix-org.jpg[url="https://publicsuffix.org"]
 
 [#rfcs-04-again.contain]
 image::img/rfcs-04.svg[]
 
-.RFC 6265
-[#rfc-6265-public-suffix.top]
-image::img/screenshots/tools-ietf-org-html-rfc6265-page-23.jpg[]
+[#rfc6265-page23]
+image::img/screenshots/rfc6265-page23.jpg[url="https://tools.ietf.org/html/rfc6265#page-23", width="1024"]
 
-[#screenshot-dxr-mozilla-org-mozilla-central-source-netwerk-dns-effective-tld-names-dat.top]
-image::img/screenshots/dxr-mozilla-org-mozilla-central-source-netwerk-dns-effective-tld-names-dat.jpg[]
+[#mozilla-source-effective-tld-names]
+image::img/screenshots/mozilla-source-effective-tld-names.jpg[url="https://dxr.mozilla.org/mozilla-central/source/netwerk/dns/effective_tld_names.dat", width="1024"]
 
-[#screenshot-chromium-googlesource-com-chromium-src-net-master-base-registry-controlled-domains-effective-tld-names-dat.top]
-image::img/screenshots/chromium-googlesource-com-chromium-src-net-master-base-registry-controlled-domains-effective-tld-names-dat.jpg[]
+[#chrome-source-effective-tld-names]
+image::img/screenshots/chrome-source-effective-tld-names.jpg[url="https://chromium.googlesource.com/chromium/src/net/+/master/base/registry_controlled_domains/effective_tld_names.dat"]
 
-[#screenshot-github-com-webkit-webkit-blob-master-source-webcore-platform-soup-publicsuffixsoup-cpp.top]
-image::img/screenshots/github-com-webkit-webkit-blob-master-source-webcore-platform-soup-publicsuffixsoup-cpp.jpg[]
+[#safari-source-effective-tld-names]
+image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github.com/WebKit/webkit/blob/master/Source/WebCore/platform/soup/PublicSuffixSoup.cpp"]
 
-[#screenshot-github-com-gnome-libsoup-blob-master-data-effective-tld-names-dat.top]
-image::img/screenshots/github-com-gnome-libsoup-blob-master-data-effective-tld-names-dat.jpg[]
+[#libsoup-source-effective-tld-names]
+image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
 
 .Public Suffix List (extrait)
 [source#public-suffix-list, slide=code]
@@ -305,10 +287,10 @@ githubusercontent.com
 gitlab.io
 ----
 
-[#question-a-cookie-on-dot-com, slide=question]
+[#question-a-cookie-on-localhost, slide=question]
 Un cookie pour `.localhost` ?
 
-[#no-dot-com-cookie.contain]
+[#no-dot-localhost-gif.contain]
 video::videos/no.mp4#t=7[]
 
 [#no-dot-com-cookie-pause, slide=blank]
@@ -317,20 +299,20 @@ Pause gif
 [source#example-cookie-path, cookies]
 Set-Cookie: name=value; Path=/api
 
-[#demo-domain-cookie, slide=blank]
+[#demo-path-cookie, slide=blank]
 Démos de cookies avec l'attribut path
 
 [source#example-cookie-secure, cookies]
 Set-Cookie: name=value; Secure
 
-[#demo-domain-cookie, slide=blank]
+[#demo-secure-cookie, slide=blank]
 Démos de cookies avec l'attribut secure
 
-[#strict-secure-draft.top]
-image::img/screenshots/tools-ietf-org-html-draft-ietf-httpbis-cookie-alone-01.jpg[]
+[#draft-ietf-httpbis-cookie-alone]
+image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
 .Header HSTS (attention !)
-[source#public-suffix-list, slide=code]
+[source#hsts, slide=code]
 ----
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
@@ -342,19 +324,19 @@ Y a-t-il une  vérification sur le port ?
 [#gif-no-port-cookie.contain]
 video::videos/no.mp4#t=13[]
 
-[#animated-gifs, slide=text]
+[#sop, slide=text]
 SOP : Same Origin Policy
 
 [.contain]
 image::img/origin.svg[]
 
-[#draft-strict-cookies.top]
-image::img/screenshots/tools-ietf-org-html-draft-west-origin-cookies-01.jpg[]
+[#draft-west-origin-cookies]
+image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
-[#animated-gifs, slide=text]
+[#ajax, slide=text]
 AJAX : Asynchronous JavaScript & XML
 
-[source#public-suffix-list, slide=code]
+[source#xhr, slide=code]
 ----
 const xhr = new XMLHttpRequest();
 xhr.open('GET', '/url', true);
@@ -366,22 +348,22 @@ xhr.send();
 ----
 
 // CORS
-[source#public-suffix-list, slide=code]
+[source#xhr-cors, slide=code]
 Access-Control-Allow-Credentials: true
 
-[#animated-gifs, slide=text]
+[#fetch, slide=text]
 fetch : La nouvelle XHR
 
 // CORS
-[source#public-suffix-list, slide=code]
+[source#fetch-code, slide=code]
 fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
 fetch('/url', { credentials: 'include' })
 
 // withCredentials pour le cross site
 
-[#screenshot-caniuse-fetch.contain]
-image::img/screenshots/caniuse-com-feat-fetch.jpg[]
+[#caniuse-fetch]
+image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
 // credentials: 'include'
 
@@ -403,8 +385,8 @@ C'est quoi  une attaque CSRF/XSRF ?
 [#demo-csrf, slide=blank]
 Démos CSRF
 
-[#owasp-csrf.top]
-image::img/screenshots/www-owasp-org-index-php-cross-site-request-forgery-csrf.jpg[]
+[#owasp-csrf]
+image::img/screenshots/owasp-csrf.jpg[url="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)"]
 
 [#rfcs-05-again.contain]
 image::img/rfcs-05.svg[]
@@ -433,11 +415,11 @@ Démo document.cookie
 [#question-xss-attack, slide=question]
 C'est quoi  une attaque XSS ?
 
-[#owasp-xss.top]
-image::img/screenshots/www-owasp-org-index-php-cross-site-scripting-xss.jpg[]
+[#owasp-xss]
+image::img/screenshots/owasp-xss.jpg[url="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)"]
 
-[#csp.top]
-image::img/screenshots/developers-google-com-web-fundamentals-security-csp.jpg[]
+[#developers-google-csp]
+image::img/screenshots/developers-google-csp.jpg[url="https://developers.google.com/web/fundamentals/security/csp/"]
 
 [source#example-cookie-http-only, cookies]
 Set-Cookie: name=value; HttpOnly
@@ -445,7 +427,7 @@ Set-Cookie: name=value; HttpOnly
 [#demo-httponly-cookie, slide=blank]
 Démo http only
 
-[#rfcs-05-again.contain]
+[#rfcs-05-again-02.contain]
 image::img/rfcs-05.svg[]
 
 [source#example-cookie-prefix-s, cookies]
@@ -484,11 +466,11 @@ Démo Web Storage
 [#question-cnil-dev, slide=question]
 Que dit la CNIL ?
 
-[#cnil-conformity]
-image::img/screenshots/www-cnil-fr-fr-cookies-comment-mettre-mon-site-web-en-conformite.jpg[]
+[#cnil-cookies-conformite]
+image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
 
-[#cnil-the-law]
-image::img/screenshots/www-cnil-fr-fr-cookies-traceurs-que-dit-la-loi.jpg[]
+[#cnil-cookies-la-loi]
+image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
 
 [#section-tracker]
 == Point de vue n°2 : celui/celle qui veut "tracer" ses visiteurs
@@ -501,11 +483,11 @@ Démo tracking cookie tiers avec referer
 [#question-what-is-referer, slide=question]
 C'est quoi le referer ?
 
-[#w3c-referer-policy.contain]
-image::img/screenshots/caniuse-com-search-referer.jpg[]
+[#caniuse-referer]
+image::img/screenshots/caniuse-referer.jpg[url="https://caniuse.com/#search=referer"]
 
-[#w3c-referer-policy.top]
-image::img/screenshots/www-w3-org-tr-referrer-policy.jpg[]
+[#w3c-referrer-policy]
+image::img/screenshots/w3c-referrer-policy.jpg[url="https://www.w3.org/TR/referrer-policy/"]
 
 [#question-what-is-a-super-cookie, slide=question]
 C'est quoi un supercookie ?
@@ -526,11 +508,11 @@ Traçage avec JavaScript : (CSS :visited)...
 [#tracking-with-javascript-02, slide=text]
 Traçage JavaScript : (Flash, Silverlight)...
 
-[#evercookie.top]
-image::img/screenshots/github-com-samyk-evercookie.jpg[]
+[#evercookie]
+image::img/screenshots/evercookie.jpg[url="https://github.com/samyk/evercookie"]
 
-[#evercookie-list.top]
-image::img/screenshots/github-com-samyk-evercookie-browser-storage-mechanisms.jpg[]
+[#evercookie-browser-storage-mechanisms]
+image::img/screenshots/evercookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
 [#section-web-citizen]
 == Point de vue n°3 : celui/celle qui est soucieux de sa vie privée
@@ -560,34 +542,34 @@ Démo du fichier contenant les cookies
 Faut-il installer des  extensions navigateur  en plus ?
 
 
-[#screenshot-https-everywhere.top]
-image::img/screenshots/www-eff-org-fr-https-everywhere.jpg[]
+[#https-everywhere]
+image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/fr/https-everywhere"]
 
-uBlock
+//uBlock
 
-[#screenshot-adblockplus.top]
-image::img/screenshots/adblockplus-org-fr.jpg[]
+[#adblockplus]
+image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
 
-[#screenshot-ghostery.top]
-image::img/screenshots/www-ghostery-com-fr.jpg[]
+[#ghostery]
+image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
 
-[#screenshot-facebook-container.top]
-image::img/screenshots/addons-mozilla-org-en-us-firefox-addon-facebook-container.jpg[]
+[#addons-mozilla-firefox-container]
+image::img/screenshots/addons-mozilla-firefox-container.jpg[url="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"]
 
-[#screenshot-disconnect.top]
-image::img/screenshots/disconnect-me.jpg[]
+[#disconnect-me]
+image::img/screenshots/disconnect-me.jpg[url="https://disconnect.me/"]
 
-[#screenshot-privacy-badger.top]
-image::img/screenshots/www-eff-org-fr-privacybadger.jpg[]
+[#privacybadger]
+image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/fr/privacybadger"]
 
-[#screenshot-noscript.top]
-image::img/screenshots/noscript-net.jpg[]
+[#noscript]
+image::img/screenshots/noscript.jpg[url="https://noscript.net/"]
 
-[#screenshot-panopticlick.top]
-image::img/screenshots/panopticlick-eff-org-about.jpg[]
+[#panopticlick]
+image::img/screenshots/panopticlick.jpg[url="https://panopticlick.eff.org/about"]
 
-[#tor.top]
-image::img/screenshots/www-torproject-org-projects-torbrowser-html-en.jpg[]
+[#torbrowser]
+image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/torbrowser.html.en"]
 
 [#question-private-browsing, slide=question]
 Que fait la navigation privée  dans tout ça ?
@@ -612,19 +594,19 @@ image::img/1994-2018.svg[]
 [#sherlock-outro, slide=blank]
 Histoire d'outro avec Sherlock
 
-[#sherlock-intro-02.sherlock, slide=sherlock]
+[#sherlock-outro-01.sherlock, slide=sherlock]
 Wow&nbsp;lots&nbsp;of facts&nbsp;here!
 
-[#sherlock-intro-02, slide=sherlock]
+[#sherlock-outro-02, slide=sherlock]
 Indeed
 
-[#sherlock-intro-02.sherlock, slide=sherlock]
+[#sherlock-outro-03.sherlock, slide=sherlock]
 Know when it smells...
 
-[#sherlock-intro-02.sherlock, slide=sherlock]
+[#sherlock-outro-04.sherlock, slide=sherlock]
 Spread knowledge...
 
-[#sherlock-intro-02.sherlock, slide=sherlock]
+[#sherlock-outro-05.sherlock, slide=sherlock]
 Debate&nbsp;the&nbsp;future of&nbsp;the Web!
 
 .Merci bcp !
