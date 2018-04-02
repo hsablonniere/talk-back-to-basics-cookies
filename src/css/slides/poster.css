@@ -30,7 +30,7 @@
 [data-slide="poster"] .details {
   align-items: center;
   box-sizing: border-box;
-  color: var(--color-dd);
+  color: var(--color-b);
   display: flex;
   flex: 1 1 0;
   font-size: 2rem;
