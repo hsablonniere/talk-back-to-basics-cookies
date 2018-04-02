@@ -42,16 +42,16 @@ I'm confused by bloody developers!
 Such fashion victims!
 
 [quote, Watson]
-It seems logical, isn't&nbsp;it?
+It seems logical, isn't it?
 
 [quote, Sherlock]
-They're missing the great investigation!
+But they're missing  the great investigation!
 
 [quote, Watson]
 Which one?
 
 [quote, Sherlock]
-HTTP cookies of&nbsp;course!
+HTTP cookies of course!
 
 [quote, Sherlock]
 I asked Hubert to investigate...
@@ -60,7 +60,7 @@ I asked Hubert to investigate...
 The fucking froggy?
 
 [quote, Sherlock]
-Yes but he's a&nbsp;redhead.
+Yes but he's a redhead.
 
 [quote, Sherlock]
 Facts, facts, facts!
@@ -515,10 +515,10 @@ image::img/1994-2018.svg[role=contain]
 Histoire d'outro avec Sherlock
 
 [quote, Sherlock]
-Wow&nbsp;lots&nbsp;of facts&nbsp;here!
+Wow!!!  Lots of facts!
 
 [quote, Watson]
-Indeed
+Indeed.
 
 [quote, Sherlock]
 Know when it smells...
@@ -527,7 +527,7 @@ Know when it smells...
 Spread knowledge...
 
 [quote, Sherlock]
-Debate&nbsp;the&nbsp;future of&nbsp;the Web!
+Debate the future  of the Web!
 
 .Merci bcp !
 [slide=poster]

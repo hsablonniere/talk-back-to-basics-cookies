@@ -1,43 +1,50 @@
 [data-slide="dialogue"] {
+  --gutter: 3rem;
   background-color: var(--color-a);
-  background-image: url(../../img/sherlock.svg);
-  background-position: center center;
+  background-image: url(../../img/sherlock.svg), url(../../img/watson.svg);
+  background-position: left var(--gutter) bottom var(--gutter), right var(--gutter) bottom var(--gutter);
   background-repeat: no-repeat;
-  background-size: 101% auto;
+  background-size: auto 12rem;
   position: relative;
 }
 
 [data-slide="dialogue"] .sentenceWrapper {
   align-items: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  bottom: 16rem;
   box-sizing: border-box;
   display: flex;
-  height: 15rem;
-  justify-content: center;
-  line-height: 1;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
   position: absolute;
-  text-align: center;
-  top: 3rem;
-  width: 25rem;
+  top: 2rem;
 }
 
 [data-slide="dialogue"] .sentenceWrapper[data-character="watson"] {
-  background-image: url(../../img/sherlock-bubble.svg);
-  right: 9rem;
+  left: 12rem;
+  justify-content: flex-end;
+  right: 8rem;
 }
 
 [data-slide="dialogue"] .sentenceWrapper[data-character="sherlock"] {
-  background-image: url(../../img/sherlock-bubble-left.svg);
-  left: 9rem;
+  left: 8rem;
+  justify-content: flex-start;
+  right: 12rem;
 }
 
 [data-slide="dialogue"] .sentence {
+  border-image-slice: 30 30 130 30;
+  border-style: solid;
+  border-width: 1rem 1rem 4.5rem 1rem;
   color: var(--color-f);
   font-family: "Just Another Hand", sans-serif;
   font-size: 4.2rem;
+  line-height: 1;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+[data-slide="dialogue"] .sentenceWrapper[data-character="watson"]  .sentence {
+  border-image-source: url(../../img/watson-bubble.svg);
+}
+
+[data-slide="dialogue"] .sentenceWrapper[data-character="sherlock"]  .sentence {
+  border-image-source: url(../../img/sherlock-bubble.svg);
 }
