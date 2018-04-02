@@ -9,7 +9,6 @@
 
 .slide--sherlock_sentenceWrapper {
   align-items: center;
-  background-image: url(../img/sherlock-bubble.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,20 +21,23 @@
   padding-left: 3rem;
   padding-right: 3rem;
   position: absolute;
-  right: 9rem;
   text-align: center;
   top: 3rem;
   width: 25rem;
 }
 
-.sherlock .slide--sherlock_sentenceWrapper {
-  left: 9rem;
-  right: auto;
+.slide--sherlock_sentenceWrapper[data-character="WATSON"] {
+  background-image: url(../img/sherlock-bubble.svg);
+  right: 9rem;
+}
+
+.slide--sherlock_sentenceWrapper[data-character="SHERLOCK"] {
   background-image: url(../img/sherlock-bubble-left.svg);
+  left: 9rem;
 }
 
 .slide--sherlock_sentence {
-  font-family: "Just Another Hand", sans-serif;
   color: var(--color-f);
+  font-family: "Just Another Hand", sans-serif;
   font-size: 4.2rem;
 }

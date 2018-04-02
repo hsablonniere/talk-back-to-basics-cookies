@@ -26,43 +26,43 @@ Il y a quelques mois...
 Londres
 
 [#sherlock-intro-00, slide=sherlock]
-I'm almost there...
+WATSON : I'm almost there...
 
 [#sherlock-intro-01, slide=sherlock]
-What's up Sherlock?
+WATSON : What's up Sherlock?
 
-[#sherlock-intro-02.sherlock, slide=sherlock]
-I'm confused by bloody developers!
+[#sherlock-intro-02, slide=sherlock]
+SHERLOCK : I'm confused by bloody developers!
 
-[#sherlock-intro-03.sherlock, slide=sherlock]
-Such fashion victims!
+[#sherlock-intro-03, slide=sherlock]
+SHERLOCK : Such fashion victims!
 
 [#sherlock-intro-04, slide=sherlock]
-It seems logical, isn't&nbsp;it?
+WATSON : It seems logical, isn't&nbsp;it?
 
-[#sherlock-intro-05.sherlock, slide=sherlock]
-They're missing the great investigation!
+[#sherlock-intro-05, slide=sherlock]
+SHERLOCK : They're missing the great investigation!
 
 [#sherlock-intro-06, slide=sherlock]
-Which one?
+WATSON : Which one?
 
-[#sherlock-intro-07.sherlock, slide=sherlock]
-HTTP cookies of&nbsp;course!
+[#sherlock-intro-07, slide=sherlock]
+SHERLOCK : HTTP cookies of&nbsp;course!
 
-[#sherlock-intro-08.sherlock, slide=sherlock]
-I asked Hubert to investigate...
+[#sherlock-intro-08, slide=sherlock]
+SHERLOCK : I asked Hubert to investigate...
 
 [#sherlock-intro-09, slide=sherlock]
-The fucking froggy?
+WATSON : The fucking froggy?
 
-[#sherlock-intro-10.sherlock, slide=sherlock]
-Yes but he's a&nbsp;redhead.
+[#sherlock-intro-10, slide=sherlock]
+SHERLOCK : Yes but he's a&nbsp;redhead.
 
-[#sherlock-intro-11.sherlock, slide=sherlock]
-Facts, facts, facts!
+[#sherlock-intro-11, slide=sherlock]
+SHERLOCK : Facts, facts, facts!
 
 [#sherlock-intro-12, slide=sherlock]
-Interesting...
+WATSON : Interesting...
 
 [#poster-welcome, slide=poster]
 Bonjour à tous
@@ -99,7 +99,7 @@ fishcam : des poissons en live depuis 1994
 [#lynx, slide=text]
 Lynx : navigateur mode texte
 
-[#lynx]
+[#wikipedia-lynx]
 image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
 [#blink-tag, slide=text]
@@ -594,20 +594,20 @@ image::img/1994-2018.svg[]
 [#sherlock-outro, slide=blank]
 Histoire d'outro avec Sherlock
 
-[#sherlock-outro-01.sherlock, slide=sherlock]
-Wow&nbsp;lots&nbsp;of facts&nbsp;here!
+[#sherlock-outro-01, slide=sherlock]
+SHERLOCK : Wow&nbsp;lots&nbsp;of facts&nbsp;here!
 
 [#sherlock-outro-02, slide=sherlock]
-Indeed
+WATSON : Indeed
 
-[#sherlock-outro-03.sherlock, slide=sherlock]
-Know when it smells...
+[#sherlock-outro-03, slide=sherlock]
+SHERLOCK : Know when it smells...
 
-[#sherlock-outro-04.sherlock, slide=sherlock]
-Spread knowledge...
+[#sherlock-outro-04, slide=sherlock]
+SHERLOCK : Spread knowledge...
 
-[#sherlock-outro-05.sherlock, slide=sherlock]
-Debate&nbsp;the&nbsp;future of&nbsp;the Web!
+[#sherlock-outro-05, slide=sherlock]
+SHERLOCK : Debate&nbsp;the&nbsp;future of&nbsp;the Web!
 
 .Merci bcp !
 [#poster-thx, slide=poster]

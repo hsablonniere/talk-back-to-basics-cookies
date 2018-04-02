@@ -52,9 +52,10 @@ ${ subtext ? `<div class="slide--text_subtext">${subtext}</div>` : '' }
       'slide--sherlock',
       ...node.getRoles(),
     ];
+    const [character, sentence] = node.getContent().split(' : ')
     return `<section id="${attrs.id}" class="${classes.join(' ')}">
-<div class="slide--sherlock_sentenceWrapper">
-  <div class="slide--sherlock_sentence">${node.getContent()}</div>
+<div class="slide--sherlock_sentenceWrapper" data-character="${character}">
+  <div class="slide--sherlock_sentence">${sentence}</div>
 </div>
 </section>`;
   }
