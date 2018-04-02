@@ -1,6 +1,6 @@
-.slide--blank {
+[data-slide="blank"] {
   background-color: var(--color-a);
-  background-image: url(../img/poster-cookies.svg);
+  background-image: url(../../img/poster-cookies.svg);
   background-repeat: no-repeat;
   background-size: auto 30%;
   background-position: center center;

@@ -1,4 +1,4 @@
-.slide--section {
+[data-slide="section"] {
   background-color: var(--color-bbbb);
   display: flex;
   flex-direction: column;
@@ -8,14 +8,14 @@
   align-items: center;
 }
 
-.slide--section_pretitle {
+[data-slide="section"] .pretitle {
   color: var(--color-f);
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
-.slide--section_title {
+[data-slide="section"] .title {
   color: var(--color-e);
   font-size: 5rem;
   text-align: center;

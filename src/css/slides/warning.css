@@ -1,4 +1,4 @@
-.slide--warning {
+[data-slide="warning"] {
   background-color: var(--color-a);
   font-family: 'PT Sans Narrow', sans-serif;
   display: flex;
@@ -11,19 +11,19 @@
   line-height: 1.4;
 }
 
-.slide--warning_keyword {
+[data-slide="warning"] .keyword {
   font-size: 6rem;
   color: var(--color-ddd);
   text-align: center;
 }
 
-.slide--warning_message {
+[data-slide="warning"] .message {
   font-size: 2rem;
   color: var(--color-f);
   text-align: justify;
 }
 
-.slide--warning_message .question {
+[data-slide="warning"] .question {
   display: block;
   color: var(--color-ddd);
   margin: 1rem 0;

@@ -1,13 +1,13 @@
-.slide--sherlock {
+[data-slide="dialogue"] {
   background-color: var(--color-a);
-  background-image: url(../img/sherlock.svg);
+  background-image: url(../../img/sherlock.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 101% auto;
   position: relative;
 }
 
-.slide--sherlock_sentenceWrapper {
+[data-slide="dialogue"] .sentenceWrapper {
   align-items: center;
   background-position: center center;
   background-repeat: no-repeat;
@@ -26,17 +26,17 @@
   width: 25rem;
 }
 
-.slide--sherlock_sentenceWrapper[data-character="watson"] {
-  background-image: url(../img/sherlock-bubble.svg);
+[data-slide="dialogue"] .sentenceWrapper[data-character="watson"] {
+  background-image: url(../../img/sherlock-bubble.svg);
   right: 9rem;
 }
 
-.slide--sherlock_sentenceWrapper[data-character="sherlock"] {
-  background-image: url(../img/sherlock-bubble-left.svg);
+[data-slide="dialogue"] .sentenceWrapper[data-character="sherlock"] {
+  background-image: url(../../img/sherlock-bubble-left.svg);
   left: 9rem;
 }
 
-.slide--sherlock_sentence {
+[data-slide="dialogue"] .sentence {
   color: var(--color-f);
   font-family: "Just Another Hand", sans-serif;
   font-size: 4.2rem;

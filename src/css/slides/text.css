@@ -1,4 +1,4 @@
-.slide--text {
+[data-slide="text"] {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -7,23 +7,23 @@
   text-align: center;
 }
 
-.slide--text code {
+[data-slide="text"] code {
   font-family: "Operator Mono Medium", sans-serif;
   font-size: 0.9em;
   font-style: normal;
 }
 
-.slide--text_keyword {
+[data-slide="text"] .keyword {
   color: var(--color-bb);
   font-weight: bold;
   font-size: 5rem;
 }
 
-.slide--text_subtext {
+[data-slide="text"] .subtext {
   font-size: 3rem;
   font-style: italic;
 }
 
-.slide--text_subtext code {
+[data-slide="text"] .subtext code {
   color: #666;
 }

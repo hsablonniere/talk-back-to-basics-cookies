@@ -1,20 +1,15 @@
 'use strict';
 
+const slide = require('./_slide');
+
 module.exports = (node) => {
   const attrs = node.getAttributes();
-  const classes = [
-    'slide',
-    'slide--media',
-    ...node.getRoles(),
-  ];
 
-  const author = (attrs.author) ? `<div class="slide--media_author">Photo by ${attrs.author}</div>` : '';
+  const author = (attrs.author) ? `<div class="author">Photo by ${attrs.author}</div>` : '';
+  const figcaption = (node.getTitle()) ? `<figcaption class="caption">${node.getTitle()}</figcaption>` : '';
 
-  const figcaption = (node.getTitle()) ? `<figcaption class="slide--media_caption">${node.getTitle()}</figcaption>` : '';
-
-  return `<section class="${classes.join(' ')}">
-  <video class="slide--media_element" src="${attrs.target}" loop></video>
+  return slide('media', node, node.getRoles(), `
+  <video class="element" src="${attrs.target}" loop></video>
   ${author}
-  ${figcaption}
-</section>`;
+  ${figcaption}`);
 };

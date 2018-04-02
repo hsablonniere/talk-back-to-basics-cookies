@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1080" viewBox="0 0 158.75 285.75">
+    <path d="M-13.23 207.77h185.21" stroke="#000" stroke-width="2.117"/>
+    <path d="M53.698 141.979h25.694m-25.694-6.768h51.355m-51.355-6.768h51.355m-51.355-6.768h51.355m-51.355-6.769h51.355m-51.355-6.767h51.355M48.058 75.967h62.634a2.915 2.915 0 0 1 2.921 2.921v75.676a2.915 2.915 0 0 1-2.921 2.921H48.058a2.915 2.915 0 0 1-2.921-2.921V78.888a2.915 2.915 0 0 1 2.921-2.921z"
+          fill="none" stroke="#ff0032" stroke-width="2.117" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="line-height:1.25;-inkscape-font-specification:'Operator Mono';text-align:center" x="79.367" y="44.851"
+          font-weight="400" font-size="12.347" font-family="Operator Mono" letter-spacing="0" word-spacing="0"
+          text-anchor="middle" stroke-width=".265">
+        <tspan x="79.367" y="44.851" style="-inkscape-font-specification:'Operator Mono';text-align:center">NETSCAPE
+        </tspan>
+        <tspan x="79.367" y="60.285" style="-inkscape-font-specification:'Operator Mono';text-align:center">SPEC</tspan>
+    </text>
+    <circle cx="79.375" cy="207.77" r="6" fill="#ff0032"/>
+    <text y="248.277" x="79.515" style="line-height:1.25;-inkscape-font-specification:'Droid Sans Mono for Powerline'"
+          font-weight="400" font-size="26.101" font-family="Droid Sans Mono for Powerline" letter-spacing="0"
+          word-spacing="0" fill="#ff0032" stroke-width=".265">
+        <tspan style="-inkscape-font-specification:'Just Another Hand';text-align:center" y="248.277" x="79.515"
+               font-family="Just Another Hand" text-anchor="middle">???
+        </tspan>
+    </text>
+</svg>

@@ -1,11 +1,11 @@
-.slide--question {
+[data-slide="question"] {
   align-items: center;
   background-color: var(--color-ccc);
   display: flex;
   justify-content: center;
 }
 
-.slide--question_text {
+[data-slide="question"] .text {
   color: var(--color-f);
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 4rem;
@@ -15,6 +15,6 @@
   text-align: center;
 }
 
-.slide--question_text code {
+[data-slide="question"] .text code {
   color: var(--color-e);
 }

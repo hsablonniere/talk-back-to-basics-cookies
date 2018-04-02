@@ -1,4 +1,4 @@
-.slide--location {
+[data-slide="location"] {
   background-color: var(--color-a);
   display: flex;
   justify-content: flex-start;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.slide--location_location {
+[data-slide="location"] .location {
   color: var(--color-f);
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 3rem;

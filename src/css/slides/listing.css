@@ -1,18 +1,18 @@
-.slide--listing {
+[data-slide="listing"] {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.slide--listing_title {
+[data-slide="listing"] .title {
   color: var(--color-ccc);
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.slide--listing_codeBlock {
+[data-slide="listing"] .codeBlock {
   background-color: #f7f7f7;
   border-radius: 0.25rem;
   box-sizing: border-box;
@@ -22,12 +22,12 @@
   padding: 0.5rem 1rem;
 }
 
-.slide--listing_codeBlock .hljs-string {
+[data-slide="listing"] .codeBlock .hljs-string {
   font-style: italic;
 }
 
 @media (min-aspect-ratio: 14/9) {
-  .slide--listing_codeBlock {
+  [data-slide="listing"] .codeBlock {
     font-size: 1.6rem;
   }
 }

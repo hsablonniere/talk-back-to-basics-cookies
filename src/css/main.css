@@ -1,21 +1,16 @@
 @import "highlight.js/atom-one-light.css";
 @import "font-pt-sans-narrow.css";
 @import "responsive-slides.css";
-@import "base.css";
 @import "animations.css";
-@import "slide-blank.css";
-@import "slide-listing.css";
-@import "slide-location.css";
-@import "slide-media.css";
-@import "slide-poster.css";
-@import "slide-question.css";
-@import "slide-section.css";
-@import "slide-sherlock.css";
-@import "slide-table.css";
-@import "slide-text.css";
-@import "slide-todo.css";
-@import "slide-warning.css";
-
-.notes {
-  display: none;
-}
+@import "base.css";
+@import "notes.css";
+@import "slides/blank.css";
+@import "slides/listing.css";
+@import "slides/location.css";
+@import "slides/media.css";
+@import "slides/poster.css";
+@import "slides/question.css";
+@import "slides/section.css";
+@import "slides/dialogue.css";
+@import "slides/text.css";
+@import "slides/warning.css";

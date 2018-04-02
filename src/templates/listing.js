@@ -1,12 +1,15 @@
 'use strict';
 
-const highlightjs = require('highlight.js')
+const highlightjs = require('highlight.js');
+
+const slide = require('./_slide');
 
 module.exports = (node) => {
 
   const attrs = node.getAttributes();
-
-  const title = node.getTitle() ? `<div class="slide--listing_title">${node.getTitle()}</div>` : '';
+  const title = node.getTitle()
+    ? `<div class="title">${node.getTitle()}</div>`
+    : '';
 
   if (attrs.language === 'cookies') {
     const cookie = node.getContent()
@@ -19,18 +22,15 @@ module.exports = (node) => {
       .replace(/([;:])/g, (all) => {
         return `<span class="cookie-sign">${all}</span>`;
       });
-    return `<section class="slide slide--listing">
-${title}
-<pre class="slide--listing_codeBlock">
+
+    return slide('listing', node, `${title}
+<pre class="codeBlock">
 ${cookie}
-</pre>
-</section>`;
+</pre>`);
   }
 
-  return `<section class="slide slide--listing">
-${title}
-<pre class="slide--listing_codeBlock">
+  return slide('listing', node, `${title}
+<pre class="codeBlock">
 ${highlightjs.highlight(attrs.language, node.getContent()).value}
-</pre>
-</section>`;
+</pre>`);
 };
