@@ -71,7 +71,7 @@ Bonjour à tous
 [#clever-cloud.logo]
 image::img/cc-rocket-man.png[]
 
-[source#go-to-stand, slide=code]
+[source#go-to-stand, js, slide=code]
 ----
 if (true) {
   toi.passerAuStand('Clever Cloud');
@@ -275,7 +275,7 @@ image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github
 image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
 
 .Public Suffix List (extrait)
-[source#public-suffix-list, slide=code]
+[source#public-suffix-list, ini, slide=code]
 ----
 // GitHub, Inc.
 // Submitted by Patrick Toomey <security@github.com>
@@ -312,7 +312,7 @@ Démos de cookies avec l'attribut secure
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
 .Header HSTS (attention !)
-[source#hsts, slide=code]
+[source#hsts, http, slide=code]
 ----
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
@@ -336,7 +336,7 @@ image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org
 [#ajax, slide=text]
 AJAX : Asynchronous JavaScript & XML
 
-[source#xhr, slide=code]
+[source#xhr, js, slide=code]
 ----
 const xhr = new XMLHttpRequest();
 xhr.open('GET', '/url', true);
@@ -348,14 +348,14 @@ xhr.send();
 ----
 
 // CORS
-[source#xhr-cors, slide=code]
+[source#xhr-cors, http, slide=code]
 Access-Control-Allow-Credentials: true
 
 [#fetch, slide=text]
 fetch : La nouvelle XHR
 
 // CORS
-[source#fetch-code, slide=code]
+[source#fetch-code, js, slide=code]
 fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
 fetch('/url', { credentials: 'include' })

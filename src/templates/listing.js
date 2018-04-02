@@ -1,5 +1,7 @@
 'use strict';
 
+const highlightjs = require('highlight.js')
+
 module.exports = (node) => {
 
   const attrs = node.getAttributes();
@@ -25,10 +27,12 @@ ${cookie}
 </section>`;
   }
 
+  console.log(attrs.language, node)
+
   return `<section class="slide slide--listing">
 ${title}
 <pre class="slide--listing_codeBlock">
-${node.getContent()}
+${highlightjs.highlight(attrs.language, node.getContent()).value}
 </pre>
 </section>`;
 };

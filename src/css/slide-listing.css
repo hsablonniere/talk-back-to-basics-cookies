@@ -13,12 +13,17 @@
 }
 
 .slide--listing_codeBlock {
-  font-size: 1.3rem;
   background-color: #f7f7f7;
-  box-sizing: border-box;
-  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  box-sizing: border-box;
+  font-family: "Operator Mono Book", monospace;
+  font-size: 1.3rem;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.slide--listing_codeBlock .hljs-string {
+  font-style: italic;
 }
 
 @media (min-aspect-ratio: 14/9) {
