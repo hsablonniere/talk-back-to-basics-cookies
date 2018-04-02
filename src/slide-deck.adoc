@@ -17,8 +17,8 @@ Le sujet se concentre sur un vieux truc inventé dans les années 90 (que vous c
 [.question]#Acceptez-vous de poursuivre la présentation ?#
 Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, il est encore temps de changer de salle...
 
-[slide=location]
-&nbsp;
+[.empty, slide=blank]
+...
 
 [slide=location]
 Il y a quelques mois...

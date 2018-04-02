@@ -6,3 +6,7 @@
   background-position: center center;
   opacity: 0.4;
 }
+
+[data-slide="blank"].empty {
+  background-image: none;
+}
