@@ -8,274 +8,236 @@ Hubert Sablonnière
 :event: BreizhCamp
 :date: 30 mars 2018
 
-[#poster-intro, slide=poster]
+[slide=poster]
 Intro
 
-[WARNING#warning-old-stuffs, caption=Avertissement]
+[WARNING, caption=Avertissement]
 Cette présentation n'aborde aucune technologie à la mode.
 Le sujet se concentre sur un vieux truc inventé dans les années 90 (que vous connaissez peut-être déjà).
 [.question]#Acceptez-vous de poursuivre la présentation ?#
 Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, il est encore temps de changer de salle...
 
-[#london-pre, slide=location]
+[slide=location]
 &nbsp;
 
-[#london, slide=location]
+[slide=location]
 Il y a quelques mois...
 221b Baker Street
 Londres
 
-[#sherlock-intro-00, slide=sherlock]
-WATSON : I'm almost there...
+[quote, Watson]
+I'm almost there...
 
-[#sherlock-intro-01, slide=sherlock]
-WATSON : What's up Sherlock?
+J'arrive, j'arrive...
 
-[#sherlock-intro-02, slide=sherlock]
-SHERLOCK : I'm confused by bloody developers!
+[quote, Watson]
+What's up Sherlock?
 
-[#sherlock-intro-03, slide=sherlock]
-SHERLOCK : Such fashion victims!
+Que se passe t-il Sherlock ?
 
-[#sherlock-intro-04, slide=sherlock]
-WATSON : It seems logical, isn't&nbsp;it?
+[quote, Sherlock]
+I'm confused by bloody developers!
 
-[#sherlock-intro-05, slide=sherlock]
-SHERLOCK : They're missing the great investigation!
+[quote, Sherlock]
+Such fashion victims!
 
-[#sherlock-intro-06, slide=sherlock]
-WATSON : Which one?
+[quote, Watson]
+It seems logical, isn't&nbsp;it?
 
-[#sherlock-intro-07, slide=sherlock]
-SHERLOCK : HTTP cookies of&nbsp;course!
+[quote, Sherlock]
+They're missing the great investigation!
 
-[#sherlock-intro-08, slide=sherlock]
-SHERLOCK : I asked Hubert to investigate...
+[quote, Watson]
+Which one?
 
-[#sherlock-intro-09, slide=sherlock]
-WATSON : The fucking froggy?
+[quote, Sherlock]
+HTTP cookies of&nbsp;course!
 
-[#sherlock-intro-10, slide=sherlock]
-SHERLOCK : Yes but he's a&nbsp;redhead.
+[quote, Sherlock]
+I asked Hubert to investigate...
 
-[#sherlock-intro-11, slide=sherlock]
-SHERLOCK : Facts, facts, facts!
+[quote, Watson]
+The fucking froggy?
 
-[#sherlock-intro-12, slide=sherlock]
-WATSON : Interesting...
+[quote, Sherlock]
+Yes but he's a&nbsp;redhead.
 
-[#poster-welcome, slide=poster]
+[quote, Sherlock]
+Facts, facts, facts!
+
+[quote, Watson]
+Interesting...
+
+[slide=poster]
 Bonjour à tous
 
-.Clever Cloud
-[#clever-cloud.logo]
-image::img/cc-rocket-man.png[]
+#mode normal (et énergique)# +
+Bonjour à *toutes* et tous ! +
+J'm'appelle Hubert Sablonnière, +
+J'suis développeur Web chez #Clever Cloud#.
 
-[source#go-to-stand, js, slide=code]
-----
+.Clever Cloud
+image::img/cc-rocket-man.png[role=logo]
+
+Qui connait Clever Cloud ?
+
+[source, js, slide=code]
 if (true) {
   toi.passerAuStand('Clever Cloud');
 }
-----
 
-[#transition-to-cookie, slide=blank]
+[slide=blank]
 Enchaînement vers cookies
 
-[#back-to-1994.contain]
-image::img/2018-1994.svg[]
+image::img/2018-1994.svg[role="contain"]
 
 // http://facesofopensource.com/lou-montulli/
 // http://www.peteradamsphoto.com/lou-montulli-2/
-[#lou-montulli.big.top]
-image::img/loumontulli.jpg[author="Peter Adams"]
+image::img/loumontulli.jpg[author="Peter Adams", role="big top"]
 
 .Netscape
-[#netscape.logo]
-image::img/netscape_4-6.svg[]
+image::img/netscape_4-6.svg[role=logo]
 
-[#fishcam, slide=text]
+[slide=text]
 fishcam : des poissons en live depuis 1994
 
-[#lynx, slide=text]
+[slide=text]
 Lynx : navigateur mode texte
 
-[#wikipedia-lynx]
 image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
-[#blink-tag, slide=text]
+[slide=text]
 [.blink]`<blink>` : la meilleure balise de tous les temps !
 
-[#shake-tag, slide=text]
+[slide=text]
 [.shake]`<shake>` : si on m'avait demandé mon avis...
 
-[#animated-gifs, slide=text]
+[slide=text]
 gifs animés : parceque Java c'est trop long à charger
 
-[#animated-gifs-example.contain]
-video::videos/no.mp4[]
+video::videos/no.mp4[role=contain]
 
-[#lou-and-cookies.contain.light]
-image::img/loumontulli.jpg[author="Peter Adams"]
+image::img/loumontulli.jpg[author="Peter Adams", role="contain light"]
 
-[#section-dev]
 == Point de vue n°1 : celui/celle qui veut sécuriser son site Web
 
-[#question-what-are-cookies, slide=question]
+[slide=question]
 C'est quoi un cookie HTTP ?
 
-[#cookies-flow-01.contain]
-image::img/cookies-flow-01.svg[]
+image::img/cookies-flow-01.svg[role=contain]
 
-[#cookies-flow-02.contain]
-image::img/cookies-flow-02.svg[]
+image::img/cookies-flow-02.svg[role=contain]
 
-[#cookies-flow-03.contain]
-image::img/cookies-flow-03.svg[]
+image::img/cookies-flow-03.svg[role=contain]
 
-[#cookies-flow-04.contain]
-image::img/cookies-flow-04.svg[]
+image::img/cookies-flow-04.svg[role=contain]
 
-[#cookies-flow-05.contain]
-image::img/cookies-flow-05.svg[]
+image::img/cookies-flow-05.svg[role=contain]
 
-[#cookies-flow-06.contain]
-image::img/cookies-flow-06.svg[]
+image::img/cookies-flow-06.svg[role=contain]
 
-[#cookies-flow-07.contain]
-image::img/cookies-flow-07.svg[]
+image::img/cookies-flow-07.svg[role=contain]
 
-[#cookies-flow-08.contain]
-image::img/cookies-flow-08.svg[]
+image::img/cookies-flow-08.svg[role=contain]
 
-[#cookies-flow-09.contain]
-image::img/cookies-flow-09.svg[]
+image::img/cookies-flow-09.svg[role=contain]
 
-[#cookies-flow-10.contain]
-image::img/cookies-flow-10.svg[]
+image::img/cookies-flow-10.svg[role=contain]
 
-[#cookies-flow-11.contain]
-image::img/cookies-flow-11.svg[]
+image::img/cookies-flow-11.svg[role=contain]
 
-[#cookies-flow-12.contain]
-image::img/cookies-flow-12.svg[]
+image::img/cookies-flow-12.svg[role=contain]
 
-[#demo-simple-cookie, slide=blank]
+[slide=blank]
 Démo d'un cookie simple dans le browser
 
-[#rfcs-01.contain]
-image::img/rfcs-01.svg[]
+image::img/rfcs-01.svg[role=contain]
 
-[#rfcs-02.contain]
-image::img/rfcs-02.svg[]
+image::img/rfcs-02.svg[role=contain]
 
-[#rfcs-03.contain]
-image::img/rfcs-03.svg[]
+image::img/rfcs-03.svg[role=contain]
 
-[#question-cookie-storage-duration, slide=question]
+[slide=question]
 Combien de temps  est stocké un cookie ?
 
 .Expirer à la fermeture de la session
-[source#example-cookie-simple, cookies]
+[source, cookies]
 Set-Cookie: name=value
 
 .Expirer à une date
-[source#example-cookie-expires, cookies]
+[source, cookies]
 Set-Cookie: name=value;
             Expires=Wed, 20 Jan 2021 10:30:00 GMT
 
 .Expirer dans 24h
-[source#example-cookie-max-age, cookies]
+[source, cookies]
 Set-Cookie: name=value; Max-Age=86400
 
-[#demo-persistent-cookie, slide=blank]
+[slide=blank]
 Démo de cookie persistent
 
-[#question-how-to-delete-cookies, slide=question]
+[slide=question]
 Comment le serveur  supprime un cookie ?
 
 .Supprimer un cookie
-[source#example-cookie-expires-delete, cookies]
+[source, cookies]
 Set-Cookie: name=value;
             Expires=Thu, 01 Jan 1970 00:00:00 GMT
 
 .Supprimer un cookie
-[source#example-cookie-max-age-delete, cookies]
+[source, cookies]
 Set-Cookie: name=value; Max-Age=0
 
-[#demo-delete-cookie, slide=blank]
+[slide=blank]
 Démo suppression de cookie
 
-[#question-when-are-cookies-sent, slide=question]
+[slide=question]
 Quand est-ce que  les cookies sont  envoyés automatiquement ?
 
-[source#example-cookie-domain-unset, cookies]
+[source, cookies]
 Set-Cookie: name=value
 
-[source#example-cookie-domain, cookies]
+[source, cookies]
 Set-Cookie: name=value; Domain=cookies.rocks
 
-[source#example-cookie-subdomain, cookies]
+[source, cookies]
 Set-Cookie: name=value; Domain=blue.cookies.rocks
 
-[source#example-cookie-subsubdomain, cookies]
+[source, cookies]
 Set-Cookie: name=value; Domain=big.blue.cookies.rocks
 
-[#demo-domain-cookie, slide=blank]
+[slide=blank]
 Démos de cookies avec l'attribut Domain
 
-// [#recap-domain-attribute, slide=table]
-// --
-// |===
-// |                       |c.r |blue.c.r |green.c.r |big.blue.c.r
-//
-// // |sans domaine           |OUI |         |          |
-// |domaine c.r            |OUI |OUI      |OUI       |OUI
-// |sous-domaine blue.c.r  |    |OUI      |          |OUI
-// |sous-domaine green.c.r |    |         |OUI       |
-// |===
-// --
-
-[#question-a-cookie-on-dot-com, slide=question]
+[slide=question]
 Un cookie pour `.com` ?
 
-[#no-dot-com-cookie.contain]
-video::videos/no.mp4#t=4[]
+video::videos/no.mp4#t=4[role=contain]
 
-[#mozilla-issue-252342]
 image::img/screenshots/mozilla-issue-252342.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=252342"]
 
-[#mozilla-issue-331510]
 image::img/screenshots/mozilla-issue-331510.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=331510"]
 
-[#mozilla-issue-342314]
 image::img/screenshots/mozilla-issue-342314.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=342314"]
 
-[#mozilla-public-suffix-list]
 image::img/screenshots/mozilla-public-suffix-list.jpg[url="https://wiki.mozilla.org/Public_Suffix_List"]
 
-[#publicsuffix-org]
 image::img/screenshots/publicsuffix-org.jpg[url="https://publicsuffix.org"]
 
-[#rfcs-04-again.contain]
-image::img/rfcs-04.svg[]
+image::img/rfcs-04.svg[role=contain]
 
-[#rfc6265-page23]
 image::img/screenshots/rfc6265-page23.jpg[url="https://tools.ietf.org/html/rfc6265#page-23", width="1024"]
 
-[#mozilla-source-effective-tld-names]
 image::img/screenshots/mozilla-source-effective-tld-names.jpg[url="https://dxr.mozilla.org/mozilla-central/source/netwerk/dns/effective_tld_names.dat", width="1024"]
 
-[#chrome-source-effective-tld-names]
 image::img/screenshots/chrome-source-effective-tld-names.jpg[url="https://chromium.googlesource.com/chromium/src/net/+/master/base/registry_controlled_domains/effective_tld_names.dat"]
 
-[#safari-source-effective-tld-names]
 image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github.com/WebKit/webkit/blob/master/Source/WebCore/platform/soup/PublicSuffixSoup.cpp"]
 
-[#libsoup-source-effective-tld-names]
 image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
 
 .Public Suffix List (extrait)
-[source#public-suffix-list, ini, slide=code]
+[source, ini, slide=code]
 ----
 // GitHub, Inc.
 // Submitted by Patrick Toomey <security@github.com>
@@ -287,56 +249,49 @@ githubusercontent.com
 gitlab.io
 ----
 
-[#question-a-cookie-on-localhost, slide=question]
+[slide=question]
 Un cookie pour `.localhost` ?
 
-[#no-dot-localhost-gif.contain]
-video::videos/no.mp4#t=7[]
+video::videos/no.mp4#t=7[role=contain]
 
-[#no-dot-com-cookie-pause, slide=blank]
+[slide=blank]
 Pause gif
 
-[source#example-cookie-path, cookies]
+[source, cookies]
 Set-Cookie: name=value; Path=/api
 
-[#demo-path-cookie, slide=blank]
+[slide=blank]
 Démos de cookies avec l'attribut path
 
-[source#example-cookie-secure, cookies]
+[source, cookies]
 Set-Cookie: name=value; Secure
 
-[#demo-secure-cookie, slide=blank]
+[slide=blank]
 Démos de cookies avec l'attribut secure
 
-[#draft-ietf-httpbis-cookie-alone]
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
 .Header HSTS (attention !)
-[source#hsts, http, slide=code]
-----
+[source, http, slide=code]
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
-----
 
-[#question-cookie-port-verification, slide=question]
+[slide=question]
 Y a-t-il une  vérification sur le port ?
 
-[#gif-no-port-cookie.contain]
-video::videos/no.mp4#t=13[]
+video::videos/no.mp4#t=13[role=contain]
 
-[#sop, slide=text]
+[slide=text]
 SOP : Same Origin Policy
 
-[.contain]
-image::img/origin.svg[]
+image::img/origin.svg[role=contain]
 
-[#draft-west-origin-cookies]
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
-[#ajax, slide=text]
+[slide=text]
 AJAX : Asynchronous JavaScript & XML
 
-[source#xhr, js, slide=code]
+[source, js, slide=code]
 ----
 const xhr = new XMLHttpRequest();
 xhr.open('GET', '/url', true);
@@ -347,97 +302,81 @@ xhr.withCredentials = true;
 xhr.send();
 ----
 
-// CORS
-[source#xhr-cors, http, slide=code]
+[source, http, slide=code]
 Access-Control-Allow-Credentials: true
 
-[#fetch, slide=text]
+[slide=text]
 fetch : La nouvelle XHR
 
-// CORS
-[source#fetch-code, js, slide=code]
+[source, js, slide=code]
 fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
 fetch('/url', { credentials: 'include' })
 
-// withCredentials pour le cross site
-
-[#caniuse-fetch]
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
-// credentials: 'include'
+image::img/cookies-flow-08.svg[role=contain]
 
-[#cookies-flow-08-bis.contain]
-image::img/cookies-flow-08.svg[]
+image::img/cookies-flow-09.svg[role=contain]
 
-[#cookies-flow-09-bis.contain]
-image::img/cookies-flow-09.svg[]
+image::img/cookies-flow-10.svg[role=contain]
 
-[#cookies-flow-10-bis.contain]
-image::img/cookies-flow-10.svg[]
+image::img/cookies-flow-11.svg[role=contain]
 
-[#cookies-flow-11-bis.contain]
-image::img/cookies-flow-11.svg[]
-
-[#question-what-is-csrf, slide=question]
+[slide=question]
 C'est quoi  une attaque CSRF/XSRF ?
 
-[#demo-csrf, slide=blank]
+[slide=blank]
 Démos CSRF
 
-[#owasp-csrf]
 image::img/screenshots/owasp-csrf.jpg[url="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)"]
 
-[#rfcs-05-again.contain]
-image::img/rfcs-05.svg[]
+image::img/rfcs-05.svg[role=contain]
 
-[source#example-cookie-samesite-lax, cookies]
+[source, cookies]
 Set-Cookie: name=value; SameSite=Lax
 
-[source#example-cookie-samesite-strict, cookies]
+[source, cookies]
 Set-Cookie: name=value; SameSite=Strict
 
-[#demo-samesite-cookie, slide=blank]
+[slide=blank]
 Démos samesite
 
 // [#screenshot-caniuse-samesite-cookies.contain]
 // image::img/screenshots/caniuse-com-feat-same-site-cookie-attribute.jpg[]
 
-[#question-who-can-read-cookies, slide=question]
+[slide=question]
 Qui peut lire quels cookies ?
 
-[#document-cookie, slide=text]
+[slide=text]
 `document.cookie` : l'API navigateur la plus étrange du monde
 
-[#demo-document-cookie, slide=blank]
+[slide=blank]
 Démo document.cookie
 
-[#question-xss-attack, slide=question]
+[slide=question]
 C'est quoi  une attaque XSS ?
 
-[#owasp-xss]
 image::img/screenshots/owasp-xss.jpg[url="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)"]
 
-[#developers-google-csp]
 image::img/screenshots/developers-google-csp.jpg[url="https://developers.google.com/web/fundamentals/security/csp/"]
 
-[source#example-cookie-http-only, cookies]
+[source, cookies]
 Set-Cookie: name=value; HttpOnly
 
-[#demo-httponly-cookie, slide=blank]
+[slide=blank]
 Démo http only
 
-[#rfcs-05-again-02.contain]
-image::img/rfcs-05.svg[]
+image::img/rfcs-05.svg[role=contain]
 
-[source#example-cookie-prefix-s, cookies]
+[source, cookies]
 Set-Cookie: __Secure-name=value; Secure
 
-[source#example-cookie-prefix-h, cookies]
+[source, cookies]
 Set-Cookie: __Host-name=value; Secure; Path=/
 
 .Récap. des attributs
-[source#example-recap-attributes, cookies]
+[source, cookies]
 Set-Cookie: name=value;
             Expires=Tue, 03 Nov 2020 00:00:00 GMT;
             Max-Age=86400;
@@ -448,140 +387,121 @@ Set-Cookie: name=value;
             SameSite=Lax;
             SameSite=Strict
 
-[#question-cookie-alternatives, slide=question]
+[slide=question]
 Quelles alternatives  pour un stockage local ?
 
-[#window-name, slide=text]
+[slide=text]
 `window.name` : la vieille technique cross-site
 
-[#demo-window-name, slide=blank]
+[slide=blank]
 Démo window.name
 
-[#web-storage, slide=text]
+[slide=text]
 Web Storage : `localStorage` et `sessionStorage`
 
-[#demo-web-storage, slide=blank]
+[slide=blank]
 Démo Web Storage
 
-[#question-cnil-dev, slide=question]
+[slide=question]
 Que dit la CNIL ?
 
-[#cnil-cookies-conformite]
 image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
 
-[#cnil-cookies-la-loi]
 image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
 
-[#section-tracker]
 == Point de vue n°2 : celui/celle qui veut "tracer" ses visiteurs
 
 // rappel conditions du CSRF
 
-[#demo-third-party-cookie, slide=blank]
+[slide=blank]
 Démo tracking cookie tiers avec referer
 
-[#question-what-is-referer, slide=question]
+[slide=question]
 C'est quoi le referer ?
 
-[#caniuse-referer]
 image::img/screenshots/caniuse-referer.jpg[url="https://caniuse.com/#search=referer"]
 
-[#w3c-referrer-policy]
 image::img/screenshots/w3c-referrer-policy.jpg[url="https://www.w3.org/TR/referrer-policy/"]
 
-[#question-what-is-a-super-cookie, slide=question]
+[slide=question]
 C'est quoi un supercookie ?
 
-[#tracking-without-javascript, slide=text]
+[slide=text]
 Traçage sans JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
 // redirect ?
 
-[#demo-etag-cookie, slide=blank]
+[slide=blank]
 Démo tracking etag avec referer
 
-[#tracking-with-javascript, slide=text]
+[slide=text]
 Traçage avec JavaScript : Cache, Web Storage, IndexedDB, window.name, Canvas...
 
-[#tracking-with-javascript-01, slide=text]
+[slide=text]
 Traçage avec JavaScript : (CSS :visited)...
 
-[#tracking-with-javascript-02, slide=text]
+[slide=text]
 Traçage JavaScript : (Flash, Silverlight)...
 
-[#evercookie]
 image::img/screenshots/evercookie.jpg[url="https://github.com/samyk/evercookie"]
 
-[#evercookie-browser-storage-mechanisms]
 image::img/screenshots/evercookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
-[#section-web-citizen]
 == Point de vue n°3 : celui/celle qui est soucieux de sa vie privée
 
-[#question, slide=question]
+[slide=question]
 Comment régler  mon navigateur ?
 
-[#browser-cookie-settings, slide=text]
+[slide=text]
 Les cookies tiers
 
-[#demo-browser-cookie-settings, slide=blank]
+[slide=blank]
 Démo du réglage des cookies tiers
 
-[#browser-referer-settings, slide=text]
+[slide=text]
 L'en-tête `referer`
 
-[#demo-referer-settings, slide=blank]
+[slide=blank]
 Démo du réglage des referers
 
-[#question-cookies-sqlite, slide=question]
+[slide=question]
 Ils sont où les cookies ?
 
-[#demo-cookies-sqlite, slide=blank]
+[slide=blank]
 Démo du fichier contenant les cookies
 
-[#question-browser-extensions, slide=question]
+[slide=question]
 Faut-il installer des  extensions navigateur  en plus ?
 
-
-[#https-everywhere]
 image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/fr/https-everywhere"]
 
 //uBlock
 
-[#adblockplus]
 image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
 
-[#ghostery]
 image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
 
-[#addons-mozilla-firefox-container]
 image::img/screenshots/addons-mozilla-firefox-container.jpg[url="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"]
 
-[#disconnect-me]
 image::img/screenshots/disconnect-me.jpg[url="https://disconnect.me/"]
 
-[#privacybadger]
 image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/fr/privacybadger"]
 
-[#noscript]
 image::img/screenshots/noscript.jpg[url="https://noscript.net/"]
 
-[#panopticlick]
 image::img/screenshots/panopticlick.jpg[url="https://panopticlick.eff.org/about"]
 
-[#torbrowser]
 image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/torbrowser.html.en"]
 
-[#question-private-browsing, slide=question]
+[slide=question]
 Que fait la navigation privée  dans tout ça ?
 
-[#question-free-wifi, slide=question]
+[slide=question]
 WiFi gratuits ?
 
-// [#question-cnil-citizen, slide=question]
+// [slide=question]
 // La CNIL est mon amie
 
-[#back-to-2018.contain]
-image::img/1994-2018.svg[]
+image::img/1994-2018.svg[role=contain]
 
 // https://web.archive.org/web/20130912000824/http://www.montulli-blog.com:80/2013/05/why-blocking-3rd-party-cookies-could-be.html
 // Lou
@@ -591,27 +511,27 @@ image::img/1994-2018.svg[]
 // The evil you know is better than the one you don't.
 // This is probably a race we can't win.
 
-[#sherlock-outro, slide=blank]
+[slide=blank]
 Histoire d'outro avec Sherlock
 
-[#sherlock-outro-01, slide=sherlock]
-SHERLOCK : Wow&nbsp;lots&nbsp;of facts&nbsp;here!
+[quote, Sherlock]
+Wow&nbsp;lots&nbsp;of facts&nbsp;here!
 
-[#sherlock-outro-02, slide=sherlock]
-WATSON : Indeed
+[quote, Watson]
+Indeed
 
-[#sherlock-outro-03, slide=sherlock]
-SHERLOCK : Know when it smells...
+[quote, Sherlock]
+Know when it smells...
 
-[#sherlock-outro-04, slide=sherlock]
-SHERLOCK : Spread knowledge...
+[quote, Sherlock]
+Spread knowledge...
 
-[#sherlock-outro-05, slide=sherlock]
-SHERLOCK : Debate&nbsp;the&nbsp;future of&nbsp;the Web!
+[quote, Sherlock]
+Debate&nbsp;the&nbsp;future of&nbsp;the Web!
 
 .Merci bcp !
-[#poster-thx, slide=poster]
+[slide=poster]
 Outro
 
-[#question-questions, slide=question]
+[slide=question]
 Des questions ?

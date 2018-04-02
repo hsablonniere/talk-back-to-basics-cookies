@@ -3,7 +3,7 @@
 module.exports = (node) => {
   const attrs = node.getAttributes();
   // console.log(node)
-  return `<section id="${attrs.id}" class="slide slide--table">
+  return `<section class="slide slide--table">
 <table>
 ${ node.rows.body.map((cells) => {
    return `<tr>${

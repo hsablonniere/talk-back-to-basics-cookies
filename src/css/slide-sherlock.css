@@ -26,12 +26,12 @@
   width: 25rem;
 }
 
-.slide--sherlock_sentenceWrapper[data-character="WATSON"] {
+.slide--sherlock_sentenceWrapper[data-character="watson"] {
   background-image: url(../img/sherlock-bubble.svg);
   right: 9rem;
 }
 
-.slide--sherlock_sentenceWrapper[data-character="SHERLOCK"] {
+.slide--sherlock_sentenceWrapper[data-character="sherlock"] {
   background-image: url(../img/sherlock-bubble-left.svg);
   left: 9rem;
 }

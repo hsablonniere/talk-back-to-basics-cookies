@@ -14,7 +14,7 @@ module.exports = (node) => {
          <div class="slide--poster_title">${title}</div>
       </div>`;
 
-  return `<section id="${attrs.id}" class="slide slide--poster">
+  return `<section class="slide slide--poster">
   ${$title}
   <div class="slide--poster_details">
     <div class="slide--poster_details_author">

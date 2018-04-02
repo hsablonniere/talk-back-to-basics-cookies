@@ -27,8 +27,6 @@ ${cookie}
 </section>`;
   }
 
-  console.log(attrs.language, node)
-
   return `<section class="slide slide--listing">
 ${title}
 <pre class="slide--listing_codeBlock">

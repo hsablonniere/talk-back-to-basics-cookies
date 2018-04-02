@@ -15,3 +15,7 @@
 @import "slide-text.css";
 @import "slide-todo.css";
 @import "slide-warning.css";
+
+.notes {
+  display: none;
+}

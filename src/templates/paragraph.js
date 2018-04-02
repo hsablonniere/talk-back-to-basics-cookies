@@ -15,7 +15,7 @@ module.exports = (node) => {
       'slide--media',
       ...node.getRoles(),
     ];
-    return `<section id="${attrs.id}" class="${classes.join(' ')}">
+    return `<section class="${classes.join(' ')}">
   ${node.getContent()}
   <figcaption>${node.title}</figcaption>
 </section>`;
@@ -29,50 +29,34 @@ module.exports = (node) => {
         .replace(/ /g, '&nbsp;')
         .replace(/&nbsp;&nbsp;/g, ' ')
       : question;
-    return `<section id="${attrs.id}" class="slide slide--question">
+    return `<section class="slide slide--question">
 <div class="slide--question_text">${balancedQuestion}</div>
 </section>`;
   }
 
   if (attrs.slide === 'text') {
     const [keyword, subtext] = node.getContent().split(' : ');
-    return `<section id="${attrs.id}" class="slide slide--text">
+    return `<section class="slide slide--text">
 <div class="slide--text_keyword">${keyword}</div>
 ${ subtext ? `<div class="slide--text_subtext">${subtext}</div>` : '' }
 </section>`;
   }
 
   if (attrs.slide === 'blank') {
-    return `<section id="${attrs.id}" class="slide slide--blank"></section>`;
-  }
-
-  if (attrs.slide === 'sherlock') {
-    const classes = [
-      'slide',
-      'slide--sherlock',
-      ...node.getRoles(),
-    ];
-    const [character, sentence] = node.getContent().split(' : ')
-    return `<section id="${attrs.id}" class="${classes.join(' ')}">
-<div class="slide--sherlock_sentenceWrapper" data-character="${character}">
-  <div class="slide--sherlock_sentence">${sentence}</div>
-</div>
-</section>`;
+    return `<section class="slide slide--blank"></section>`;
   }
 
   if (attrs.slide === 'location') {
-    return `<section id="${attrs.id}" class="slide slide--location">
+    return `<section class="slide slide--location">
 <div class="slide--location_location">${node.getContent()}</div>
 </section>`;
   }
 
   if (Object.keys(attrs).length === 0) {
-    return `<section class="slide slide--todo">
-  <div class="slide--todo_text">TODO: ${node.getContent()}</div>
-  </section>`;
+    return `<div class="notes">${node.getContent()}</div>`;
   }
 
-  return `<section id="${attrs.id}" class="slide slide--paragraph">
+  return `<section class="slide slide--paragraph">
 <p>${node.getContent()}</p>
 </section>`;
 };

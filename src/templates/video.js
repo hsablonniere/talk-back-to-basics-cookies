@@ -12,7 +12,7 @@ module.exports = (node) => {
 
   const figcaption = (node.getTitle()) ? `<figcaption class="slide--media_caption">${node.getTitle()}</figcaption>` : '';
 
-  return `<section id="${attrs.id}" class="${classes.join(' ')}">
+  return `<section class="${classes.join(' ')}">
   <video class="slide--media_element" src="${attrs.target}" loop></video>
   ${author}
   ${figcaption}
