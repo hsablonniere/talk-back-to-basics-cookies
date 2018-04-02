@@ -9,24 +9,15 @@
 }
 
 [data-slide="media"] .element {
-  background-color: #000;
-  object-fit: cover;
-  width: 100%;
+  background-color: var(--color-a);
   flex: 1 1 0;
   min-height: 0;
   min-width: 0;
-}
-
-[data-slide="media"].light .element {
-  background-color: #fff;
-}
-
-[data-slide="media"].contain .element {
   object-fit: contain;
+  width: 100%;
 }
 
 [data-slide="media"].big .element {
-  object-fit: contain;
   transform: scale(3);
 }
 
@@ -35,6 +26,29 @@
   transform-origin: center top;
 }
 
+[data-slide="media"].light .element {
+  background-color: #fff;
+}
+
+[data-slide="media"] .author {
+  --height: 1rem;
+  --padding: 0.5rem;
+  bottom: calc(calc(-1 * calc(var(--padding) * 2)) - var(--height));
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  height: var(--height);
+  left: 0;
+  line-height: var(--height);
+  padding: var(--padding);
+  position: absolute;
+  text-shadow: 0 0 0.1rem black;
+  transform-origin: left top;
+  transform: rotate(-90deg);
+}
+
+/* LOGO */
+
 [data-slide="media"].logo {
   align-items: center;
   justify-content: center;
@@ -42,14 +56,6 @@
 
 [data-slide="media"].logo .element {
   background-color: #fff;
-  object-fit: contain;
-  height: 15rem;
-  width: 15rem;
-}
-
-[data-slide="media"].logo .element {
-  background-color: #fff;
-  object-fit: contain;
   flex: 0 0 15rem;
   height: 15rem;
   width: 15rem;
@@ -63,43 +69,7 @@
   text-align: center;
 }
 
-[data-slide="media"] .caption {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bold;
-  flex: 0 0 4rem;
-  font-size: 2.5rem;
-  background-color: var(--color-a);
-  line-height: 4rem;
-  text-align: center;
-}
-
-[data-slide="media"].logo .caption {
-  background-color: var(--color-f);
-  line-height: calc(1 / 0.6);
-}
-
-[data-slide="media"] .caption,
-[data-slide="media"] .caption a {
-  color: var(--color-f);
-  text-decoration: none;
-}
-
-[data-slide="media"] .author {
-  --height: 1rem;
-  --padding: 0.5rem;
-  color: white;
-  font-family: monospace;
-  font-weight: bold;
-  height: var(--height);
-  left: 0;
-  line-height: var(--height);
-  padding: var(--padding);
-  position: absolute;
-  text-shadow: 0 0 0.1rem black;
-  bottom: calc(calc(-1 * calc(var(--padding) * 2)) - var(--height));
-  transform-origin: left top;
-  transform: rotate(-90deg);
-}
+/* BROWSER */
 
 [data-slide="media"] .browser {
   background-color: #ddd;
@@ -142,11 +112,4 @@
   border-top: 1px solid #ccc;
   object-fit: cover;
   object-position: center top;
-}
-
-[data-slide="media"] .element.caniuse,
-[data-slide="media"] .element.twitter {
-  object-fit: contain;
-  padding: 1rem;
-  box-sizing: border-box;
 }

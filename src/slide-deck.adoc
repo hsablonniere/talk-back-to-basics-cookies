@@ -89,7 +89,7 @@ if (true) {
 [slide=blank]
 Enchaînement vers cookies
 
-image::img/2018-1994.svg[role="contain"]
+image::img/2018-1994.svg[]
 
 // http://facesofopensource.com/lou-montulli/
 // http://www.peteradamsphoto.com/lou-montulli-2/
@@ -115,47 +115,47 @@ image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lyn
 [slide=text]
 gifs animés : parceque Java c'est trop long à charger
 
-video::videos/no.mp4[role=contain]
+video::videos/no.mp4[]
 
-image::img/loumontulli.jpg[author="Peter Adams", role="contain light"]
+image::img/loumontulli.jpg[author="Peter Adams", role="light"]
 
 == Point de vue n°1 : celui/celle qui veut sécuriser son site Web
 
 [slide=question]
 C'est quoi un cookie HTTP ?
 
-image::img/cookies-flow-01.svg[role=contain]
+image::img/cookies-flow-01.svg[]
 
-image::img/cookies-flow-02.svg[role=contain]
+image::img/cookies-flow-02.svg[]
 
-image::img/cookies-flow-03.svg[role=contain]
+image::img/cookies-flow-03.svg[]
 
-image::img/cookies-flow-04.svg[role=contain]
+image::img/cookies-flow-04.svg[]
 
-image::img/cookies-flow-05.svg[role=contain]
+image::img/cookies-flow-05.svg[]
 
-image::img/cookies-flow-06.svg[role=contain]
+image::img/cookies-flow-06.svg[]
 
-image::img/cookies-flow-07.svg[role=contain]
+image::img/cookies-flow-07.svg[]
 
-image::img/cookies-flow-08.svg[role=contain]
+image::img/cookies-flow-08.svg[]
 
-image::img/cookies-flow-09.svg[role=contain]
+image::img/cookies-flow-09.svg[]
 
-image::img/cookies-flow-10.svg[role=contain]
+image::img/cookies-flow-10.svg[]
 
-image::img/cookies-flow-11.svg[role=contain]
+image::img/cookies-flow-11.svg[]
 
-image::img/cookies-flow-12.svg[role=contain]
+image::img/cookies-flow-12.svg[]
 
 [slide=blank]
 Démo d'un cookie simple dans le browser
 
-image::img/rfcs-01.svg[role=contain]
+image::img/rfcs-01.svg[]
 
-image::img/rfcs-02.svg[role=contain]
+image::img/rfcs-02.svg[]
 
-image::img/rfcs-03.svg[role=contain]
+image::img/rfcs-03.svg[]
 
 [slide=question]
 Combien de temps  est stocké un cookie ?
@@ -212,7 +212,7 @@ Démos de cookies avec l'attribut Domain
 [slide=question]
 Un cookie pour `.com` ?
 
-video::videos/no.mp4#t=4[role=contain]
+video::videos/no.mp4#t=4[]
 
 image::img/screenshots/mozilla-issue-252342.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=252342"]
 
@@ -224,7 +224,7 @@ image::img/screenshots/mozilla-public-suffix-list.jpg[url="https://wiki.mozilla.
 
 image::img/screenshots/publicsuffix-org.jpg[url="https://publicsuffix.org"]
 
-image::img/rfcs-04.svg[role=contain]
+image::img/rfcs-04.svg[]
 
 image::img/screenshots/rfc6265-page23.jpg[url="https://tools.ietf.org/html/rfc6265#page-23", width="1024"]
 
@@ -252,7 +252,7 @@ gitlab.io
 [slide=question]
 Un cookie pour `.localhost` ?
 
-video::videos/no.mp4#t=7[role=contain]
+video::videos/no.mp4#t=7[]
 
 [slide=blank]
 Pause gif
@@ -279,12 +279,12 @@ Strict-Transport-Security: max-age=86400;
 [slide=question]
 Y a-t-il une  vérification sur le port ?
 
-video::videos/no.mp4#t=13[role=contain]
+video::videos/no.mp4#t=13[]
 
 [slide=text]
 SOP : Same Origin Policy
 
-image::img/origin.svg[role=contain]
+image::img/origin.svg[]
 
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
@@ -315,13 +315,13 @@ fetch('/url', { credentials: 'include' })
 
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
-image::img/cookies-flow-08.svg[role=contain]
+image::img/cookies-flow-08.svg[]
 
-image::img/cookies-flow-09.svg[role=contain]
+image::img/cookies-flow-09.svg[]
 
-image::img/cookies-flow-10.svg[role=contain]
+image::img/cookies-flow-10.svg[]
 
-image::img/cookies-flow-11.svg[role=contain]
+image::img/cookies-flow-11.svg[]
 
 [slide=question]
 C'est quoi  une attaque CSRF/XSRF ?
@@ -331,7 +331,7 @@ Démos CSRF
 
 image::img/screenshots/owasp-csrf.jpg[url="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)"]
 
-image::img/rfcs-05.svg[role=contain]
+image::img/rfcs-05.svg[]
 
 [source, cookies]
 Set-Cookie: name=value; SameSite=Lax
@@ -367,7 +367,7 @@ Set-Cookie: name=value; HttpOnly
 [slide=blank]
 Démo http only
 
-image::img/rfcs-05.svg[role=contain]
+image::img/rfcs-05.svg[]
 
 [source, cookies]
 Set-Cookie: __Secure-name=value; Secure
@@ -501,7 +501,7 @@ WiFi gratuits ?
 // [slide=question]
 // La CNIL est mon amie
 
-image::img/1994-2018.svg[role=contain]
+image::img/1994-2018.svg[]
 
 // https://web.archive.org/web/20130912000824/http://www.montulli-blog.com:80/2013/05/why-blocking-3rd-party-cookies-could-be.html
 // Lou

@@ -20,13 +20,13 @@ module.exports = (node) => {
     if (attrs.url.startsWith('https://caniuse.com')) {
       viewport.deviceScaleFactor = 1.75;
       takeScreenshot(attrs.url, path.resolve('src', attrs.target), viewport);
-      return slide('media', node, classes, `<img class="element caniuse" src="${attrs.target}">`);
+      return slide('media', node, classes, `<img class="element" src="${attrs.target}">`);
     }
 
     if (attrs.url.startsWith('https://twitter.com')) {
       viewport.deviceScaleFactor = 3;
       takeScreenshot(attrs.url, path.resolve('src', attrs.target), viewport);
-      return slide('media', node, classes, `<img class="element twitter" src="${attrs.target}">`);
+      return slide('media', node, classes, `<img class="element" src="${attrs.target}">`);
     }
 
     takeScreenshot(attrs.url, path.resolve('src', attrs.target), viewport);
