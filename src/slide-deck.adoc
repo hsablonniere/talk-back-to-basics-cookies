@@ -5,8 +5,8 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: BreizhCamp
-:date: 30 mars 2018
+:event: Devoxx France
+:date: 19 avril 2018
 
 [slide=poster]
 Intro
