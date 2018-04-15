@@ -259,6 +259,59 @@
 * https://www.sjoerdlangkemper.nl/2016/04/14/preventing-csrf-with-samesite-cookie-attribute/
 * https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/
 
+* https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/r0UBdUAyrLk/E_iCCBCRBAAJ
+* https://github.com/mikewest/cookies-over-http-bad/
+
+=== HSTS supercookies
+
+https://twitter.com/johnwilander/status/982355679527616512
+
+* https://www.gothamcityresearch.com/single-post/2017/10/12/Criteo-SA-NASDAQ-CRTO-Why-We-Believe-Criteo%E2%80%99s-Undisclosed-Practices-are-Illegal-and-Harmful-to-Advertisers
+* https://twitter.com/TedOnPrivacy/status/942659765926354944
+* https://www.wsj.com/articles/criteos-shares-plummet-on-revenue-forecast-1513279308
+* https://nakedsecurity.sophos.com/2015/02/02/anatomy-of-a-browser-dilemma-how-hsts-supercookies-make-you-choose-between-privacy-or-security/
+* https://adexchanger.com/ad-exchange-news/apples-safari-tracking-changes-costs-criteo-1m-q3-cost-minimum-20m-q4/
+* https://github.com/ben174/hsts-cookie
+* http://demo.hsts.radialapps.com/demo/supercookie.html
+* https://twitter.com/BrendanEich/status/982691805438160896
+* https://www.fool.com/investing/2017/12/14/why-criteo-sa-stock-plummeted-today.aspx
+* https://www.fool.com/investing/2017/11/01/criteo-sa-is-feeling-the-burn-of-apples-innovation.aspx
+* https://adexchanger.com/online-advertising/tracking-carnage-safaris-tougher-cookie-stance/#more-115061
+* https://www.theregister.co.uk/2017/09/22/inside_apple_itp_cookie_blocker/
+* https://webkit.org/blog/7675/intelligent-tracking-prevention/
+* https://webkit.org/blog/8142/intelligent-tracking-prevention-1-1/
+* https://webkit.org/blog/8146/protecting-against-hsts-abuse/
+* https://arstechnica.com/information-technology/2015/10/unpatched-browser-weaknesses-can-be-exploited-to-track-millions-of-web-users/
+* https://www.youtube.com/watch?v=kk2GkZv6Wjs
+* http://www.businessinsider.fr/us/super-cookies-hsts-security-private-2015-1
+
+* https://twitter.com/BrendanEich/status/976827785934196738
+* https://twitter.com/BrendanEich/status/982680777556049925
+
+* https://snyk.io/blog/xss-attacks-the-next-wave/
+
+* https://bugs.webkit.org/show_bug.cgi?id=159464
+* https://github.com/MicrosoftEdge/Status/issues/201
+* https://groups.google.com/forum/#!msg/mozilla.dev.platform/7hOKZDuO3qI/w9FVLatSAAAJ
+
+* http://www.businessinsider.fr/us/facebook-is-shutting-down-the-use-of-third-party-data-for-ad-targeting-2018-3
+* http://www.businessinsider.fr/us/cynical-theories-facebook-dump-third-party-data-advertising-2018-3
+
+* https://twitter.com/davidoreilly/status/983782270241771521
+* https://snyk.io/blog/owasp-top-10-breaches/
+* https://baekdal.com/strategy/publishers-havent-realized-just-how-big-a-deal-gdpr-is/
+* https://www.wired.com/story/mark-zuckerberg-will-follow-up/
+* https://www.facebook.com/help/186325668085084
+* https://www.bloomberg.com/gadfly/articles/2018-04-12/mark-zuckerberg-refuses-to-admit-how-facebook-works
+* https://www.emarketer.com/content/web-browsers-reject-about-two-thirds-of-cookies
+* https://www.newyorker.com/culture/cultural-comment/the-infuriating-innocence-of-mark-zuckerberg
+* https://stratechery.com/2018/the-facebook-current/
+* https://www.theguardian.com/commentisfree/2018/apr/11/mark-zuckerbergs-facebook-hearing-sham
+* https://news.vice.com/en_us/article/ywxqeg/zuckerbergs-cheat-sheet-accidentally-made-public-at-senate-hearing-on-privacy
+* https://pbs.twimg.com/media/DadTMxlW4AAUz_h.jpg:large
+* https://apnews.com/cf4dc2e1cc5e4ed9a28192f56e29dc10
+* https://theintercept.com/2018/04/11/mark-zuckerberg-is-either-ignorant-deliberately-misleading-congress-or-both/
+
 == Demos & POC
 
 * https://www.elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect
