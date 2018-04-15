@@ -454,9 +454,9 @@ Traçage avec JavaScript : (CSS :visited)...
 [slide=text]
 Traçage JavaScript : (Flash, Silverlight)...
 
-image::img/screenshots/evercookie.jpg[url="https://github.com/samyk/evercookie"]
+image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
 
-image::img/screenshots/evercookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
+image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
 == Point de vue n°3 : celui/celle qui est soucieux de sa vie privée
 
