@@ -8,7 +8,7 @@
 }
 
 [data-slide="text"] code {
-  font-family: "Operator Mono Medium", sans-serif;
+  font-family: "Operator Mono Medium", monospace;
   font-size: 0.9em;
   font-style: normal;
 }
