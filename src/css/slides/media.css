@@ -17,6 +17,11 @@
   width: 100%;
 }
 
+[data-slide="media"] .element--svg svg {
+  height: 100%;
+  width: 100%;
+}
+
 [data-slide="media"].big .element {
   transform: scale(3);
 }
