@@ -19,7 +19,6 @@ export default function configurePlugin () {
         notes,
       };
     });
-    console.log(steps);
 
     const details = {
       title: document.title || '',
@@ -33,7 +32,10 @@ export default function configurePlugin () {
       }
       if (command === 'go-to-step') {
         const { cursor } = commandArgs;
-        return deck.slide(Number(cursor));
+        deck.slide(Number(cursor));
+        let theSlide = deck.slides[deck.slide()];
+        const viewport = theSlide.dataset.viewport || '0';
+        return source.postMessage({ event: 'set-viewport', eventData: { viewport } }, '*');
       }
       if (command === 'toggle-slide-deck-state') {
         const { state, enabled } = commandArgs;

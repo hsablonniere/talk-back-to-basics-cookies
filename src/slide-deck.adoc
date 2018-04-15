@@ -101,10 +101,20 @@ image::img/netscape_4-6.svg[role=logo]
 [slide=text]
 fishcam : des poissons en live depuis 1994
 
+[slide=blank, data-viewport=2]
+Démo fishcam
+
+Démo fishcam
+
 [slide=text]
 Lynx : navigateur mode texte
 
 image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
+
+[slide=blank, data-viewport=3]
+Démo lynx
+
+Démo lynx
 
 [slide=text]
 [.blink]`<blink>` : la meilleure balise de tous les temps !
@@ -148,7 +158,9 @@ image::img/cookies-flow-11.svg[]
 
 image::img/cookies-flow-12.svg[]
 
-[slide=blank]
+[slide=blank, data-viewport=1]
+Démo d'un cookie simple dans le browser
+
 Démo d'un cookie simple dans le browser
 
 image::img/rfcs-01.svg[]
