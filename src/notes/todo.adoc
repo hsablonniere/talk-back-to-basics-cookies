@@ -20,13 +20,21 @@
 
 == Prépa avant talk
 
-* Desktop 1: Ouvrir Chrome avec la preview
+* Desktop 0: Ouvrir Chrome avec la preview
+* Desktop 1: Ouvrir firefox latest profil default avec devtools ouvert et cookies simples
 * Desktop 2: Ouvrir firefox avec fishcam
 * Desktop 3: Terminal noir sur blanc pour elinks
-* Desktop 4: Ouvrir firefox latest profil default avec devtools ouvert et cookies simples
-* Desktop 5: Ouvrir Chrome latest profil cookie avec devtools ouvert
+* Desktop 4: Ouvrir Chrome latest profil cookie avec devtools ouvert
 
 == Improvements
+
+* commit modifs en cours (fonts, svg...)
+* timer tout le talk en conditions réelles
+* ajuster le timing
+* browser UI (screenshots)
+* operator mono
+* stabiliser ensuite
+* ajouter/modifier les démos
 
 == Démos
 
