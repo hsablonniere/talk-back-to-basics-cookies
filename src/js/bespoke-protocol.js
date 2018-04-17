@@ -26,6 +26,9 @@ export default function configurePlugin () {
       steps,
     };
 
+    const recordingTs = new Date().getTime();
+    const events = [];
+
     window.addEventListener('message', ({ source, data: { command, commandArgs } }) => {
       if (command === 'get-slide-deck-details') {
         return source.postMessage({ event: 'slide-deck-details', eventData: { details } }, '*');
@@ -35,6 +38,11 @@ export default function configurePlugin () {
         deck.slide(Number(cursor));
         let theSlide = deck.slides[deck.slide()];
         const viewport = theSlide.dataset.viewport || '0';
+
+        const ts = new Date().getTime();
+        events.push({ ts: ts - recordingTs, cursor });
+        localStorage.setItem(`recording-${recordingTs}`, JSON.stringify(events));
+
         return source.postMessage({ event: 'set-viewport', eventData: { viewport } }, '*');
       }
       if (command === 'toggle-slide-deck-state') {

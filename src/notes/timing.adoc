@@ -1,0 +1,26 @@
+0m0s    Poster
+2m5s    Poster (after story)
+7m36s   PDV 1
+7m50s   C’est quoi un cookie HTTP ?
+11m22s  Combien de temps est stocké un cookie ?
+12m15s  Comment le serveur supprime un cookie ?
+13m20s  Quand est-ce que les cookies sont envoyés automatiquement ?
+15m32s  Un cookie pour .com ?
+18m26s  Un cookie pour .localhost ?
+18m39s  Un cookie pour .localhost ?
+23m5s   Y a-t-il une vérification sur le port ?
+27m12s  C’est quoi une attaque CSRF/XSRF ?
+31m31s  Qui peut lire quels cookies ?
+33m6s   C’est quoi une attaque XSS ?
+35m42s  Quelles alternatives pour un stockage local ?
+37m37s  Que dit la CNIL ?
+38m49s  PDV2
+41m39s  C’est quoi le referer ?
+43m11s  C’est quoi un supercookie ?
+44m44s  PDV3
+44m55s  Comment régler mon navigateur ?
+46m0s   Ils sont où les cookies ?
+47m18s  Faut-il installer des extensions navigateur en plus ?
+49m1s   Que fait la navigation privée dans tout ça ?
+49m1s   WiFi gratuits ?
+52m0s   Merci bcp !

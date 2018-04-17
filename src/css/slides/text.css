@@ -22,6 +22,7 @@
 [data-slide="text"] .subtext {
   font-size: 3rem;
   font-style: italic;
+  padding: 0 2rem;
 }
 
 [data-slide="text"] .subtext code {

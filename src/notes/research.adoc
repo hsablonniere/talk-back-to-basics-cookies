@@ -284,6 +284,7 @@ https://twitter.com/johnwilander/status/982355679527616512
 * https://arstechnica.com/information-technology/2015/10/unpatched-browser-weaknesses-can-be-exploited-to-track-millions-of-web-users/
 * https://www.youtube.com/watch?v=kk2GkZv6Wjs
 * http://www.businessinsider.fr/us/super-cookies-hsts-security-private-2015-1
+* https://www.sjoerdlangkemper.nl/2017/02/09/cookie-prefixes/
 
 * https://twitter.com/BrendanEich/status/976827785934196738
 * https://twitter.com/BrendanEich/status/982680777556049925
@@ -311,6 +312,8 @@ https://twitter.com/johnwilander/status/982355679527616512
 * https://pbs.twimg.com/media/DadTMxlW4AAUz_h.jpg:large
 * https://apnews.com/cf4dc2e1cc5e4ed9a28192f56e29dc10
 * https://theintercept.com/2018/04/11/mark-zuckerberg-is-either-ignorant-deliberately-misleading-congress-or-both/
+
+* https://www.leviathansecurity.com/blog/the-double-edged-sword-of-hsts-persistence-and-privacy
 
 == Demos & POC
 

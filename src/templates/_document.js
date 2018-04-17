@@ -26,6 +26,7 @@ if ('serviceWorker' in navigator) {
 <body>
 ${node.getContent()}
 <audio id="sherlock-sound" src="videos/sherlock.ogg"></audio>
+<audio id="sherlock-sound-full" src="videos/sherlock-full.ogg"></audio>
 </body>
 </html>`;
 };

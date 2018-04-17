@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="cookies-flow-08 (copie 1).svg">
+   sodipodi:docname="cookies-flow-09.svg">
   <defs
      id="defs2">
     <clipPath
@@ -1457,14 +1457,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.3096207"
-     inkscape:cx="1041.7952"
-     inkscape:cy="304.71456"
+     inkscape:cx="770.79717"
+     inkscape:cy="286.38864"
      inkscape:document-units="mm"
      inkscape:current-layer="g4224"
      showgrid="false"
      units="px"
-     inkscape:window-width="2560"
-     inkscape:window-height="1416"
+     inkscape:window-width="2688"
+     inkscape:window-height="1488"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -1618,14 +1618,14 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.09294415px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="221.61302"
+         x="148.20654"
          y="117.57043"
          id="text1252-6"><tspan
            sodipodi:role="line"
-           x="221.61302"
+           x="148.20654"
            y="117.57043"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';stroke-width:0.26458332"
-           id="tspan1254">cookies ?</tspan></text>
+           id="tspan1254">des cookies pour ce site ?</tspan></text>
       <path
          id="path1261"
          d="m 179.47708,177.77851 5.67404,7.08939 5.58813,-7.35827"

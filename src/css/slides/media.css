@@ -23,7 +23,7 @@
 }
 
 [data-slide="media"].big .element {
-  transform: scale(3);
+  transform: scale(2.75);
 }
 
 [data-slide="media"].top .element {
@@ -50,6 +50,20 @@
   text-shadow: 0 0 0.1rem black;
   transform-origin: left top;
   transform: rotate(-90deg);
+  z-index: 2;
+}
+
+[data-slide="media"] .caption {
+  background-color: var(--color-a);
+  bottom: 0;
+  color: var(--color-f);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 /* LOGO */
@@ -67,17 +81,20 @@
 }
 
 [data-slide="media"].logo .caption {
+  background-color: transparent;
   color: var(--color-bb);
-  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
+  position: static;
 }
 
 /* BROWSER */
 
 [data-slide="media"] .browser {
   background-color: #ddd;
+  background-image: url(../../img/browser-buttons.svg);
+  background-position: top 0.8rem left 0.4rem;
+  background-repeat: no-repeat;
+  background-size: auto 1.5rem;
   border-radius: 0.3rem 0.3rem 0 0;
   border: 1px solid #aaa;
   border-bottom-width: 0;
@@ -89,14 +106,14 @@
 }
 
 [data-slide="media"] .url {
-  background: var(--color-f);
+  background-color: var(--color-f);
   border-radius: 0.3rem;
   border: 1px solid #ccc;
   flex: 0 0 auto;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 6.5rem;
   order: -1;
   overflow: hidden;
   padding: 0 0.4rem;

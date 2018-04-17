@@ -1,40 +1,41 @@
 = TODO
 
-== Story/Slide
-
-// * OWASP
-// * HSTS
-* CORS
-* XHR
-* Fetch
-* brevet
-* CSP
-// * Demo xss example with localstorage
-// * Demo cookie préfix
-* Démo window.name cross site
-* Schéma pour introduire le tracking
-* referer policies
-* discours de la fin wifi publics
-* discours de la fin cnil
-* discours de la navig privée
-
 == Prépa avant talk
 
 * Desktop 0: Ouvrir Chrome avec la preview
-* Desktop 1: Ouvrir firefox latest profil default avec devtools ouvert et cookies simples
-* Desktop 2: Ouvrir firefox avec fishcam
-* Desktop 3: Terminal noir sur blanc pour elinks
-* Desktop 4: Ouvrir Chrome latest profil cookie avec devtools ouvert
+* Desktop 1: Ouvrir firefox latest profil default-settings
+* Desktop 2: Ouvrir Chrome latest profil cookie
+* Desktop 3: Ouvrir firefox avec fishcam
+* Desktop 4: Terminal noir sur blanc pour elinks
+* Desktop 5: Ouvrir firefox avec slide PDV 2
 
 == Improvements
 
-* commit modifs en cours (fonts, svg...)
-* timer tout le talk en conditions réelles
-* ajuster le timing
-* browser UI (screenshots)
-* operator mono
-* stabiliser ensuite
-* ajouter/modifier les démos
+=== slides
+
+* Schéma avant CSRF incomplet
+// * Règles SameSite
+// * Point CNIL
+* Ecrire la conclusion
+* Rappel cookie tiers avant le tracking
+
+* ramener souvent au concept d'enquête
+// * mettre en valeur les screenshots (surlinger avec un state)
+** cas classique de l'A/R avec redirection HTTPS
+* afficher code progressivement sur l'XHR et fetch
+* amener le sujet de qui peut lire les cookies
+* schéma
+** pour attribut Secure
+** pour le HSTS
+** pour les prefixs
+** pour attribut SameSite
+*** C'est quoi déjà les règles ?
+** pour attribut HTTPOnly
+** pr le tracking
+
+=== demos
+
+
 
 == Démos
 

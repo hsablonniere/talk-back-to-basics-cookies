@@ -1,0 +1,43 @@
+0m0s    Story
+2m00s   Bonjour & Clever Cloud
+3m00s   Lou Montulli Story
+8m00s   PDV 1
+8m30s   C’est quoi un cookie HTTP ?
+11m40s  Combien de temps est stocké un cookie ?
+12m20s  Comment le serveur supprime un cookie ?
+13m30s  Quand est-ce que les cookies sont envoyés automatiquement ?
+
+29m00s  Y a-t-il une vérification sur le port ?
+
+// 31m50s  AjaxS
+
+// 5min
+// domain attribute
+// path attribute
+// secure attribute
+// strict secure
+// hsts
+// port ?
+// SOP
+// xhr
+// fetch
+// C’est quoi une attaque CSRF/XSRF ?
+// samesite attribute
+// 3min
+//31m31s  Qui peut lire quels cookies ?
+//33m6s   C’est quoi une attaque XSS ?
+// 3min
+//35m42s  Quelles alternatives pour un stockage local ?
+// 1min
+//37m37s  Que dit la CNIL ?
+// 1min
+// 30m00s  PDV 2
+//41m39s  C’est quoi le referer ?
+//43m11s  C’est quoi un supercookie ?
+// 38m00s  PDV 3
+//44m55s  Comment régler mon navigateur ?
+//46m0s   Ils sont où les cookies ?
+//47m18s  Faut-il installer des extensions navigateur en plus ?
+//49m1s   Que fait la navigation privée dans tout ça ?
+44m0s   Conclusion
+45m0s   Merci bcp !

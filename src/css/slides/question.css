@@ -15,6 +15,24 @@
   text-align: center;
 }
 
+[data-slide="question"][data-position="before"],
+[data-slide="question"][data-position="after"] {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+[data-slide="question"] .text {
+  transform: scale(1);
+  transition: transform 0s linear;
+}
+
+[data-slide="question"][data-position="current"] .text {
+  transform: scale(1.1);
+  transition-duration: 15s;
+}
+
 [data-slide="question"] .text code {
   color: var(--color-e);
 }

@@ -1456,8 +1456,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.65481034"
-     inkscape:cx="883.55611"
-     inkscape:cy="708.7104"
+     inkscape:cx="423.88102"
+     inkscape:cy="690.38448"
      inkscape:document-units="mm"
      inkscape:current-layer="layer8"
      showgrid="false"
@@ -1550,7 +1550,7 @@
     <g
        id="g1399"
        transform="translate(-32.857138,106.97581)"
-       style="stroke:#0082ff;stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none">
+       style="stroke:#0082ff;stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.3">
       <path
          style="fill:#0082ff;stroke:#0082ff;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 262.30596,-30.387573 0.30305,21.2637108 6.48907,-6.8791668 6.48907,6.8791668 V -30.387573"
@@ -1598,7 +1598,7 @@
          ry="2.9207249" />
     </g>
     <g
-       style="stroke:#0082ff;stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none"
+       style="stroke:#0082ff;stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.3"
        transform="translate(-131.62575,106.97581)"
        id="g1417">
       <path
@@ -1651,16 +1651,16 @@
        id="text1439"
        y="52.533432"
        x="155.13744"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;opacity:0.3;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332;"
          y="52.533432"
          x="155.13744"
          id="tspan1437"
          sodipodi:role="line">RFC 2109</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;opacity:0.3;"
        x="253.99248"
        y="52.558128"
        id="text1443"><tspan
@@ -1668,7 +1668,7 @@
          id="tspan1441"
          x="253.99248"
          y="52.558128"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332">RFC 2965</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332;">RFC 2965</tspan></text>
     <text
        id="text1447"
        y="52.601341"
@@ -1683,7 +1683,7 @@
     <g
        id="g1469"
        transform="translate(-230.39436,106.97581)"
-       style="stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ff0032">
+       style="stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ff0032;opacity:0.3">
       <path
          style="fill:none;stroke:#ff0032;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 261.17909,1.1628238 h 51.3561"
@@ -1726,7 +1726,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;line-height:1.25;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;opacity:0.3;"
        x="56.455257"
        y="44.850803"
        id="text1473"><tspan
@@ -1734,14 +1734,14 @@
          id="tspan1471"
          x="56.455257"
          y="44.850803"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332">NETSCAPE</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332;">NETSCAPE</tspan><tspan
          sodipodi:role="line"
          x="56.455257"
          y="60.284828"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.34722233px;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';text-align:center;text-anchor:middle;stroke-width:0.26458332;"
          id="tspan1475">SPEC</tspan></text>
     <circle
-       style="opacity:1;fill:#ff0032;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.3;fill:#ff0032;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1481"
        cx="56.462784"
        cy="207.77003"
@@ -1751,9 +1751,9 @@
        cy="207.77003"
        cx="155.23138"
        id="circle1483"
-       style="opacity:1;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.3;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
-       style="opacity:1;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.3;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle1485"
        cx="253.99998"
        cy="207.77003"
@@ -1766,7 +1766,7 @@
        style="opacity:1;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:0.26458329;opacity:0.3;"
        x="155.14854"
        y="248.27744"
        id="text1493"><tspan
@@ -1774,14 +1774,14 @@
          id="tspan1491"
          x="155.14854"
          y="248.27744"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Just Another Hand';-inkscape-font-specification:'Just Another Hand';text-align:center;text-anchor:middle;fill:#0082ff;stroke-width:0.26458329">02/1997</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Just Another Hand';-inkscape-font-specification:'Just Another Hand';text-align:center;text-anchor:middle;fill:#0082ff;stroke-width:0.26458329;">02/1997</tspan></text>
     <text
        id="text1497"
        y="248.27744"
        x="253.80882"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#0082ff;fill-opacity:1;stroke:none;stroke-width:0.26458329;opacity:0.3;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Just Another Hand';-inkscape-font-specification:'Just Another Hand';text-align:center;text-anchor:middle;fill:#0082ff;stroke-width:0.26458329"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Just Another Hand';-inkscape-font-specification:'Just Another Hand';text-align:center;text-anchor:middle;fill:#0082ff;stroke-width:0.26458329;"
          y="248.27744"
          x="253.80882"
          id="tspan1495"
@@ -1801,12 +1801,12 @@
        id="text1505"
        y="248.27744"
        x="56.379944"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#ff0032;fill-opacity:1;stroke:none;stroke-width:0.26458329;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.10066223px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#ff0032;fill-opacity:1;stroke:none;stroke-width:0.26458329;opacity:0.3;"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Just Another Hand';-inkscape-font-specification:'Just Another Hand';text-align:center;text-anchor:middle;fill:#ff0032;stroke-width:0.26458329;"
          y="248.27744"
          x="56.379944"
          id="tspan1503"
-         sodipodi:role="line">???</tspan></text>
+         sodipodi:role="line">1994</tspan></text>
   </g>
 </svg>

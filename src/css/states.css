@@ -1,0 +1,92 @@
+/* Unzoom on image */
+.unzoom img {
+  transform: scale(3);
+  transform-origin: top center;
+}
+
+.state-one .unzoom img {
+  transition: 4s transform ease-in-out;
+  transform: scale(1);
+}
+
+/* zoom browser */
+.browser .element {
+  transform: scale(1);
+  transform-origin: 0 0;
+  transition: transform 250ms ease-in-out;
+}
+
+.state-one .browser .element {
+  transform: scale(2.2) translateX(-4.5rem);
+}
+
+.zoom-patent .browser .element {
+  transform-origin: 100% 0;
+}
+
+.state-one .zoom-patent .browser .element {
+  transform: scale(2.6) translateX(8.4rem) translateY(-7rem);
+}
+
+/* highlight of cookie key and value */
+
+.state-one .cookie-key ~ .cookie-key,
+.state-two .cookie-value ~ .cookie-value {
+  background-color: var(--the-color);
+  color: var(--color-f);
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 0.2rem var(--the-color);
+}
+
+/* hightlight of url parts */
+
+:not(.state-two):not(.state-three):not(.state-four).state-one .url-protocol,
+:not(.state-one):not(.state-two):not(.state-four).state-three .url-host,
+:not(.state-one):not(.state-two):not(.state-four).state-three .url-host .url-domain,
+:not(.state-one):not(.state-two):not(.state-four).state-three .url-host .url-subdomain,
+:not(.state-one):not(.state-two):not(.state-four).state-three .url-host .url-domainPrefix,
+:not(.state-one):not(.state-two):not(.state-four).state-three .url-host .url-domainSuffix,
+:not(.state-one):not(.state-three):not(.state-four).state-two .url-port,
+:not(.state-one):not(.state-two):not(.state-three).state-four .url-path,
+:not(.state-one):not(.state-two).state-three.state-four .url-subdomain,
+:not(.state-two):not(.state-four).state-one.state-three .url-domainSuffix,
+:not(.state-one):not(.state-four).state-two.state-three .url-domain,
+:not(.state-one):not(.state-four).state-two.state-three .url-domain .url-domainPrefix,
+:not(.state-one):not(.state-four).state-two.state-three .url-domain .url-domainSuffix,
+:not(.state-four).state-one.state-two.state-three .url-protocol,
+:not(.state-four).state-one.state-two.state-three .url-host,
+:not(.state-four).state-one.state-two.state-three .url-host .url-domain,
+:not(.state-four).state-one.state-two.state-three .url-host .url-subdomain,
+:not(.state-four).state-one.state-two.state-three .url-host .url-domainPrefix,
+:not(.state-four).state-one.state-two.state-three .url-host .url-domainSuffix,
+:not(.state-four).state-one.state-two.state-three .url-port,
+:not(.state-two).state-one.state-three.state-four .url-protocol,
+:not(.state-two).state-one.state-three.state-four .url-host,
+:not(.state-two).state-one.state-three.state-four .url-host .url-domain,
+:not(.state-two).state-one.state-three.state-four .url-host .url-subdomain,
+:not(.state-two).state-one.state-three.state-four .url-host .url-domainPrefix,
+:not(.state-two).state-one.state-three.state-four .url-host .url-domainSuffix,
+:not(.state-two).state-one.state-three.state-four .url-path {
+  background-color: var(--the-color);
+  color: var(--color-f);
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 0.2rem var(--the-color);
+}
+
+:not(.state-two):not(.state-three):not(.state-four).state-one [data-url-line="0"] .url-protocol > .url--label,
+:not(.state-one):not(.state-two):not(.state-four).state-three [data-url-line="0"] .url-host > .url--label,
+:not(.state-one):not(.state-three):not(.state-four).state-two [data-url-line="0"] .url-port > .url--label,
+:not(.state-one):not(.state-two):not(.state-three).state-four [data-url-line="0"] .url-path > .url--label,
+:not(.state-one):not(.state-two).state-three.state-four [data-url-line="0"] .url-subdomain > .url--label,
+:not(.state-two):not(.state-four).state-one.state-three [data-url-line="0"] .url-domainSuffix > .url--label,
+:not(.state-one):not(.state-four).state-two.state-three [data-url-line="0"] .url-domain > .url--label,
+:not(.state-three):not(.state-four).state-one.state-two [data-url-line="0"] .url-domain > .url--label,
+:not(.state-four).state-one.state-two.state-three [data-url-line="0"] .url-protocol > .url--label,
+:not(.state-four).state-one.state-two.state-three [data-url-line="0"] .url-host > .url--label,
+:not(.state-four).state-one.state-two.state-three [data-url-line="0"] .url-port > .url--label,
+:not(.state-two).state-one.state-three.state-four [data-url-line="0"] .url-protocol > .url--label,
+:not(.state-two).state-one.state-three.state-four [data-url-line="0"] .url-host > .url--label,
+:not(.state-two).state-one.state-three.state-four [data-url-line="0"] .url-path > .url--label {
+  opacity: 1;
+  color: var(--the-color);
+}

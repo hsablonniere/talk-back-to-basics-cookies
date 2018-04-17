@@ -48,3 +48,8 @@
 [data-slide="dialogue"] .sentenceWrapper[data-character="sherlock"]  .sentence {
   border-image-source: url(../../img/sherlock-bubble.svg);
 }
+
+[data-slide="dialogue"] .sentence strong {
+  color: var(--color-e);
+  font-weight: normal;
+}

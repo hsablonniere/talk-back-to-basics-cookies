@@ -1457,14 +1457,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.65481034"
-     inkscape:cx="807.01778"
-     inkscape:cy="616.0564"
+     inkscape:cx="347.34269"
+     inkscape:cy="597.73048"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer8"
      showgrid="false"
      units="px"
-     inkscape:window-width="2560"
-     inkscape:window-height="1416"
+     inkscape:window-width="2688"
+     inkscape:window-height="1488"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -1476,7 +1476,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2198,13 +2198,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.09294415px;line-height:1.25;font-family:'Droid Sans Mono for Powerline';-inkscape-font-specification:'Droid Sans Mono for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="119.68812"
+       x="131.05756"
        y="112.90405"
        id="text1252"><tspan
          sodipodi:role="line"
          id="tspan1250"
-         x="119.68812"
+         x="131.05756"
          y="112.90405"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';stroke-width:0.26458332">example-foo.com</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';stroke-width:0.26458332">cookies.rocks</tspan></text>
   </g>
 </svg>
