@@ -134,5 +134,17 @@
 
 .url--wrong {
   opacity: 0.5;
-  /*text-decoration: line-through;*/
+  /* text-decoration: line-through; */
+}
+
+.url--withCookies::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-image: url(../../img/cookie.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+    width: 2rem;
+    transform: translateX(-3rem);
 }

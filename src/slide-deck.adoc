@@ -5,8 +5,8 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: Devoxx France
-:date: 19 avril 2018
+:event: MiXiT
+:date: 20 avril 2018
 
 [slide=poster]
 Intro
@@ -36,6 +36,11 @@ J'arrive Sherlock, j'arrive...
 What's up Sherlock?
 
 Que se passe t-il encore ?
+
+[quote, Watson]
+What are we doing in bloody Lyon?
+
+Que fait-on à Lyon, cette magnifique ville ?
 
 [quote, Sherlock]
 I'm disappointed by bloody developers!
@@ -137,27 +142,27 @@ Pendant ce temps là, nous on se concentre sur le reste :
 *Le builder, le déployer, le "monitorer", relancer automatiquement ce qui est planté*
 *et bien évidemment maintenir et mettre jour toutes les couches sur lesquelles ce code tourne.*
 
-[source, js, slide=code]
-if (false === connaitCleverCloud) {
-  toi.passerAuStand('Clever Cloud');
-}
-
-Si vous ne nous connaissez pas, passez voir notre stand, on vous expliquera tout ça...
-
-[source, js, slide=code]
-if (true === connaitCleverCloud) {
-  toi.passerAuStand('Clever Cloud');
-}
-
-Si vous nous connaissez déjà, passez voir notre stand, on pourra discuter de la plateforme et de ce que vous en faite.
-Si vous... #PAUSE# Enfin bref...
-
-[source, js, slide=code]
-if (true) {
-  toi.passerAuStand('Clever Cloud');
-}
-
-...passez voir notre stand ;-)
+// [source, js, slide=code]
+// if (false === connaitCleverCloud) {
+//   toi.passerAuStand('Clever Cloud');
+// }
+//
+// Si vous ne nous connaissez pas, passez voir notre stand, on vous expliquera tout ça...
+//
+// [source, js, slide=code]
+// if (true === connaitCleverCloud) {
+//   toi.passerAuStand('Clever Cloud');
+// }
+//
+// Si vous nous connaissez déjà, passez voir notre stand, on pourra discuter de la plateforme et de ce que vous en faite.
+// Si vous... #PAUSE# Enfin bref...
+//
+// [source, js, slide=code]
+// if (true) {
+//   toi.passerAuStand('Clever Cloud');
+// }
+//
+// ...passez voir notre stand ;-)
 
 [slide=blank]
 Enchaînement vers cookies
@@ -574,7 +579,7 @@ Déposer des cookies pour des niveaux d'hôte plus généraux
 
 .http://blue.cookies.rocks/
 [source, url, setCookie="id=42"]
-http://blue.cookies.rocks/page.html
+V http://blue.cookies.rocks/page.html
 ! http://big.blue.cookies.rocks/page.html
 ! http://green.cookies.rocks/page.html
 ! http://cookies.rocks/page.html
@@ -582,18 +587,18 @@ http://blue.cookies.rocks/page.html
 
 .http://blue.cookies.rocks/
 [source, url, setCookie="id=42; Domain=blue.cookies.rocks"]
-http://blue.cookies.rocks/page.html
-http://big.blue.cookies.rocks/page.html
+V http://blue.cookies.rocks/page.html
+V http://big.blue.cookies.rocks/page.html
 ! http://green.cookies.rocks/page.html
 ! http://cookies.rocks/page.html
 ! http://foobar.rocks/page.html
 
 .http://blue.cookies.rocks/
 [source, url, setCookie="id=42; Domain=cookies.rocks"]
-http://big.blue.cookies.rocks/page.html
-http://blue.cookies.rocks/page.html
-http://green.cookies.rocks/page.html
-http://cookies.rocks/page.html
+V http://big.blue.cookies.rocks/page.html
+V http://blue.cookies.rocks/page.html
+V http://green.cookies.rocks/page.html
+V http://cookies.rocks/page.html
 ! http://foobar.rocks/page.html
 
 // .Quelles requêtes partiront avec les cookies ?
@@ -735,14 +740,14 @@ Set-Cookie: id=42; Path=/admin
 
 .http://cookies.rocks/
 [source, url, setCookie="id=42"]
-http://cookies.rocks/some-page.html
-http://cookies.rocks/api/profile
-http://cookies.rocks/api-faq
+V http://cookies.rocks/some-page.html
+V http://cookies.rocks/api/profile
+V http://cookies.rocks/api-faq
 
 .http://cookies.rocks/
 [source, url, setCookie="id=42; Path=/api"]
 ! http://cookies.rocks/some-page.html
-http://cookies.rocks/api/profile
+V http://cookies.rocks/api/profile
 ! http://cookies.rocks/api-faq
 
 .http://cookies.rocks/
@@ -756,7 +761,7 @@ http://cookies.rocks/api/profile
 ! http://cookies.rocks/some-page.html
 ! http://cookies.rocks/api/profile
 ! http://cookies.rocks/api-faq
-http://cookies.rocks/api-/foobar
+V http://cookies.rocks/api-/foobar
 
 [slide=text]
 `Path=` : restreint la portée du cookie  à tous les paths  qui commencent par la valeur*
@@ -766,8 +771,8 @@ http://cookies.rocks/api-/foobar
 
 .https://cookies.rocks/
 [source, url, setCookie="id=42"]
-http://cookies.rocks/some-page.html
-https://cookies.rocks/some-page.html
+V http://cookies.rocks/some-page.html
+V https://cookies.rocks/some-page.html
 
 Attribut secure
 
@@ -778,7 +783,7 @@ Set-Cookie: id=42; Secure
 .https://cookies.rocks/
 [source, url, setCookie="id=42; Secure"]
 ! http://cookies.rocks/some-page.html
-https://cookies.rocks/some-page.html
+V https://cookies.rocks/some-page.html
 
 [slide=text]
 `Secure` : restreint la portée du cookie  aux requêtes sécurisées
@@ -793,7 +798,7 @@ image::img/screenshots/owasp-hsts.jpg[url="https://www.owasp.org/index.php/HTTP_
 .http://cookies.rocks/ (non sécurisé)
 [source, url, setCookie="id=42; Secure"]
 ! http://cookies.rocks/some-page.html
-https://cookies.rocks/some-page.html
+V https://cookies.rocks/some-page.html
 
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
@@ -1080,10 +1085,9 @@ image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/t
 image::img/1994-2018.svg[]
 
 Ça fait 24 ans qu'on se plain des cookies mais après toute cette enquête,
-je suis obligé de constater que le Web n'en serait pas là aujourd'hui sans bannières publicitaires à base de texte clignotant et de gif animés.
+je me pose la question "est-ce que le Web en serait pas là aujourd'hui si on avait pas eu de bannières publicitaires à base de texte clignotant et de gif animés".
 Les navigateurs et les annonceurs jouent au chat et à la souris,
 une course sans fin qui ne résoud pas le problème à long terme.
-Pour moi la clé est dans des nouveaux modèles de rétribution et
 
 // Lou
 // The answer is pretty simple:
@@ -1129,6 +1133,7 @@ We *must* debate about  the future of the Web!
 
 Avec tout ces facts John,
 On *doit* absoluement élever le débat et discuter ensemble du futur du Web.
+Entre avoir plein de contenus gratuits, ne pas payer, refuser d'être tracé et avoir des publicités, il va falloir choisir et pousser ensemble les nouveaux modèles économiques vers lesquels nous voulons que notre société évolue...
 
 .Merci bcp !
 [slide=poster]

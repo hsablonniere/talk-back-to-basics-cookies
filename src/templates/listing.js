@@ -50,12 +50,13 @@ ${cookies}
       .split('\n')
       .map((line, index) => {
         const wrong = line.startsWith('! ');
-        const theUrl = line.replace(/^! /, '');
+        const withCookies = line.startsWith('V ');
+        const theUrl = line.replace(/^(!|V) /, '');
         const parsedUrl = url.parse(theUrl);
         const parsedTld = tldjs.parse(theUrl);
 
         return [
-          `<span data-url-line="${index}" class="${wrong ? `url--wrong` : ''}">`,
+          `<span data-url-line="${index}" class="${wrong ? `url--wrong` : ''} ${withCookies ? `url--withCookies` : ''}">`,
           `<span class="url-protocol"><span class="url--label">protocole</span>${parsedUrl.protocol.replace(':', '')}</span>://`,
           `<span class="url-host"><span class="url--label">hôte</span>`,
           parsedTld.subdomain ? `<span class="url-subdomain"><span class="url--label">sous-domaine</span>${parsedTld.subdomain}</span>.` : '',
