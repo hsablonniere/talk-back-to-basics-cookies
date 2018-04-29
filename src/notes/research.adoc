@@ -315,6 +315,9 @@ https://twitter.com/johnwilander/status/982355679527616512
 
 * https://www.leviathansecurity.com/blog/the-double-edged-sword-of-hsts-persistence-and-privacy
 
+* https://scotthelme.co.uk/tough-cookies/
+* https://scotthelme.co.uk/csrf-is-dead/
+
 == Demos & POC
 
 * https://www.elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect
