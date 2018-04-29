@@ -1,0 +1,20 @@
+* the fact that the registration is magical bugs me
+* I would prefer roles to be an array
+* The context should be simple Object literal JSONifyiable
+* I like the "next" behaviour but
+** I'm not sure about template options being a array of template indexed by context in an object literal
+* could we pass the context and not index them
+* can I really fallback on classic template?
+
+The CSS selector matcher syntax
+
+* feels good to use ;-)
+** it allowed me to split some code into several functions
+** it could help to use the same templating on 2 different selectors
+* needs to be moved in core
+** or core needs to just give me a callback for all converts/transforms
+* some stuffs could be improved
+** :not(selector) could help to narrow some stuffs
+** E[foo^="bar"] and E[foo$="bar"] could help too
+** should we start supporting + ~ > or "space"?
+*** For example, I would like to transform only image that are children of document or section

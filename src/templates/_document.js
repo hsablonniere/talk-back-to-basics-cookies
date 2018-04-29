@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = (node) => {
+module.exports = ({ node }) => {
   const attrs = node.getAttributes();
   return `<!DOCTYPE html>
 <html lang="en">

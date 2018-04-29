@@ -2,7 +2,7 @@
 
 const slide = require('./_slide');
 
-module.exports = (node) => {
+module.exports = ({ node }) => {
 
   const docAttrs = node.document.getAttributes();
   const attrs = node.getAttributes();

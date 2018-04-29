@@ -2,7 +2,7 @@
 
 const slide = require('./_slide');
 
-module.exports = (node) => {
+module.exports = ({ node }) => {
   const attrs = node.getAttributes();
   const [pretitle, title] = node.getTitle().split(' : ');
   const balancedTitle = title.includes('  ')

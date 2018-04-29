@@ -2,7 +2,7 @@
 
 const slide = require('./_slide');
 
-module.exports = (node) => {
+module.exports = ({ node }) => {
   const [keyword, subtext] = node.getContent().split(' : ');
   const balancedSubtext = (subtext || '').includes('  ')
     ? subtext

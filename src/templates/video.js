@@ -2,7 +2,7 @@
 
 const slide = require('./_slide');
 
-module.exports = (node) => {
+module.exports = ({ node }) => {
   const attrs = node.getAttributes();
 
   const author = (attrs.author) ? `<div class="author">Photo by ${attrs.author}</div>` : '';
