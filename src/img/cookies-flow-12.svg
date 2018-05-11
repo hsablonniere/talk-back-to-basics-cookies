@@ -1531,7 +1531,7 @@
            x="402.92874"
            id="tspan2478"
            sodipodi:role="line"
-           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#ff0032;fill-opacity:1;stroke-width:0.26458332">serveur</tspan></text>
+           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#ff0032;fill-opacity:1;stroke-width:0.26458332">server</tspan></text>
     </g>
     <g
        id="g2730"
@@ -1560,7 +1560,7 @@
            sodipodi:role="line"
            id="tspan2482"
            x="310.73145"
-           y="271.05658">navigateur</tspan></text>
+           y="271.05658">browser</tspan></text>
     </g>
     <g
        id="g246"
@@ -1607,7 +1607,7 @@
          sodipodi:role="line"
          id="tspan2486"
          x="184.17642"
-         y="265.76492">jarre cookie</tspan></text>
+         y="265.76492">cookie jar</tspan></text>
     <path
        sodipodi:nodetypes="ccccc"
        d="m 470.80197,178.35375 c 9.37779,-62.41306 -145.579,-67.9288 -142.86157,0 m 5.41134,-0.57524 -5.67404,7.08939 -5.58813,-7.35828"
@@ -1677,7 +1677,7 @@
            x="111.88286"
            id="tspan2490"
            sodipodi:role="line"
-           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#009452;stroke-width:0.26458332">utilisateur</tspan></text>
+           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#009452;stroke-width:0.26458332">user</tspan></text>
     </g>
   </g>
   <g

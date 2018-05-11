@@ -1531,7 +1531,7 @@
            x="402.92874"
            id="tspan2478"
            sodipodi:role="line"
-           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#ff0032;fill-opacity:1;stroke-width:0.26458332">serveur</tspan></text>
+           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#ff0032;fill-opacity:1;stroke-width:0.26458332">server</tspan></text>
     </g>
     <g
        id="g2730"
@@ -1560,7 +1560,7 @@
            sodipodi:role="line"
            id="tspan2482"
            x="310.73145"
-           y="271.05658">navigateur</tspan></text>
+           y="271.05658">browser</tspan></text>
     </g>
     <g
        id="g4224">
@@ -1609,7 +1609,7 @@
            x="184.17642"
            id="tspan2486"
            sodipodi:role="line"
-           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#dda85f;fill-opacity:1;stroke-width:0.26458332">jarre cookie</tspan></text>
+           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#dda85f;fill-opacity:1;stroke-width:0.26458332">cookie jar</tspan></text>
       <path
          style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff0032;stroke-width:2.11666656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 184.90194,178.35375 c -9.37779,-62.41305 145.579,-67.92879 142.86157,0"
@@ -1630,7 +1630,7 @@
            x="236.44296"
            y="117.57043"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Operator Mono';-inkscape-font-specification:'Operator Mono';stroke-width:0.26458332"
-           id="tspan1254">OUI !</tspan></text>
+           id="tspan1254">YES!</tspan></text>
     </g>
     <g
        id="g2712"
@@ -1684,7 +1684,7 @@
            x="111.88286"
            id="tspan2490"
            sodipodi:role="line"
-           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#009452;stroke-width:0.26458332">utilisateur</tspan></text>
+           style="font-size:25.50305939px;line-height:1.25;text-align:center;text-anchor:middle;fill:#009452;stroke-width:0.26458332">user</tspan></text>
     </g>
   </g>
   <g

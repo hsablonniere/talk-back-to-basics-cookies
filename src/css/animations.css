@@ -1,4 +1,3 @@
-
 [data-position="current"] .blink {
   animation: blink 1s infinite ease-in-out alternate;
 }

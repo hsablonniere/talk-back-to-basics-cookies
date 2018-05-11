@@ -9,6 +9,16 @@
   transform: scale(1);
 }
 
+.devoxx-uk-banner img {
+  transform: scale(1);
+  transform-origin: top right;
+  transition: 1s transform ease-in-out;
+}
+
+.state-one .devoxx-uk-banner img {
+  transform: scale(2);
+}
+
 /* zoom browser */
 .browser .element {
   transform: scale(1);

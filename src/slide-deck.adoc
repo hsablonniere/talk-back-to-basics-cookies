@@ -1,146 +1,146 @@
-= #RetourAuxSources : Les Cookies HTTP
+= #BackToBasics : HTTP Cookies
 Hubert Sablonnière
 :author-twitter: @hsablonniere
 :author-avatar: img/hsablonniere-profil-2017.jpg
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: MiXiT
-:date: 20 avril 2018
+:event: DevoxxUK
+:date: May 11th 2018
 
 [slide=poster]
 Intro
 
 [.time]#00:00:00#
 
-[WARNING, caption=Avertissement]
-Cette présentation n'aborde aucune technologie à la mode.
-Le sujet se concentre sur un vieux truc inventé dans les années 90 (que vous connaissez peut-être déjà).
-[.question]#Acceptez-vous de poursuivre la présentation ?#
-Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, il est encore temps de changer de salle...
+[WARNING]
+This presentation does NOT cover any trending topic.
+It focuses on a boring old thing invented in the 90s (which you may already know).
+[.question]#Do you accept this talk?#
+If you want to know more about how to deploy Kotlin microservices in the blockchain with Kubernetes, you still have time to leave...
 
 [.four]#musique#
 
 [slide=location]
-Il y a quelques mois...
+A few months ago...
 221b Baker Street
 Londres
 
 [quote, Watson]
 I'm almost there...
 
-#Accent anglais (grosse voix)#
-J'arrive Sherlock, j'arrive...
+#British accent (grosse voix)#
+I'm coming, almost there...
 
 [quote, Watson]
 What's up Sherlock?
 
-Que se passe t-il encore ?
+What's your problem this time?
 
 [quote, Watson]
-What are we doing in bloody Lyon?
+What are we doing at bloody DevoxxUK?
 
-Que fait-on à Lyon, cette magnifique ville ?
+What are we doing in this wonderful conference?
 
 [quote, Sherlock]
 I'm disappointed by bloody developers!
 
 #Accent anglais (voix condescendante)#
-Et bien mon cher Watson,
-je suis troublé par les développeurs et les développeuses.
-J'ai regardé le programme de plusieurs conférences...
+Well, you see Watson,
+I'm really connfused by developers,
+I looked at a few conference schedules...
 
 [quote, Sherlock]
 Such fashion victims!
 
-...et j'ai l'impression qu'ils sont uniquement intéressés par les dernières technologies à la mode.
+...and it seems like they're only interested by latest trending tools and frameworks.
 
 [quote, Watson]
 It seems logical, isn't it?
 
-Je ne vois pas où est le problème ?
-Ça semble logique de vouloir s'informer sur les nouveautés liées à son propre métier.
+I don't see the problems,
+It seems logical to want to know more about the latest news about your own job.
 
 [quote, Sherlock]
 But they're missing  the great investigation!
 
-Yes but, plus personne ne s'intéresse aux vieux machins.
-Tout le monde passe à côté de l'enquête la plus importante de tous les temps.
+Yes but, nobody's interested in old stuffs anymore.
+Everyone's missing the greatest investigation of all time.
 
 [quote, Watson]
 Which one?
 
-Hum ?
-Laquelle ?
+Hum?
+Which one?
 
 [quote, Sherlock]
 HTTP cookies of course!
 
-Les cookies HTTP bien sûr.
+HTTP cookies of course!
 
 [quote, Sherlock]
 You know nothing John.
 
-Vous êtes à côté de la place John,
-Tout le monde les utilise mais plus personne ne connaît vraiment leur origine ni même comment ils fonctionnent.
-Ça implique chez les devs pas mal de bêtises sur les projets Web
-et chez moldus, _"les non-informaticiens"_, je constate une profonde méconnaissance en ce qui concerne le tracking et le respect de la vie privée.
+You know nothing John,
+Everybody's using them but nobody really knows about their history, their origin and how they work.
+It pushes developers to make lots of silly mistakes on Web projects,
+and I also realize that muggles, _"non IT people", have a profound lack of knowledge regarding tracking and privacy.
 
 [quote, Sherlock]
 I asked Hubert to investigate...
 
-J'ai demandé à Hubert Sablonnière de mener l'enquête.
+I asked Hubert Sablonnière to investigate on this.
 
 [quote, Watson]
-The fucking froggy?
+The sodding froggy?
 
 #Air déçu et inquiet#
-Le français ?
+Français ?
 
 [quote, Sherlock]
 Yes but he's a redhead.
 
-Oui mais bon...
+yes but...
 #hésitations#
-comment dire...
-il ressemble un peu à un anglais, n'est-ce pas ?
+you know, he looks a bit like us, doesn't he?
+
+image::img/devoxx-uk-banner.png[role=devoxx-uk-banner]
 
 [quote, Sherlock]
 #BackToBasics
 
-Je lui ai demandé de faire un "retour aux sources".
+I asked him to do a Back to Basics kind of talk...
 
 [quote, Sherlock]
 Facts, facts, facts!
 
-et surtout de nous remonter les _facts_, rien que les _facts_.
-Ainsi, chacun - en fonction de son propre contexte personnel et professionnel - pourra détecter certains problèmes et prendre les bonnes décisions...
+...and to really insist on the _facts_, nothing but the _facts_.
+That way, anyone - depending on the context, personal or profesional - will be able to detect some of the problems and take the right decisions...
 
 [quote, Watson]
 Interesting...
 
-Hum, je suis intrigué...
+Hum, I'm intrigued...
 
 [slide=poster]
 Bonjour à tous
 
 [.time]#00:02:00#
 #mode normal (et énergique)#
-Bonjour à *toutes* et tous !
-J'm'appelle Hubert Sablonnière,
-J'suis développeur Web chez #Clever Cloud#.
+Hello everyone!
+I'm Hubert Sablonnière,
+I'm a Web developer at #Clever Cloud#.
 
 .Clever Cloud
 image::img/cc-rocket-man.png[role=logo]
 
-[.question]#Qui connait Clever Cloud ?#
-Chez Clever, on fait de l'**IT automation**.
-// Quand je dis IT automation, ça veut dire que globalement on fournit un outil et que ce soit sur notre cloud ou "on-premise", les développeurs n'ont plus qu'à envoyer leur code et nous on s'occupe du reste :
-On fournit un outil sur notre cloud _ou "on-premise"_ qui permet aux devs de se concentrer sur l'essentiel :
-*écrire du code et le pousser*.
-Pendant ce temps là, nous on se concentre sur le reste :
-*Le builder, le déployer, le "monitorer", relancer automatiquement ce qui est planté*
-*et bien évidemment maintenir et mettre jour toutes les couches sur lesquelles ce code tourne.*
+[.question]#Who knows Clever Cloud?#
+At Clever, we do **IT automation**.
+We provide tooling on our cloud or _on-premises_ to let the developers focus on what they do best :
+*writing code and pushing it*.
+Meanwhile, we're focusing on the rest:
+*Building, deploying, monitoring, automatically restarting the app when it crashes*
+*and of course we maintain the different layers on which the code runs.*
 
 // [source, js, slide=code]
 // if (false === connaitCleverCloud) {
@@ -168,64 +168,64 @@ Pendant ce temps là, nous on se concentre sur le reste :
 Enchaînement vers cookies
 
 [.time]#00:03:00#
-Aujourd'hui, j'ai envie de vous parler de mon enquête sur les cookies HTTP.
+Today, I want to talk about my investigation on HTTP Cookies.
 
 image::img/2018-unknown.svg[]
 
-Alors, j'ai commencé par retourner à la source des cookies.
+So I started to go back to the source of cookies.
 
 image::img/2018-1994.svg[]
 
 #Narrateur#
-(Nous sommes en 1994)
-et je me suis intéressé à...
+(The year is nineteen ninety-four)
+and I got interested in...
 
 // http://facesofopensource.com/lou-montulli/
 // http://www.peteradamsphoto.com/lou-montulli-2/
 image::img/loumontulli.jpg[author="Peter Adams", role="big top"]
 
-...ce monsieur!
+...this man!
 #Mains en l'air qui prient au ciel#
 
 image::img/loumontulli.jpg[title="Lou Montulli" author="Peter Adams", role="big top"]
 
 *Lou Montulli*
-Quand on s'intéresse à l'histoire du Web,
-on parle souvent de Tim Berners-Lee ou de Robert Cailleau.
+When you start to look at the history of the World Wide Web,
+you'll find articles and stories about Tim Berners-Lee or Robert Cailleau.
 
 [slide=text]
-#ILoveLou : mot-dièse à utiliser sans modération
+#ILoveLou : use this hashtag again and again...
 
-Aujourd'hui, je voudrai rendre hommage à Lou et souligner l'impact qu'il a eu sur pas mal de technologies du Web qu'on utilise encore aujourd'hui.
-C'est parti pour les anecdotes !
+Today, I'd like to honor Lou and emphasize on the impact he had on many Web technologies we're still using nowadays.
+So, here we go for the anecdotes!
 
 .Netscape
 image::img/netscape_4-6.svg[role=logo]
 
-En 1994, Lou travaille chez Netscape et avec ses collègues...
+Back in 1994, Lou was working at Netscape and with his colleagues...
 
 [slide=text]
-fishcam : des poissons en live depuis 1994
+fishcam : fish aquarium, live since 1994
 
-...il met en place la 2ème webcam de l'histoire.
-Un petit _easter-egg_ accessible via *Ctrl+Alt+F* sur Netscape et qui aujourd'hui...
+...he helped to setup the 2nd Webcam in history.
+A small _easter-egg_ available via *Ctrl+Alt+F* on Netscape and which is still...
 
 [slide=blank, data-viewport=3]
 Démo fishcam
 
-...est toujours dispo sur *fishcam.com* !
+...available today on *fishcam.com* !
 #Démo fishcam#
-L'aquarium est en Californie et là on voit bien une photo qui date d'il y a qq secondes.
-#Voix d'enfant#
-Coucou les petits poissons !
-Bon, ça DL 30 kilo toutes les 2 secondes soit 40 megs d'ici là fin du talk alors on va fermer la page quand même.
+The aquarium is in California and here we can see a photo taken a few seconds ago.
+#Child voice#
+Hello littles fishies!
+OK, so it downloads 30K every 2 seconds so 40megs before the end of the talk so I'm gonna close the tab.
 -> 640 by 480 pixel image and took nearly 20 seconds
 -> Updated every minute
 
 [slide=text]
-Lynx : navigateur Web en mode texte
+Lynx : text-based Web browser
 
-Lou est aussi le co-créateur de Lynx, un navigateur Web en mode texte
+Lou is also the co-creator of Lynx, a text-based Web browser.
 
 // image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
@@ -233,193 +233,195 @@ Lou est aussi le co-créateur de Lynx, un navigateur Web en mode texte
 Démo lynx
 
 #Démo lynx#
-Pour ceux qui connaissent pas, Lynx, c'est assez rudimentaire mais c'est *uuuultra*-rapide !
-Je peux aller sur le site du CFP de Devoxx,
-chercher "cookies" et trouver des infos sur cette présentation.
-Je m'en sers pas tous les jours, mais à chaque fois je trouve que ça remet en perspective l'importance du contenu et de l'accessibilité sur un site Web.
+For those who don't know about Lynx, it looks pretty simple but it's suuuuuper-fast!
+I can browse the DevoxxUK CFP website,
+I can search for "cookies" and find information about this presentation.
+I have to admit, I don't use it everyday but each time I realize how much content and accessibility is important on a Website.
 
 [slide=blank]
 Intro <blink>
 
-A propos de Lynx, tiens.
-Une soirée d'été 1994, après le boulot, Lou et ses collègues vont boire des verres dans un bar.
-Ils discutent du futur du Web, des possibles extensions d'HTML et dans cette discussion, Lou mentionne qu'il était un peu triste car à cause de ses limitations graphiques, Lynx ne pourraient probablement pas supporter toutes ces nouveautés.
-La seule chose que Lynx pouvait faire, c'était à la rigueur de faire clignoter du texte.
+Oh, about Lynx.
+During a summer evening in 1994, after work, Lou and his colleagues went to a bar to have some drinks.
+They talked about the future of the Web and all the possible extensions of HTML and Lou was sad.
+He mentioned that because Lynx a text-based only, he probably won't be able to support all these new features.
+The only "dynamic" thing that Lynx could do is maybe make some text blink.
 
 [slide=blank]
 Intro <blink>
 
-#Faux rire#
-Ah ah ah, qu'est ce qu'ils ont bien rigolé sur le fait que cette idée était complètement absurde.
-La soirée continue, Lou rencontre celle qui deviendra sa femme et le lendemain matin en arrivant au boulot,
-il découvre que son collègue _"Jean-Michel 1er degré"_ est repassé par le bureau après la soirée...
+#Fake laugh#
+Ah ah ah, they really had a good laugh about the fact that this idea was completely absurd.
+The evening goes one, Lou will meet his future wife and the next morning, when he arrived at work,
+He realized that his colleague, _"1st degree humor John_" went back to the office after the party...
 
 [slide=text]
-[.blink]`<blink>` : la meilleure balise de tous les temps !
+[.blink]`<blink>` : best HTML tag ever!
 
-...et a implémenté dans la nuit la meilleure balise de tout les temps.
-Tout a donc commencé avec un _easter-egg_ non documenté dans Netscape.
-La suite de l'histoire, vous la connaissez...
-Et encore...
+...and implemented during the night the best HTML tag ever!
+So everything started as a non-documented  _easter-egg_ in Netscape.
+You already know the end of this story.
+And... I mean...
 
 [slide=text]
-[.shake]`<shake>` : si on m'avait demandé mon avis...
+[.shake]`<shake>` : if they asked me...
 
-...si j'avais participé à cette soirée, ça aurait pu être bien pire !
+...if they asked my opinion, it could have been worse!
 
 [slide=blank]
 Lancement gif
 
-On se moque mais, cette balise on l'a tous utilisé,
-et à l'époque, tout était bon à prendre pour attirer l'attention des visiteurs sur les bannières de pub.
-Quand le plugin Java est arrivé dans Netscape,
-beaucoup s'en sont emparé pour animer du texte et le faire défiler.
-Le problème, c'est que le plugin mettait une bonne trentaine de secondes à se lancer.
+We're making fun of this but we all used this tag,
+and back then, everything was a good reason to catch the attention of visitors and show them banner ads.
+When the Java plugin arrived in Netscape,
+lots of people used it to animated text and make it scroll.
+The problem was, that the plugin took around 30s to load.
 
 video::videos/no.mp4[]
 
-Et ça, ça frustrait beaucoup notre ami Lou.
-Il voulait remplacer les pubs en Java par autre chose.
-Du coup pendant un mois, il a tanné Scott Furman, celui qui bossait sur le code d'imaging de Netscape,
+And that was frustrating our friend Lou.
+He really wanted to find a replacement, a solution to do those banner ads without loading Java.
+So after imploring for a month to his colleague Scott Furman, in charge of imaging code at Netscape,
+he finally convinced him to...
 
 [slide=text]
-gifs animés : parceque Java c'est trop long à charger
+animated gifs : because Java applets take way too long to load
 
-pour ajouter une extension au format gif et ainsi boucler plusieurs fois sur l'animation des frames présentes dans le fichier.
-C'est exactement pour ça qu'aujourd'hui encore, si vous ouvrez n'importe quel gif animé avec le bon éditeur,
-vous verrez le "Netscape Application Block" qui permet de préciser combien de fois l'animation doit recommencer.
-Avec 0 pour l'infini.
+add an extension to the gif format and loop many times on the set of frames already in the file.
+That's exactly why today, if you open any animated gif file with the right editor,
+You'll see the "Netscape Application Block" which is here to define how much time you need to repeat the animation.
+Zero for endless loop of course.
 
 image::img/loumontulli.jpg[author="Peter Adams", role="light unzoom"]
 
 [.one]#unzoom#
-Si je vous parle autant de Lou c'est aussi est surtout,
-parce que c'est l'inventeur des cookies HTTP.
-À une époque où le Web était encore complètement sans état,
-implémenter un site e-commerce avec un panier virtuel tout en étant capable de reconnaître un même client entre plusieurs chargement de pages...
-#grimace# c'était pas la joie.
-Et c'est bien dans ce but précis,
-maintenir un visiteur connecté sur un site
-que Lou a voulu ajouter un état côté client.
-Dans mon enquête je me suis intéressé à plusieurs points de vues.
-Celui que je veux vous présenter aujourd'hui,
+If I talk so much about Lou, it's also and mainly
+because he's the inventor of HTTP cookies.
+Backend the Web was pretty much statless,
+so when you wanted to create an e-commerce site with a virtual cart while still being able to recognize a user between multiple page load...
+#sad face# I mean, you had to get up early!
+This is the exact reason why Lou wanted to add some state on the client side:
+maintaining a user logged in to the site.
+During my investigation, I tried to look at this case from many point of views,
+and that's what I want to present today.
+The main point of vue we will cover together...
 
 [.zoom-patent]
 image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
 
-== Point de vue : celui/celle qui utilise  des cookies  sur son site Web
+// == TODO Point de vue : celui/celle qui utilise  des cookies  sur son site Web
+== Point of view : those who use cookies  on their Web site
 
 [.time]#00:08:00#
-c'est le point de vue de celui ou celle qui utilise des cookies sur son site Web.
-[.question]#Il y des devs dans la salle ?#
-Ça tombe bien !
-Donc on va vraiment revenir aux bases,
-en posant une série de questions et en y apportant des réponses.
-Je vais peut-être expliquer des choses que vous savez déjà,
-mais les rappels ça fait toujours du bien
-et on va aussi parler de certaines nouveautés.
+...is the point of view of those who use cookies on their Web site.
+[.question]#Are their any developers in the room?#
+OK, great.
+So let's go back to basics,
+we're going to ask several questions and try to give answers.
+I'm probably going to explain stuffs you already know,
+but recaps are always good anyway, right?
+we'll also cover some very recent news aroud cookies.
 
 [slide=question]
-C'est quoi un cookie HTTP ?
+What is an HTTP cookie?
 
 [.time]#00:08:30#
-Première question : _C'est quoi un cookie HTTP ?_
-Déjà on va arrêter de dire que les cookies sont des fichiers stockés sur un ordinateur.
-C'est incomplet et daté car les cookies c'est + qu'une forme de stockage et ça fait bien longtemps qu'on ne stocke plus un cookie par fichier.
-On va également arrêter de mélanger/confondre les cookies avec une session utilisateur stockée côté serveur.
-Trop souvent, j'entends quelqu'un dire, "j'ai stocké cette info dans les cookies"
-alors qu'en fait l'info est stockée en RAM, côté serveur, dans la session utilisateur.
-Je dis NON !
-Moi j'préfère présenter les cookies comme un protocole.
-Un comportement sur lequel navigateurs et serveurs se sont mis d'accord pour maintenir un état côté client.
-Petit schéma.
+So first question : _What is an HTTP cookie?_
+First we need to stop with the *cookies for dummies* definition : "cookies are tiny files stored on my computer".
+It's imcomplete and dated because cookies are more that just a storage mechanism and it's been a while since we stopped storing one cookie per file.
+We also need to stop mixing-up cookies and user sessions that are stored on the server side.
+Too many times, I heard someone saying "yes, I stored the information in the cookies".
+and when I looked for the info, they were stored on the server side, in the user session, in RAM.
+I say no to those!
+I prefer to describe cookies as a protocol.
+A behaviour browsers and servers agreed to follow to maintain some state on the client side.
+A small diagram.
 
 image::img/cookies-flow-01.svg[]
 
-Un utilisateur veut se rendre sur le site "cookies.rocks".
+A user wants to visit the site "cookies.rocks".
 
 image::img/cookies-flow-02.svg[]
 
-Il tape l'adresse dans son navigateur.
+He or she types the address in the browser.
 
 image::img/cookies-flow-03.svg[]
 
-Son navigateur fait une requête HTTP :
-*GET* vers *http://cookies.rocks/*
+The browser makes a GET HTTP request to *http://cookies.rocks/*
 
 image::img/cookies-flow-04.svg[]
 
-Le serveur répond :
-*200 OK* avec la page HTML du site demandé.
+The server responds with:
+*200 OK* with the HTML page of the requested site.
 
 image::img/cookies-flow-04b.svg[]
 
-Mais surtout, le serveur utilise l'en-tête *`Set-Cookie`* pour demander au navigateur de stocker de l'information,
-une clé et une valeur.
+But more importantly, the server use the `Set-Cookie` header to ask the browser to store some information,
+a key and a value.
 
 image::img/cookies-flow-04c.svg[]
 
-Et c'est vrai... que... le plus souvent, ce couple clé/valeur, permet de stocker un identifiant unique.
+And... yes... most of the time this key/value pair will be used to store a unique ID linked to a server side user session.
 
 image::img/cookies-flow-04d.svg[]
 
-Après ça peut aussi être tout simplement la langue choisie par l'utilisateur, un thème personnalisé...
+But it could also simply be the language chosen by the user or a custom theme...
 
 image::img/cookies-flow-05.svg[]
 
-Côté navigateur, on a un espace de stockage, la jarre à cookies.
-Quand le navigateur reçoit un cookie.
+On the browser side, we have a storage space, the cookie jar.
+When the browser receives a cookie,
 
 image::img/cookies-flow-06.svg[]
 
-Il le stocke dans sa jarre.
+It stores it into the jar.
 
 image::img/cookies-flow-07.svg[]
 
-Du coup, un peu plus tard,
+That way, a little bit later,
 
 image::img/cookies-flow-08.svg[]
 
-quand l'utilisateur retourne sur le même site,
+when the user goes back to the same site,
 
 image::img/cookies-flow-09.svg[]
 
-le navigateur regarde dans sa jarre si des cookies ont été déposés pour ce site,
+the browser looks into its jar to see if it has cookies for this site.
 
 image::img/cookies-flow-10.svg[]
 
-Et quand c'est le cas,
+When it's the case,
 
 image::img/cookies-flow-11.svg[]
 
-le navigateur fait sa requête HTTP comme avant :
-*GET* vers *http://cookies.rocks/*
+the browser makes an HTTP request just like before:
+*GET* to *http://cookies.rocks/*
 
 image::img/cookies-flow-11b.svg[]
 
-et il renvoie l'information stockée avec l'en-tête *Cookie*
+and it also sends the stored information in a `Cookie` header.
 
 image::img/cookies-flow-11c.svg[]
 
-Ici, on continue l'exemple où le cookie contient un identifiant.
-Avec cette information,
+Here we're still with our example with a session ID.
+With this information,
 
 image::img/cookies-flow-12.svg[]
 
-Le serveur peut envoyer sa réponse HTTP :
-*200 OK* avec la page HTML du site demandé.
-Et surtout,
+The server can send its HTTP response:
+*200 OK* with the requested HTML page.
+But now...
 
 image::img/cookies-flow-12b.svg[]
 
-Il peut contextualiser sa réponse.
+The response can be contextualized.
 
 [slide=blank]
 Les cookies, c'est ça.
 
-Les cookies, c'est ça.
+Cookies are nothing more than this.
 #PAUSE#
-Un protocole entre le serveur et le navigateur permettant le stockage d'un état côté client.
+A protocol between servers and browsers allowing the storage of a state on the client side.
 
 // [slide=blank, data-viewport=1]
 // Démo d'un cookie simple dans le browser
@@ -428,107 +430,109 @@ Un protocole entre le serveur et le navigateur permettant le stockage d'un état
 
 image::img/rfcs-01.svg[]
 
-Ce fonctionnement a été inventé et spécifié par Lou Montulli en 1994.
+This behaviour was invented by Lou Montulli in 1994.
 
 image::img/rfcs-02.svg[]
 
-On a eu une vraie RFC en 1997,
+We had a true RFC spec in 1997,
 
 image::img/rfcs-03.svg[]
 
-et une autre en 2000,
-mais globalement,
+and another in 2000,
+but in general,
 #PAUSE#
-depuis 24 ans,
+and for the past 24 years,
 #PAUSE#
-ça fonctionne toujours de la même manière.
+it follows the same rules and behaviour.
 #PAUSE#
-Une fois que le navigateur a reçu un cookie.
+So once a browser receives a cookie,
 
 [slide=question]
-Combien de temps  est stocké un cookie ?
+How long a cookie is stored?
 
 [.time]#00:11:40#
-_Combien de temps est-ce qu'il le stocke ?_
+_How much time does he store it?_
 
-.Expiration à la fermeture de la session
+.Expires at the end of the session
 [source, cookies]
 Set-Cookie: id=42
 
-De base, quand le serveur envoie l'en-tête *Set-Cookie*,
-c'est lui qui choisit combien de temps le cookie doit être stocké.
-Ici l'identifiant 42 sera stocké dans le navigateur le temps de la session.
-C'est à dire jusqu'à la fermeture du navigateur.
+Without any options, when a server uses *Set-Cookie*,
+it choses how much time the cookie must be stored.
+Here the ID 42 will be stored until the end of the browser session.
+Which means when the user closes the browser.
 #PAUSE#
-Pour demander un stockage persistant des cookies, le serveur a 2 moyens :
+If the server wants to define a persitent cookie, it has to ways to do so:
 
-.Expiration à une date précise
+.Expires at a specific date
 [source, cookies]
 Set-Cookie: id=42;
             Expires=Wed, 20 Jan 2021 10:30:00 GMT
 
-Il peut définir une [.two]#date d'expiration# avec l'attribut [.one]#Expires#.
+He can use an [.two]#expiration date# with the [.one]#Expires# attribute.
 
-.Expiration après une certaine durée
+.Expires after a specific duration
 [source, cookies]
 Set-Cookie: id=42; Max-Age=86400
 
-Ou il peut définir une [.two]#durée en secondes# avec l'attribut [.one]#Max-Age#.
+Or he can define a specific [.two]#duration in seconds# with the [.one]#Max-Age# attribute.
 -> Attribut ajouté par la première RFC officielle de 1997.
+-> This attribute was added in the first official RFC in 1997 and is not supported on odl versions of IE..
 #PAUSE#
-Un fois qu'un cookie est déposé par le serveur...
+Once a cookie is stored in the jar...
 
 // [slide=blank]
 // Démo de cookie persistent
 
 [slide=question]
-Comment demander  la suppression d'un cookie ?
+How can a server request  a cookie deletion?
 
 [.time]#00:12:20#
-..._comment peut-il demander la suppression d'un cookie_ avant son expiration.
-Au départ, je me suis dit il doit bien y avoir un header
-*Remove-Cookie* ou *Delete-Cookie*,
-NON !
-Pour demander la suppression d'un cookie...
+..._how can a server request a cookies deletion_ before its expiration?
+So at first I was like "there must be a `Delete-Cookie` header or a `Remove-Cookie` header..."
+Yeaaaaah, nooooo....
+NO!
+For a server to ask for a cookie to be deleted...
 
-.Demander la suppression d'un cookie
+.Ask for a cookie deletion
 [source, cookies]
 Set-Cookie: id=42;
             Expires=Thu, 01 Jan 1970 00:00:00 GMT
 
-Le serveur peut utiliser l'attribut [.one]#Expires# avec [.two]#une date dans le passé#.
-Généralement on utilise la date de reference epoch du 1er janvier 1970.
+It needs to use the [.one]#Expires# attribute with a [.two]#date in the past#.
+In general, people use the reference epoch date of january 1st 1970.
 
-.Demander la suppression d'un cookie
+.Ask for a cookie deletion
 [source, cookies]
 Set-Cookie: id=42; Max-Age=0
 
-Le serveur peut également utiliser l'attribut [.one]#Max-Age# avec une [.two]#durée égale à zéro#.
+The server can also ask for a deletion with the [.one]#Max-Age# attribute and a [.two]#duration of zero seconds#.
 
 [slide=blank]
 Pause, pb des cookies
 
-Pour l'instant, les choses sont simples, pas de piège, pas de surprise.
-Mais depuis tout à l'heure, je dis :
-_"quand l'utilisateur retourne sur le site, le navigateur envoie automatiquement les cookies qui vont avec"_.
-Mais qu'est-ce que ça veut dire "retourne sur le site" ?
+So for now, things are simple, no surprises, no traps.
+But since the beginning of the talk, I've been saying:
+_"when the user goes back to the same site, the browser automatically sends the cookies that goes with it"_.
+#PAUSE#
+But what does it mean when I say "same site"?
 
 [source, url]
-http://mon.site.fr:8080/ma-page.html
+http://my.site.net:8080/my-page.html
 https://your-blog.com/the-article.php
 
-Comment le navigateur sait qu'entre une adresse A et une adresse B il s'agit oui ou non du même _"site"_ ?
-Et en fait là,
-on arrive sur le point qui pose le plus de problème avec les cookies,
+How does a browser know that between address A and address B it's the same site or a different site?
+In this example, it's simple but it's not always the case.
+Here we touch the very aspect that cause lots of problems with HTTP cookies,
 
 // [slide=blank]
 // Démo suppression de cookie
 
 [slide=question]
-Quand est-ce que  les cookies sont  envoyés automatiquement ?
+When does the browser  automatically send the cookies?
 
 [.time]#00:13:30#
-le fait de savoir quand ils seront envoyés automatiquement par le navigateur (ou pas).
+knowing when the browser will automatically send the cookies (or not).
 
 [source, url, suffix="TLD"]
 http://blue.cookies.rocks:80/page.html
@@ -536,14 +540,14 @@ http://blue.cookies.rocks:80/page.html
 // [source, url, suffix="TLD"]
 // http://big.blue.cookies.rocks:80/awesome-page.html
 
-Si on regarde de plus près une URL,
-on a 4 parties :
-[.one]#le protocole#
-[.three]#l'hôte#
-[.two]#le port#
-[.four]#le path#
-[.three]#&# [.four]#sous domaine#
-[.three]#&# [.two]#domaine#
+If we look closely at a given URL,
+we have 4 parts:
+[.one]#the protocol#
+[.three]#the host#
+[.two]#the port#
+[.four]#the path#
+[.three]#&# [.four]#sub-domain#
+[.three]#&# [.two]#domain#
 // [.three]#&# [.one]#suffixe#
 
 // [source, url]
@@ -556,7 +560,7 @@ on a 4 parties :
 // [source, url]
 // http://cookies.co.uk/the-page.html
 
-.Attribut `Domain=`
+.Attribute: `Domain=`
 [source, cookies]
 Set-Cookie: no-domain=no
 Set-Cookie: root-domain=root; Domain=cookies.rocks
@@ -566,14 +570,14 @@ Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
 [slide=blank, data-viewport=1]
 Démos de cookies avec l'attribut Domain
 
-Vider les cookies
+Empty the cookies
 Afficher "show cookies" sur cookies.rocks
 Afficher "show cookies" sur blue.cookies.rocks
 Afficher "show cookies" sur green.cookies.rocks
 Lancer "la page attr Domaine" sur cookies.rocks
 
 [slide=text]
-`Domain=` : augmente la portée du cookie  à tous les hôtes  qui se terminent par la valeur
+`Domain=` : increases the range of the cookie  to all hosts ending with the value
 
 Déposer des cookies pour des niveaux d'hôte plus généraux
 
@@ -641,7 +645,7 @@ V http://cookies.rocks/page.html
 
 
 [slide=question]
-Un cookie avec `Domain=rocks` ?
+A cookie with `Domain=rocks` ?
 
 video::videos/no.mp4#t=4[]
 
@@ -673,7 +677,7 @@ image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github
 
 image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
 
-.Public Suffix List (extraits)
+.Public Suffix List (extracts)
 [source, c, slide=code]
 ----
 // uk : https://en.wikipedia.org/wiki/.uk
@@ -693,7 +697,7 @@ osaka.jp
 tokyo.jp
 ----
 
-.Public Suffix List (extrait)
+.Public Suffix List (extract)
 [source, c, slide=code]
 ----
 // GitHub, Inc.
@@ -713,7 +717,7 @@ azure-mobile.net
 cloudapp.net
 ----
 
-.Public Suffix List (extrait)
+.Public Suffix List (extract)
 [source, c, slide=code]
 ----
 // Clever Cloud : https://www.clever-cloud.com/
@@ -726,14 +730,14 @@ http://cookies.rocks/
 http://www.bbc.co.uk/news/
 http://www.metro.tokyo.jp/
 https://hsablonniere.gitlab.io/babbler/
-https://foobar.azurewebsites.net/
+https://foobar.cleverapps.io/
 
 [slide=question]
-Un cookie avec `Domain=localhost` ?
+A cookie with `Domain=localhost` ?
 
 video::videos/no.mp4#t=7[]
 
-.Attribut `Path=`
+.Attribute: `Path=`
 [source, cookies]
 Set-Cookie: id=42; Path=/api
 Set-Cookie: id=42; Path=/admin
@@ -764,7 +768,7 @@ V http://cookies.rocks/api/profile
 V http://cookies.rocks/api-/foobar
 
 [slide=text]
-`Path=` : restreint la portée du cookie  à tous les paths  qui commencent par la valeur*
+`Path=` : restricts the range of a cookie  to paths that start with the value*
 
 // [slide=blank]
 // Démos de cookies avec l'attribut path
@@ -774,9 +778,9 @@ V http://cookies.rocks/api-/foobar
 V http://cookies.rocks/some-page.html
 V https://cookies.rocks/some-page.html
 
-Attribut secure
+Secure attribute
 
-.Attribut `Secure`
+.Attribute: `Secure`
 [source, cookies]
 Set-Cookie: id=42; Secure
 
@@ -786,23 +790,23 @@ Set-Cookie: id=42; Secure
 V https://cookies.rocks/some-page.html
 
 [slide=text]
-`Secure` : restreint la portée du cookie  aux requêtes sécurisées
+`Secure` : restricts the range of a cookie  to secured requests
 
-.Header HSTS (attention !)
+.HSTS header (warning!)
 [source, http, slide=code]
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
 
 image::img/screenshots/owasp-hsts.jpg[url="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet"]
 
-.http://cookies.rocks/ (non sécurisé)
+.http://cookies.rocks/ (not secured)
 [source, url, setCookie="id=42; Secure"]
 ! http://cookies.rocks/some-page.html
 V https://cookies.rocks/some-page.html
 
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
-.Reçu par le serveur
+.Received by the server
 [source, http, slide=code]
 Cookie: id=42
 
@@ -820,7 +824,7 @@ Set-Cookie: __Host-id=42; Secure; Path=/
 http://blue.cookies.rocks:80/page.html
 
 [slide=question]
-Y a-t-il une  vérification sur le port ?
+Is there a check on the port?
 
 video::videos/no.mp4#t=13[]
 
@@ -835,7 +839,7 @@ image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org
 [slide=text]
 AJAX : Asynchronous JavaScript & XML  *(cookies opt-out)*
 
-.Une XHR sur la même origine
+.XHR on the same origin
 [source, js, slide=code]
 ----
 const xhr = new XMLHttpRequest();
@@ -847,7 +851,7 @@ xhr.responseType = 'json';
 xhr.send();
 ----
 
-.Une XHR sur une origine différente
+.XHR on a different origin
 [source, js, slide=code]
 ----
 const xhr = new XMLHttpRequest();
@@ -859,12 +863,12 @@ xhr.withCredentials = true;
 xhr.send();
 ----
 
-.L'en-tête CORS qui va bien
+.CORS headers to save the day
 [source, http, slide=code]
 Access-Control-Allow-Credentials: true
 
 [slide=text]
-fetch : L'AJAX mais en beaucoup mieux  *(cookies opt-in)*
+fetch : "Better AJAX"  *(cookies opt-in)*
 
 [source, js, slide=code]
 fetch('/url', { credentials: 'omit' })
@@ -874,6 +878,8 @@ fetch('/url', { credentials: 'include' })
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
 image::img/cookies-csrf-01.svg[]
+
+Start CSRF explanation
 
 image::img/cookies-csrf-02.svg[]
 
@@ -892,7 +898,7 @@ image::img/cookies-csrf-08.svg[]
 image::img/cookies-csrf-09.svg[]
 
 [slide=question]
-C'est quoi  une attaque CSRF/XSRF ?
+What is a  CSRF/XSRF attack?
 
 [slide=blank, data-viewport=1]
 Démos CSRF
@@ -905,7 +911,7 @@ image::img/screenshots/owasp-csrf.jpg[url="https://www.owasp.org/index.php/Cross
 
 image::img/rfcs-05.svg[]
 
-.Attribut `SameSite=`
+.Attribute: `SameSite=`
 [source, cookies]
 Set-Cookie: id=42; SameSite=Lax
 Set-Cookie: id=42; SameSite=Strict
@@ -917,10 +923,10 @@ Set-Cookie: id=42; SameSite=Strict
 // image::img/screenshots/caniuse-com-feat-same-site-cookie-attribute.jpg[]
 
 [slide=question]
-Qui peut lire quels cookies ?
+Who can read cookies?
 
 [slide=text]
-`document.cookie` : l'API navigateur la plus étrange du monde
+`document.cookie` : craziest Web API ever
 
 [slide=blank, data-viewport=1]
 Démo document.cookie
@@ -928,7 +934,7 @@ Démo document.cookie
 Démo document.cookie
 
 [slide=question]
-C'est quoi  une attaque XSS ?
+What is an XSS attack?
 
 [slide=blank, data-viewport=1]
 Démo XSS
@@ -939,7 +945,7 @@ image::img/screenshots/owasp-xss.jpg[url="https://www.owasp.org/index.php/Cross-
 
 image::img/screenshots/developers-google-csp.jpg[url="https://developers.google.com/web/fundamentals/security/csp/"]
 
-.Attribut `HttpOnly`
+.Attribute: `HttpOnly`
 [source, cookies]
 Set-Cookie: id=42; HttpOnly
 
@@ -948,7 +954,7 @@ Démo http only
 
 Démo http only
 
-.Récap. des attributs
+.Cookie attributes recap
 [source, cookies]
 Set-Cookie: id=42;
             Expires=Tue, 03 Nov 2020 00:00:00 GMT;
@@ -960,10 +966,10 @@ Set-Cookie: id=42;
             SameSite=Lax
 
 [slide=question]
-Quelles alternatives  pour un stockage local ?
+What alternatives  to store data locally?
 
 [slide=text]
-`window.name` : la vieille technique cross-site
+`window.name` : good old cross-site technique
 
 [slide=blank, data-viewport=1]
 Démo window.name
@@ -971,20 +977,20 @@ Démo window.name
 Démo window.name
 
 [slide=text]
-Web Storage : `localStorage` et `sessionStorage`
+Web Storage : `localStorage` and `sessionStorage`
 
 // [slide=blank]
 // Démo Web Storage
 
-[slide=question]
-Que dit la CNIL ?
-
-image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
-
-image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
+//[slide=question]
+//Que dit la CNIL ?
+//
+//image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
+//
+//image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
 
 [contenteditable=true, data-viewport=5]
-== Point de vue : celui/celle qui veut  "tracer" ses visiteurs
+== Point of view : those who want to  track their visitors
 
 Editer le texte : celui/celle qui veut améliorer l'UX ses visiteurs
 
@@ -996,17 +1002,17 @@ Démo tracking cookie tiers avec referer
 Démo tracking cookie tiers avec referer
 
 [slide=question]
-C'est quoi le referer ?
+What is the `referer`?
 
 image::img/screenshots/caniuse-referer.jpg[url="https://caniuse.com/#search=referer"]
 
 image::img/screenshots/w3c-referrer-policy.jpg[url="https://www.w3.org/TR/referrer-policy/"]
 
 [slide=question]
-C'est quoi un supercookie ?
+What is a supercookie?
 
 [slide=text]
-Traçage sans JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
+Tracking without JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
 // redirect ?
 
 [slide=blank, data-viewport=1]
@@ -1015,31 +1021,31 @@ Démo tracking etag avec referer
 Démo tracking etag avec referer
 
 [slide=text]
-Traçage avec JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
+Tracking with JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
 
 [slide=text]
-Traçage avec JavaScript : (CSS :visited)...
+Tracking without JavaScript : (CSS :visited)...
 
 [slide=text]
-Traçage JavaScript : (Flash, Silverlight)...
+Tracking with JavaScript : (Flash, Silverlight)...
 
 image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
 
 image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
-== Point de vue : celui/celle  qui est soucieux  de sa vie privée
+== Point of view : those concerned by  online privacy
 
 [slide=question]
-Comment régler  mon navigateur ?
+How do I configure my browser?
 
 [slide=text]
-Bloquer les cookies tiers
+Block third-party cookies
 
 // [slide=blank]
 // Démo du réglage des cookies tiers
 
 [slide=text]
-Bloquer l'en-tête `referer`
+Block `referer` header
 
 // [slide=blank]
 // Démo du réglage des referers
@@ -1051,21 +1057,21 @@ Bloquer l'en-tête `referer`
 // Démo du fichier contenant les cookies
 
 [slide=question]
-Faut-il installer des  extensions navigateur  en plus ?
+Should I also install  browser extensions?
 
-image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/fr/https-everywhere"]
+image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/en/https-everywhere"]
 
 //uBlock
 
-image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
+image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/"]
 
-image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
+image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/"]
 
 image::img/screenshots/addons-mozilla-firefox-container.jpg[url="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"]
 
 image::img/screenshots/disconnect-me.jpg[url="https://disconnect.me/"]
 
-image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/fr/privacybadger"]
+image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/privacybadger"]
 
 image::img/screenshots/noscript.jpg[url="https://noscript.net/"]
 
@@ -1084,10 +1090,12 @@ image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/t
 
 image::img/1994-2018.svg[]
 
-Ça fait 24 ans qu'on se plain des cookies mais après toute cette enquête,
-je me pose la question "est-ce que le Web en serait pas là aujourd'hui si on avait pas eu de bannières publicitaires à base de texte clignotant et de gif animés".
-Les navigateurs et les annonceurs jouent au chat et à la souris,
-une course sans fin qui ne résoud pas le problème à long terme.
+We've all been complaining about cookies, their limitations and their misuse for the past 24 years but,
+after all this investigation,
+I have to ask the question "would we have the open and standard World Wide Web we use today without banner ads using blinkink text and animated gifs"
+I mean, it also spread because lots of sites relied on advertisement to make a revenue and because users had access to lots of contents for free.
+Nowadays, advertisers and browser makers have been playing a cat and mouse game.
+and in those cases, it's an endless race.
 
 // Lou
 // The answer is pretty simple:
@@ -1102,42 +1110,42 @@ Histoire d'outro avec Sherlock
 [quote, Sherlock]
 Wow!!!  Lots of facts!
 
-Wow, ça fait beaucoup de facts !
+Wow, I was not expecting that many facts!
 
 [quote, Watson]
 Indeed.
 
-En effet.
+Indeed.
 
 [quote, Sherlock]
 But now...
 
-Oui mais maintenant John,
+Yes but now John,
 
 [quote, Sherlock]
 We *can* identify when it smells!
 
-Avec tout ces facts John,
-Nous avons toutes les bases pour comprendre les cookies et se prémunir des attaques.
-On *peut* savoir savoir quand est-ce que ça pue (dans nos projets) !
+With all those facts,
+We have all the basics to understand cookies and where to look for to prevent attacks.
+We *can* identify when it stinks in our Web projects!
 
 [quote, Sherlock]
 We *should* spread  the knowledge!
 
-Avec tout ces facts John,
-On *devrait* pouvoir partager ce savoir à nos amis et notre famille,
-leur expliquer ce qu'il se passe dans leur navigateur.
+With all those facts,
+We *should* be able to spread the knowledge to our muggle friends and family,
+we should explain them what happens in their browsers.
 
 [quote, Sherlock]
 We *must* debate about  the future of the Web!
 
-Avec tout ces facts John,
-On *doit* absoluement élever le débat et discuter ensemble du futur du Web.
-Entre avoir plein de contenus gratuits, ne pas payer, refuser d'être tracé et avoir des publicités, il va falloir choisir et pousser ensemble les nouveaux modèles économiques vers lesquels nous voulons que notre société évolue...
+With all those facts,
+We absolutely *must* rise the debate and discussion together about the futur of the Web and it's model.
+Between having everything for free, not paying and blocking every ads and trackers, we'll have to chose and push together new economic models towards which we want our society to evolve.
 
-.Merci bcp !
+.Thanks!
 [slide=poster]
 Outro
 
 [slide=question]
-Des questions ?
+Questions?
