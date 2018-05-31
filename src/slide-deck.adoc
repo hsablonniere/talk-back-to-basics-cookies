@@ -5,8 +5,8 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: MiXiT
-:date: 20 avril 2018
+:event: Poitou-Charentes JUG
+:date: 31 mai 2018
 
 [slide=poster]
 Intro
@@ -38,7 +38,7 @@ What's up Sherlock?
 Que se passe t-il encore ?
 
 [quote, Watson]
-What are we doing in bloody Lyon?
+What are we doing in bloody Niort?
 
 Que fait-on à Lyon, cette magnifique ville ?
 
@@ -726,7 +726,7 @@ http://cookies.rocks/
 http://www.bbc.co.uk/news/
 http://www.metro.tokyo.jp/
 https://hsablonniere.gitlab.io/babbler/
-https://foobar.azurewebsites.net/
+https://foobar.cleverapps.io/
 
 [slide=question]
 Un cookie avec `Domain=localhost` ?
