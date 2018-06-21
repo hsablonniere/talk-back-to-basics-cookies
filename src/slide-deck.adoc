@@ -5,8 +5,9 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: Tours JUG
-:date: 26 juin 2018
+:event: Devfest Lille
+:date: 21 juin 2018
+:city: Lille
 
 [slide=poster]
 Intro
@@ -38,7 +39,7 @@ What's up Sherlock?
 Que se passe t-il encore ?
 
 [quote, Watson]
-What are we doing in bloody Niort?
+What are we doing in bloody {city}?
 
 Que fait-on à Lyon, cette magnifique ville ?
 
