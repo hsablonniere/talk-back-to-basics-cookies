@@ -5,8 +5,8 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: Poitou-Charentes JUG
-:date: 31 mai 2018
+:event: Tours JUG
+:date: 26 juin 2018
 
 [slide=poster]
 Intro
