@@ -1,6 +1,6 @@
 = TODO
 
-== Prépa avant talk
+== Prépa avant talkns
 
 * Desktop 0: Ouvrir Chrome avec la preview
 * Desktop 1: Ouvrir firefox latest profil default-settings
