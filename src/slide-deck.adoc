@@ -17,7 +17,7 @@ Intro
 Cette présentation n'aborde aucune technologie à la mode.
 Le sujet se concentre sur un vieux truc inventé dans les années 90 (que vous connaissez peut-être déjà).
 [.question]#Acceptez-vous de poursuivre la présentation ?#
-Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, il est encore temps de changer de salle...
+Si vous voulez savoir comment déployer dans la blockchain des microservices Kotlin avec Kubernetes, vous vous êtes trompé d'endroit...
 
 [.four]#musique#
 
@@ -38,7 +38,7 @@ What's up Sherlock?
 Que se passe t-il encore ?
 
 [quote, Watson]
-What are we doing in bloody Niort?
+What are we doing in bloody Towers?
 
 Que fait-on à Lyon, cette magnifique ville ?
 
@@ -864,11 +864,14 @@ xhr.send();
 Access-Control-Allow-Credentials: true
 
 [slide=text]
-fetch : L'AJAX mais en beaucoup mieux  *(cookies opt-in)*
+fetch : L'AJAX mais en beaucoup mieux  *(cookies opt-in avant)*
+
+[slide=text]
+fetch : L'AJAX mais en beaucoup mieux  *(cookies opt-out maintenant)*
 
 [source, js, slide=code]
-fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
+fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'include' })
 
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
@@ -913,8 +916,7 @@ Set-Cookie: id=42; SameSite=Strict
 // [slide=blank]
 // Démos samesite
 
-// [#screenshot-caniuse-samesite-cookies.contain]
-// image::img/screenshots/caniuse-com-feat-same-site-cookie-attribute.jpg[]
+image::img/screenshots/caniuse-samesite.jpg[url="https://caniuse.com/#search=samesite"]
 
 [slide=question]
 Qui peut lire quels cookies ?

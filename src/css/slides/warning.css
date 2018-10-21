@@ -12,7 +12,7 @@
 
 [data-slide="warning"] .keyword {
   font-size: 6rem;
-  color: var(--color-ddd);
+  color: var(--color-e);
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
 
 [data-slide="warning"] .question {
   display: block;
-  color: var(--color-ddd);
+  color: var(--color-e);
   margin: 1rem 0;
   text-align: center;
 }
