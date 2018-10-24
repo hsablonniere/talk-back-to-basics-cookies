@@ -9,6 +9,9 @@
 * Desktop 4: Terminal noir sur blanc pour elinks
 * Desktop 5: Ouvrir firefox avec slide PDV 2
 
+* clear cookies in Firefox
+* enable cookies (clean profile)
+
 == Improvements
 
 === slides

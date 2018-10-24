@@ -5,10 +5,13 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: DevoxxUK
-:date: May 11th 2018
+:event: VoxxedBristol
+:date: October 25th 2018
 
 [slide=poster]
+Intro
+
+[slide=poster-bristol]
 Intro
 
 [.time]#00:00:00#
@@ -17,14 +20,14 @@ Intro
 This presentation does NOT cover any trending topic.
 It focuses on a boring old thing invented in the 90s (which you may already know).
 [.question]#Do you accept this talk?#
-If you want to know more about how to deploy Kotlin microservices in the blockchain with Kubernetes, you still have time to leave...
+If you want to know more about how to deploy serverless Kotlin microservices in the blockchain with Kubernetes, you still have time to leave...
 
 [.four]#musique#
 
 [slide=location]
 A few months ago...
 221b Baker Street
-Londres
+London
 
 [quote, Watson]
 I'm almost there...
@@ -38,7 +41,7 @@ What's up Sherlock?
 What's your problem this time?
 
 [quote, Watson]
-What are we doing at bloody DevoxxUK?
+What are we doing in bloody Bristol?
 
 What are we doing in this wonderful conference?
 
@@ -310,10 +313,10 @@ The main point of vue we will cover together...
 image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
 
 // == TODO Point de vue : celui/celle qui utilise  des cookies  sur son site Web
-== Point of view : those who use cookies  on their Web site
+== Point of view : those who use cookies  on their website
 
 [.time]#00:08:00#
-...is the point of view of those who use cookies on their Web site.
+...is the point of view of those who use cookies on their website.
 [.question]#Are their any developers in the room?#
 OK, great.
 So let's go back to basics,
@@ -675,8 +678,6 @@ image::img/screenshots/chrome-source-effective-tld-names.jpg[url="https://chromi
 
 image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github.com/WebKit/webkit/blob/master/Source/WebCore/platform/soup/PublicSuffixSoup.cpp"]
 
-image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
-
 .Public Suffix List (extracts)
 [source, c, slide=code]
 ----
@@ -837,7 +838,7 @@ http://blue.cookies.rocks:80/page.html
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
 [slide=text]
-AJAX : Asynchronous JavaScript & XML  *(cookies opt-out)*
+AJAX : Asynchronous JavaScript & XML
 
 .XHR on the same origin
 [source, js, slide=code]
@@ -867,12 +868,13 @@ xhr.send();
 [source, http, slide=code]
 Access-Control-Allow-Credentials: true
 
+
 [slide=text]
-fetch : "Better AJAX"  *(cookies opt-in)*
+fetch : "Better AJAX"
 
 [source, js, slide=code]
-fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
+fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'include' })
 
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
@@ -919,8 +921,10 @@ Set-Cookie: id=42; SameSite=Strict
 // [slide=blank]
 // Démos samesite
 
-// [#screenshot-caniuse-samesite-cookies.contain]
-// image::img/screenshots/caniuse-com-feat-same-site-cookie-attribute.jpg[]
+[#screenshot-caniuse-samesite-cookies.contain]
+image::img/screenshots/caniuse-samesite-cookie.jpg[url="https://caniuse.com/#feat=same-site-cookie-attribute"]
+
+// TODO article twitter
 
 [slide=question]
 Who can read cookies?
@@ -964,6 +968,17 @@ Set-Cookie: id=42;
             Secure;
             HttpOnly;
             SameSite=Lax
+
+image::img/screenshots/tough-cookies-article-scotthelme.jpg[url="https://scotthelme.co.uk/tough-cookies/"]
+
+.Tough cookie example
+[source, cookies]
+Set-Cookie: __Host-id=42;
+            Expires=Tue, 03 Nov 2020 00:00:00 GMT;
+            Path=/;
+            Secure;
+            HttpOnly;
+            SameSite
 
 [slide=question]
 What alternatives  to store data locally?
