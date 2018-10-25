@@ -2,8 +2,8 @@
 
 == Prépa avant talk
 
-* Desktop 0: Ouvrir Chrome avec la preview
-* Desktop 1: Ouvrir firefox latest profil default-settings
+* Desktop 0: Ouvrir Firefox avec la preview
+* Desktop 1: Ouvrir firefox latest profil ff-63-default-settings
 * Desktop 2: Ouvrir Chrome latest profil cookie
 * Desktop 3: Ouvrir firefox avec fishcam
 * Desktop 4: Terminal noir sur blanc pour elinks
@@ -36,10 +36,6 @@
 ** pour attribut HTTPOnly
 ** pr le tracking
 
-=== demos
-
-
-
 == Démos
 
 * Démo CSRF
@@ -52,3 +48,10 @@
 * Démo du réglage des cookies tiers
 * Démo du réglage des referers
 * Démo du fichier contenant les cookies
+
+== Before Voxxed Bristol
+
+//* Watch talk entirely
+//* Repeat talk entirely
+* Test sozu local stuffs
+* Ajouter indices manettes

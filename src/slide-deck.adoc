@@ -8,8 +8,8 @@ Hubert Sablonnière
 :event: VoxxedBristol
 :date: October 25th 2018
 
-[slide=poster]
-Intro
+//[slide=poster]
+//Intro
 
 [slide=poster-bristol]
 Intro
@@ -43,12 +43,12 @@ What's your problem this time?
 [quote, Watson]
 What are we doing in bloody Bristol?
 
-What are we doing in this wonderful conference?
+What are we doing in this wonderful city?
 
 [quote, Sherlock]
 I'm disappointed by bloody developers!
 
-#Accent anglais (voix condescendante)#
+#English accent (condescending voice)#
 Well, you see Watson,
 I'm really connfused by developers,
 I looked at a few conference schedules...
@@ -56,7 +56,7 @@ I looked at a few conference schedules...
 [quote, Sherlock]
 Such fashion victims!
 
-...and it seems like they're only interested by latest trending tools and frameworks.
+...and it seems like they're only interested in latest trending tools and frameworks.
 
 [quote, Watson]
 It seems logical, isn't it?
@@ -84,7 +84,7 @@ HTTP cookies of course!
 [quote, Sherlock]
 You know nothing John.
 
-You know nothing John,
+You know nothing John Watson,
 Everybody's using them but nobody really knows about their history, their origin and how they work.
 It pushes developers to make lots of silly mistakes on Web projects,
 and I also realize that muggles, _"non IT people", have a profound lack of knowledge regarding tracking and privacy.
@@ -92,7 +92,7 @@ and I also realize that muggles, _"non IT people", have a profound lack of knowl
 [quote, Sherlock]
 I asked Hubert to investigate...
 
-I asked Hubert Sablonnière to investigate on this.
+So I asked Hubert Sablonnière to investigate on this.
 
 [quote, Watson]
 The sodding froggy?
@@ -104,10 +104,10 @@ Français ?
 Yes but he's a redhead.
 
 yes but...
-#hésitations#
+#hesitation#
 you know, he looks a bit like us, doesn't he?
 
-image::img/devoxx-uk-banner.png[role=devoxx-uk-banner]
+//image::img/devoxx-uk-banner.png[role=devoxx-uk-banner]
 
 [quote, Sherlock]
 #BackToBasics
@@ -125,13 +125,13 @@ Interesting...
 
 Hum, I'm intrigued...
 
-[slide=poster]
-Bonjour à tous
+[slide=poster-bristol]
+Hello everyone!
 
 [.time]#00:02:00#
-#mode normal (et énergique)#
+#normal mode (with lots of energy)#
 Hello everyone!
-I'm Hubert Sablonnière,
+My name is Hubert Sablonnière,
 I'm a Web developer at #Clever Cloud#.
 
 .Clever Cloud
@@ -145,30 +145,8 @@ Meanwhile, we're focusing on the rest:
 *Building, deploying, monitoring, automatically restarting the app when it crashes*
 *and of course we maintain the different layers on which the code runs.*
 
-// [source, js, slide=code]
-// if (false === connaitCleverCloud) {
-//   toi.passerAuStand('Clever Cloud');
-// }
-//
-// Si vous ne nous connaissez pas, passez voir notre stand, on vous expliquera tout ça...
-//
-// [source, js, slide=code]
-// if (true === connaitCleverCloud) {
-//   toi.passerAuStand('Clever Cloud');
-// }
-//
-// Si vous nous connaissez déjà, passez voir notre stand, on pourra discuter de la plateforme et de ce que vous en faite.
-// Si vous... #PAUSE# Enfin bref...
-//
-// [source, js, slide=code]
-// if (true) {
-//   toi.passerAuStand('Clever Cloud');
-// }
-//
-// ...passez voir notre stand ;-)
-
 [slide=blank]
-Enchaînement vers cookies
+Transition to cookies
 
 [.time]#00:03:00#
 Today, I want to talk about my investigation on HTTP Cookies.
@@ -188,7 +166,7 @@ and I got interested in...
 image::img/loumontulli.jpg[author="Peter Adams", role="big top"]
 
 ...this man!
-#Mains en l'air qui prient au ciel#
+#Praying hands to the sky#
 
 image::img/loumontulli.jpg[title="Lou Montulli" author="Peter Adams", role="big top"]
 
@@ -214,10 +192,10 @@ fishcam : fish aquarium, live since 1994
 A small _easter-egg_ available via *Ctrl+Alt+F* on Netscape and which is still...
 
 [slide=blank, data-viewport=3]
-Démo fishcam
+Demo fishcam
 
 ...available today on *fishcam.com* !
-#Démo fishcam#
+#Demo fishcam#
 The aquarium is in California and here we can see a photo taken a few seconds ago.
 #Child voice#
 Hello littles fishies!
@@ -230,16 +208,16 @@ Lynx : text-based Web browser
 
 Lou is also the co-creator of Lynx, a text-based Web browser.
 
-// image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
-
 [slide=blank, data-viewport=4]
-Démo lynx
+Demo lynx
 
-#Démo lynx#
+#Demo lynx#
 For those who don't know about Lynx, it looks pretty simple but it's suuuuuper-fast!
 I can browse the DevoxxUK CFP website,
 I can search for "cookies" and find information about this presentation.
 I have to admit, I don't use it everyday but each time I realize how much content and accessibility is important on a Website.
+
+// image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
 [slide=blank]
 Intro <blink>
@@ -256,7 +234,7 @@ Intro <blink>
 #Fake laugh#
 Ah ah ah, they really had a good laugh about the fact that this idea was completely absurd.
 The evening goes one, Lou will meet his future wife and the next morning, when he arrived at work,
-He realized that his colleague, _"1st degree humor John_" went back to the office after the party...
+He realized that his colleague, _"John 1st degree humor_" went back to the office after the party...
 
 [slide=text]
 [.blink]`<blink>` : best HTML tag ever!
@@ -272,9 +250,9 @@ And... I mean...
 ...if they asked my opinion, it could have been worse!
 
 [slide=blank]
-Lancement gif
+Intro to gif topics
 
-We're making fun of this but we all used this tag,
+We're making fun of this but we all used this tag (liars),
 and back then, everything was a good reason to catch the attention of visitors and show them banner ads.
 When the Java plugin arrived in Netscape,
 lots of people used it to animated text and make it scroll.
@@ -284,13 +262,14 @@ video::videos/no.mp4[]
 
 And that was frustrating our friend Lou.
 He really wanted to find a replacement, a solution to do those banner ads without loading Java.
-So after imploring for a month to his colleague Scott Furman, in charge of imaging code at Netscape,
+So after imploring for a month to his colleague Scott Furman, who was in charge of imaging code at Netscape,
 he finally convinced him to...
 
 [slide=text]
 animated gifs : because Java applets take way too long to load
 
 add an extension to the gif format and loop many times on the set of frames already in the file.
+[.question]#djif? guif?#
 That's exactly why today, if you open any animated gif file with the right editor,
 You'll see the "Netscape Application Block" which is here to define how much time you need to repeat the animation.
 Zero for endless loop of course.
@@ -301,7 +280,7 @@ image::img/loumontulli.jpg[author="Peter Adams", role="light unzoom"]
 If I talk so much about Lou, it's also and mainly
 because he's the inventor of HTTP cookies.
 Backend the Web was pretty much statless,
-so when you wanted to create an e-commerce site with a virtual cart while still being able to recognize a user between multiple page load...
+so when you wanted to create an e-commerce site with a virtual cart while still being able to recognize a user between multiple page loads...
 #sad face# I mean, you had to get up early!
 This is the exact reason why Lou wanted to add some state on the client side:
 maintaining a user logged in to the site.
@@ -309,10 +288,6 @@ During my investigation, I tried to look at this case from many point of views,
 and that's what I want to present today.
 The main point of vue we will cover together...
 
-[.zoom-patent]
-image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
-
-// == TODO Point de vue : celui/celle qui utilise  des cookies  sur son site Web
 == Point of view : those who use cookies  on their website
 
 [.time]#00:08:00#
@@ -323,22 +298,24 @@ So let's go back to basics,
 we're going to ask several questions and try to give answers.
 I'm probably going to explain stuffs you already know,
 but recaps are always good anyway, right?
-we'll also cover some very recent news aroud cookies.
+We'll also cover some very recent news aroud cookies.
 
 [slide=question]
 What is an HTTP cookie?
 
 [.time]#00:08:30#
 So first question : _What is an HTTP cookie?_
-First we need to stop with the *cookies for dummies* definition : "cookies are tiny files stored on my computer".
+First we need to stop with the *cookies for dummies* definition:
+#dumb voice#
+"cookies are tiny files stored on my computer".
 It's imcomplete and dated because cookies are more that just a storage mechanism and it's been a while since we stopped storing one cookie per file.
 We also need to stop mixing-up cookies and user sessions that are stored on the server side.
 Too many times, I heard someone saying "yes, I stored the information in the cookies".
 and when I looked for the info, they were stored on the server side, in the user session, in RAM.
-I say no to those!
+I say NO to those!
 I prefer to describe cookies as a protocol.
 A behaviour browsers and servers agreed to follow to maintain some state on the client side.
-A small diagram.
+Small diagram?
 
 image::img/cookies-flow-01.svg[]
 
@@ -346,7 +323,7 @@ A user wants to visit the site "cookies.rocks".
 
 image::img/cookies-flow-02.svg[]
 
-He or she types the address in the browser.
+She types the address in the browser.
 
 image::img/cookies-flow-03.svg[]
 
@@ -359,7 +336,7 @@ The server responds with:
 
 image::img/cookies-flow-04b.svg[]
 
-But more importantly, the server use the `Set-Cookie` header to ask the browser to store some information,
+But more importantly, the server can use the `Set-Cookie` header to ask the browser to store some information,
 a key and a value.
 
 image::img/cookies-flow-04c.svg[]
@@ -389,20 +366,23 @@ when the user goes back to the same site,
 
 image::img/cookies-flow-09.svg[]
 
-the browser looks into its jar to see if it has cookies for this site.
+the browser looks into its jar and ask itself:
+"Are there any cookies for this site?"
 
 image::img/cookies-flow-10.svg[]
 
-When it's the case,
+"Yes, there is"
+In this situation,
 
 image::img/cookies-flow-11.svg[]
 
-the browser makes an HTTP request just like before:
+the browser will make an HTTP request just like before:
 *GET* to *http://cookies.rocks/*
 
 image::img/cookies-flow-11b.svg[]
 
-and it also sends the stored information in a `Cookie` header.
+but because the browser follows the "protocol",
+it will also send the stored information in a `Cookie` HTTP header.
 
 image::img/cookies-flow-11c.svg[]
 
@@ -426,14 +406,14 @@ Cookies are nothing more than this.
 #PAUSE#
 A protocol between servers and browsers allowing the storage of a state on the client side.
 
-// [slide=blank, data-viewport=1]
-// Démo d'un cookie simple dans le browser
-//
-// Démo d'un cookie simple dans le browser
-
 image::img/rfcs-01.svg[]
 
 This behaviour was invented by Lou Montulli in 1994.
+
+[.zoom-patent]
+image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
+
+I you look at the patent, you can check!
 
 image::img/rfcs-02.svg[]
 
@@ -461,11 +441,10 @@ _How much time does he store it?_
 Set-Cookie: id=42
 
 Without any options, when a server uses *Set-Cookie*,
-it choses how much time the cookie must be stored.
-Here the ID 42 will be stored until the end of the browser session.
+the cookie will be stored until the end of the browser session.
 Which means when the user closes the browser.
 #PAUSE#
-If the server wants to define a persitent cookie, it has to ways to do so:
+If the server wants to define a persitent cookie, it has 2 ways to do so:
 
 .Expires at a specific date
 [source, cookies]
@@ -479,13 +458,9 @@ He can use an [.two]#expiration date# with the [.one]#Expires# attribute.
 Set-Cookie: id=42; Max-Age=86400
 
 Or he can define a specific [.two]#duration in seconds# with the [.one]#Max-Age# attribute.
--> Attribut ajouté par la première RFC officielle de 1997.
--> This attribute was added in the first official RFC in 1997 and is not supported on odl versions of IE..
+* Added in the first RFC 1997 (no old IE support)
 #PAUSE#
 Once a cookie is stored in the jar...
-
-// [slide=blank]
-// Démo de cookie persistent
 
 [slide=question]
 How can a server request  a cookie deletion?
@@ -528,9 +503,6 @@ How does a browser know that between address A and address B it's the same site 
 In this example, it's simple but it's not always the case.
 Here we touch the very aspect that cause lots of problems with HTTP cookies,
 
-// [slide=blank]
-// Démo suppression de cookie
-
 [slide=question]
 When does the browser  automatically send the cookies?
 
@@ -552,6 +524,7 @@ we have 4 parts:
 [.three]#&# [.four]#sub-domain#
 [.three]#&# [.two]#domain#
 // [.three]#&# [.one]#suffixe#
+The browser
 
 // [source, url]
 // http://cookies.rocks/awesome-page.html
@@ -905,7 +878,7 @@ What is a  CSRF/XSRF attack?
 [slide=blank, data-viewport=1]
 Démos CSRF
 
-#Démo CSRF#
+#Demo CSRF#
 Set profile sur cookies.rocks
 Aller sur example-foo et cliquer sur naked pictures
 
@@ -924,7 +897,7 @@ Set-Cookie: id=42; SameSite=Strict
 [#screenshot-caniuse-samesite-cookies.contain]
 image::img/screenshots/caniuse-samesite-cookie.jpg[url="https://caniuse.com/#feat=same-site-cookie-attribute"]
 
-// TODO article twitter
+image::img/screenshots/twitter-silhouette-article.jpg[url="https://blog.twitter.com/engineering/en_us/topics/insights/2018/twitter_silhouette.html"]
 
 [slide=question]
 Who can read cookies?
@@ -933,17 +906,17 @@ Who can read cookies?
 `document.cookie` : craziest Web API ever
 
 [slide=blank, data-viewport=1]
-Démo document.cookie
+Demo document.cookie
 
-Démo document.cookie
+Demo document.cookie
 
 [slide=question]
 What is an XSS attack?
 
 [slide=blank, data-viewport=1]
-Démo XSS
+Demo XSS
 
-Démo XSS
+Demo XSS
 
 image::img/screenshots/owasp-xss.jpg[url="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)"]
 
@@ -954,9 +927,9 @@ image::img/screenshots/developers-google-csp.jpg[url="https://developers.google.
 Set-Cookie: id=42; HttpOnly
 
 [slide=blank, data-viewport=1]
-Démo http only
+Demo http only
 
-Démo http only
+Demo http only
 
 .Cookie attributes recap
 [source, cookies]
@@ -987,15 +960,15 @@ What alternatives  to store data locally?
 `window.name` : good old cross-site technique
 
 [slide=blank, data-viewport=1]
-Démo window.name
+Demo window.name
 
-Démo window.name
+Demo window.name
 
 [slide=text]
 Web Storage : `localStorage` and `sessionStorage`
 
 // [slide=blank]
-// Démo Web Storage
+// Demo Web Storage
 
 //[slide=question]
 //Que dit la CNIL ?
@@ -1012,9 +985,9 @@ Editer le texte : celui/celle qui veut améliorer l'UX ses visiteurs
 // rappel conditions du CSRF
 
 [slide=blank, data-viewport=1]
-Démo tracking cookie tiers avec referer
+Demo tracking cookie tiers avec referer
 
-Démo tracking cookie tiers avec referer
+Demo tracking cookie tiers avec referer
 
 [slide=question]
 What is the `referer`?
@@ -1031,9 +1004,9 @@ Tracking without JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
 // redirect ?
 
 [slide=blank, data-viewport=1]
-Démo tracking etag avec referer
+Demo tracking etag avec referer
 
-Démo tracking etag avec referer
+Demo tracking etag avec referer
 
 [slide=text]
 Tracking with JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
@@ -1057,19 +1030,19 @@ How do I configure my browser?
 Block third-party cookies
 
 // [slide=blank]
-// Démo du réglage des cookies tiers
+// Demo du réglage des cookies tiers
 
 [slide=text]
 Block `referer` header
 
 // [slide=blank]
-// Démo du réglage des referers
+// Demo du réglage des referers
 
 // [slide=question]
 // Ils sont où les cookies ?
 
 // [slide=blank]
-// Démo du fichier contenant les cookies
+// Demo du fichier contenant les cookies
 
 [slide=question]
 Should I also install  browser extensions?
@@ -1159,7 +1132,7 @@ We absolutely *must* rise the debate and discussion together about the futur of 
 Between having everything for free, not paying and blocking every ads and trackers, we'll have to chose and push together new economic models towards which we want our society to evolve.
 
 .Thanks!
-[slide=poster]
+[slide=poster-bristol]
 Outro
 
 [slide=question]

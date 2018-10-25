@@ -2,10 +2,11 @@
   background-image: url(../../img/voxxed-bristol.jpg);
   background-size: cover;
   background-position: left center;
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 [data-slide="poster-bristol"] .main {
@@ -17,7 +18,7 @@
 
 [data-slide="poster-bristol"] .pretitle,
 [data-slide="poster-bristol"] .title {
-  color: var(--color-bristol-b);
+  color: var(--color-bristol-a);
   line-height: 1.4;
 }
 
@@ -37,14 +38,15 @@
 }
 
 [data-slide="poster-bristol"] .social {
-  background-color: var(--color-bristol-b);
-  color: var(--color-bristol-a);
+  background-color: var(--color-bristol-a);
+  bottom: 0;
+  box-sizing: border-box;
+  color: var(--color-a);
   display: flex;
   font-size: 1.5rem;
   font-weight: bold;
   justify-content: space-between;
   padding: 0 1rem;
   position: absolute;
-  bottom: 0;
   width: var(--slide-width);
 }

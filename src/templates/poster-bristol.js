@@ -11,14 +11,14 @@ module.exports = (node) => {
   const $title = (node.getTitle())
     ? `<div class="title">${node.title}</div>`
     : `<div class="pretitle">${pretitle}</div>
-         <div class="title">${title}</div>`;
+       <div class="title">${title}</div>
+       <div class="author">${docAttrs.author}</div>
+       <div class="author-company">${docAttrs['author-company']}</div>
+       <div class="date">${docAttrs.date}</div>`;
 
   return slide('poster-bristol', node, `
   <div class="main">
       ${$title}
-      <div class="author">${docAttrs.author}</div>
-      <div class="author-company">${docAttrs['author-company']}</div>
-      <div class="date">${docAttrs.date}</div>
   </div>
   <div class="social">
       <div class="event">#${docAttrs.event}</div>
