@@ -1,5 +1,6 @@
 0m0s    Poster
 2m5s    Poster (after story)
+3m25    Anecdotes
 7m36s   PDV 1
 7m50s   C’est quoi un cookie HTTP ?
 11m22s  Combien de temps est stocké un cookie ?

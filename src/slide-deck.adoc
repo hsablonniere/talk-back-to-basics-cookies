@@ -5,9 +5,9 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: Devfest Lille
-:date: 21 juin 2018
-:city: Lille
+:event: DevFest Toulouse
+:date: 8 novembre 2018
+:city: Toulouse
 
 [slide=poster]
 Intro
@@ -39,9 +39,9 @@ What's up Sherlock?
 Que se passe t-il encore ?
 
 [quote, Watson]
-What are we doing in bloody {city}?
+What are we doing in fucking {city}?
 
-Que fait-on à Lyon, cette magnifique ville ?
+Que fait-on dans cette magnifique ville de {city} ?
 
 [quote, Sherlock]
 I'm disappointed by bloody developers!
@@ -82,7 +82,7 @@ Les cookies HTTP bien sûr.
 [quote, Sherlock]
 You know nothing John.
 
-Vous êtes à côté de la place John,
+Vous êtes à côté de la plaque John,
 Tout le monde les utilise mais plus personne ne connaît vraiment leur origine ni même comment ils fonctionnent.
 Ça implique chez les devs pas mal de bêtises sur les projets Web
 et chez moldus, _"les non-informaticiens"_, je constate une profonde méconnaissance en ce qui concerne le tracking et le respect de la vie privée.
@@ -228,8 +228,6 @@ Lynx : navigateur Web en mode texte
 
 Lou est aussi le co-créateur de Lynx, un navigateur Web en mode texte
 
-// image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
-
 [slide=blank, data-viewport=4]
 Démo lynx
 
@@ -304,9 +302,6 @@ maintenir un visiteur connecté sur un site
 que Lou a voulu ajouter un état côté client.
 Dans mon enquête je me suis intéressé à plusieurs points de vues.
 Celui que je veux vous présenter aujourd'hui,
-
-[.zoom-patent]
-image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
 
 == Point de vue : celui/celle qui utilise  des cookies  sur son site Web
 
@@ -430,6 +425,15 @@ Un protocole entre le serveur et le navigateur permettant le stockage d'un état
 image::img/rfcs-01.svg[]
 
 Ce fonctionnement a été inventé et spécifié par Lou Montulli en 1994.
+
+
+[.zoom-patent]
+image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
+
+Si vous regardez le brevet, tout va bien :
+* Lou
+* Netscape
+* Facebook ?
 
 image::img/rfcs-02.svg[]
 
@@ -559,6 +563,38 @@ on a 4 parties :
 
 .Attribut `Domain=`
 [source, cookies]
+Set-Cookie: id=42; Domain=cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+🙈 Set-Cookie: no-domain=no
+🙈 Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+🙈 Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+Set-Cookie: root-domain=root; Domain=cookies.rocks
+Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
 Set-Cookie: no-domain=no
 Set-Cookie: root-domain=root; Domain=cookies.rocks
 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
@@ -671,8 +707,6 @@ image::img/screenshots/mozilla-source-effective-tld-names.jpg[url="https://dxr.m
 image::img/screenshots/chrome-source-effective-tld-names.jpg[url="https://chromium.googlesource.com/chromium/src/net/+/master/base/registry_controlled_domains/effective_tld_names.dat"]
 
 image::img/screenshots/safari-source-effective-tld-names.jpg[url="https://github.com/WebKit/webkit/blob/master/Source/WebCore/platform/soup/PublicSuffixSoup.cpp"]
-
-image::img/screenshots/libsoup-source-effective-tld-names.jpg[url="https://github.com/GNOME/libsoup/blob/master/data/effective_tld_names.dat"]
 
 .Public Suffix List (extraits)
 [source, c, slide=code]
@@ -790,7 +824,7 @@ V https://cookies.rocks/some-page.html
 `Secure` : restreint la portée du cookie  aux requêtes sécurisées
 
 .Header HSTS (attention !)
-[source, http, slide=code]
+[source, bash, slide=code]
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
 
@@ -804,7 +838,7 @@ V https://cookies.rocks/some-page.html
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
 .Reçu par le serveur
-[source, http, slide=code]
+[source, bash, slide=code]
 Cookie: id=42
 
 image::img/rfcs-05.svg[]
@@ -834,7 +868,7 @@ http://blue.cookies.rocks:80/page.html
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
 [slide=text]
-AJAX : Asynchronous JavaScript & XML  *(cookies opt-out)*
+AJAX : Asynchronous JavaScript & XML
 
 .Une XHR sur la même origine
 [source, js, slide=code]
@@ -861,20 +895,22 @@ xhr.send();
 ----
 
 .L'en-tête CORS qui va bien
-[source, http, slide=code]
+[source, bash, slide=code]
 Access-Control-Allow-Credentials: true
 
 [slide=text]
-fetch : L'AJAX mais en beaucoup mieux  *(cookies opt-in)*
+fetch : L'AJAX mais en beaucoup mieux
 
 [source, js, slide=code]
-fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'same-origin' })
+fetch('/url', { credentials: 'omit' })
 fetch('/url', { credentials: 'include' })
 
 image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
 image::img/cookies-csrf-01.svg[]
+
+Explications CSRF...
 
 image::img/cookies-csrf-02.svg[]
 
@@ -914,8 +950,10 @@ Set-Cookie: id=42; SameSite=Strict
 // [slide=blank]
 // Démos samesite
 
-// [#screenshot-caniuse-samesite-cookies.contain]
-// image::img/screenshots/caniuse-com-feat-same-site-cookie-attribute.jpg[]
+[#screenshot-caniuse-samesite-cookies.contain]
+image::img/screenshots/caniuse-samesite-cookie.jpg[url="https://caniuse.com/#feat=same-site-cookie-attribute"]
+
+image::img/screenshots/twitter-silhouette-article.jpg[url="https://blog.twitter.com/engineering/en_us/topics/insights/2018/twitter_silhouette.html"]
 
 [slide=question]
 Qui peut lire quels cookies ?
@@ -959,6 +997,17 @@ Set-Cookie: id=42;
             Secure;
             HttpOnly;
             SameSite=Lax
+
+image::img/screenshots/tough-cookies-article-scotthelme.jpg[url="https://scotthelme.co.uk/tough-cookies/"]
+
+.Tough cookie example
+[source, cookies]
+Set-Cookie: __Host-id=42;
+            Expires=Tue, 03 Nov 2020 00:00:00 GMT;
+            Path=/;
+            Secure;
+            HttpOnly;
+            SameSite
 
 [slide=question]
 Quelles alternatives  pour un stockage local ?

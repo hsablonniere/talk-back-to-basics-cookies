@@ -52,16 +52,26 @@
   }
 }
 
-.cookie-key {
+[data-slide="listing"] .invisible {
+  visibility: hidden;
+}
+
+.cookie {
+  font-style: italic;
+}
+
+.cookie-name-key {
   --the-color: var(--color-ccc);
   color: var(--the-color);
 }
 
-.cookie-key ~ .cookie-key {
+.cookie-attr-key {
   --the-color: var(--color-bbb);
+  color: var(--the-color);
 }
 
-.cookie-value {
+.cookie-name-value,
+.cookie-attr-value {
   --the-color: var(--color-ddd);
   color: var(--the-color);
 }
@@ -138,13 +148,13 @@
 }
 
 .url--withCookies::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    background-image: url(../../img/cookie.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 100% auto;
-    width: 2rem;
-    transform: translateX(-3rem);
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-image: url(../../img/cookie.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+  width: 2rem;
+  transform: translateX(-3rem);
 }

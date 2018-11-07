@@ -30,8 +30,10 @@
 
 /* highlight of cookie key and value */
 
-.state-one .cookie-key ~ .cookie-key,
-.state-two .cookie-value ~ .cookie-value {
+.state-one .cookie-attr-key,
+.state-two .cookie-attr-value,
+.state-three .cookie-name-key,
+.state-four .cookie-name-value {
   background-color: var(--the-color);
   color: var(--color-f);
   border-radius: 0.2rem;
