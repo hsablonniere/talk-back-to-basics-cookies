@@ -10,7 +10,7 @@ export default function configurePlugin () {
     deck.on('toggle-slide-deck-state', ({ state, enabled }) => {
       document.body.classList.toggle(`state-${state}`, enabled);
       if (state === 'four') {
-        if (deck.slide() < 3) {
+        if (deck.slide() < 5) {
           if (enabled) {
             sherlock.play();
           }
