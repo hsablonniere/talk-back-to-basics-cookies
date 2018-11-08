@@ -39,8 +39,6 @@ module.exports = (node) => {
 
   if (attrs.language === 'cookies') {
 
-    console.log({ conent: node.getContent() });
-
     const cookies = node.getContent()
       .split('\n')
       .map((line) => {

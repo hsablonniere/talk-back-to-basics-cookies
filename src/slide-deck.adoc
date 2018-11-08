@@ -39,7 +39,7 @@ What's up Sherlock?
 Que se passe t-il encore ?
 
 [quote, Watson]
-What are we doing in fucking {city}?
+What are we doing in Chocolatine City?
 
 Que fait-on dans cette magnifique ville de {city} ?
 
@@ -685,8 +685,12 @@ video::videos/no.mp4#t=4[]
 [source, url, suffix="TLD"]
 http://big.blue.cookies.rocks:80/page.html
 
+[.one]#&# [.three]#TLD#
+
 [source, url, suffix="TLD"]
 http://big.blue.cookies.co.uk:80/page.html
+
+[.one]#&# [.three]#TLD#
 
 image::img/screenshots/mozilla-issue-252342.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=252342"]
 
@@ -762,6 +766,8 @@ http://www.bbc.co.uk/news/
 http://www.metro.tokyo.jp/
 https://hsablonniere.gitlab.io/babbler/
 https://foobar.cleverapps.io/
+
+[.one]#&# [.three]#TLD#
 
 [slide=question]
 Un cookie avec `Domain=localhost` ?
@@ -847,9 +853,13 @@ image::img/rfcs-05.svg[]
 [source, cookies]
 Set-Cookie: __Secure-id=42; Secure
 
+[.three]#prefix#
+
 .Cookie prefix: `__Host`
 [source, cookies]
 Set-Cookie: __Host-id=42; Secure; Path=/
+
+[.three]#prefix#
 
 [source, url]
 http://blue.cookies.rocks:80/page.html
@@ -865,48 +875,51 @@ SOP : Same Origin Policy
 [source, url]
 http://blue.cookies.rocks:80/page.html
 
+[.one]#&# [.two]#&# [.three]#Origin#
+[.one]#&# [.three]#&# [.four]#Cookies#
+
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
-[slide=text]
-AJAX : Asynchronous JavaScript & XML
-
-.Une XHR sur la même origine
-[source, js, slide=code]
-----
-const xhr = new XMLHttpRequest();
-xhr.open('GET', '/url', true);
-xhr.responseType = 'json';
-
-
-
-xhr.send();
-----
-
-.Une XHR sur une origine différente
-[source, js, slide=code]
-----
-const xhr = new XMLHttpRequest();
-xhr.open('GET', '/url', true);
-xhr.responseType = 'json';
-
-xhr.withCredentials = true;
-
-xhr.send();
-----
-
-.L'en-tête CORS qui va bien
-[source, bash, slide=code]
-Access-Control-Allow-Credentials: true
-
-[slide=text]
-fetch : L'AJAX mais en beaucoup mieux
-
-[source, js, slide=code]
-fetch('/url', { credentials: 'same-origin' })
-fetch('/url', { credentials: 'omit' })
-fetch('/url', { credentials: 'include' })
-
-image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
+// [slide=text]
+// AJAX : Asynchronous JavaScript & XML
+//
+// .Une XHR sur la même origine
+// [source, js, slide=code]
+// ----
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET', '/url', true);
+// xhr.responseType = 'json';
+//
+//
+//
+// xhr.send();
+// ----
+//
+// .Une XHR sur une origine différente
+// [source, js, slide=code]
+// ----
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET', '/url', true);
+// xhr.responseType = 'json';
+//
+// xhr.withCredentials = true;
+//
+// xhr.send();
+// ----
+//
+// .L'en-tête CORS qui va bien
+// [source, bash, slide=code]
+// Access-Control-Allow-Credentials: true
+//
+// [slide=text]
+// fetch : L'AJAX mais en beaucoup mieux
+//
+// [source, js, slide=code]
+// fetch('/url', { credentials: 'same-origin' })
+// fetch('/url', { credentials: 'omit' })
+// fetch('/url', { credentials: 'include' })
+//
+// image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
 image::img/cookies-csrf-01.svg[]
 
@@ -961,10 +974,10 @@ Qui peut lire quels cookies ?
 [slide=text]
 `document.cookie` : l'API navigateur la plus étrange du monde
 
-[slide=blank, data-viewport=1]
-Démo document.cookie
-
-Démo document.cookie
+// [slide=blank, data-viewport=1]
+// Démo document.cookie
+//
+// Démo document.cookie
 
 [slide=question]
 C'est quoi  une attaque XSS ?
@@ -982,10 +995,10 @@ image::img/screenshots/developers-google-csp.jpg[url="https://developers.google.
 [source, cookies]
 Set-Cookie: id=42; HttpOnly
 
-[slide=blank, data-viewport=1]
-Démo http only
-
-Démo http only
+// [slide=blank, data-viewport=1]
+// Démo http only
+//
+// Démo http only
 
 .Récap. des attributs
 [source, cookies]
@@ -1009,16 +1022,19 @@ Set-Cookie: __Host-id=42;
             HttpOnly;
             SameSite
 
+[.three]#prefix#
+[.one]#attributs#
+
 [slide=question]
 Quelles alternatives  pour un stockage local ?
 
-[slide=text]
-`window.name` : la vieille technique cross-site
-
-[slide=blank, data-viewport=1]
-Démo window.name
-
-Démo window.name
+// [slide=text]
+// `window.name` : la vieille technique cross-site
+//
+// [slide=blank, data-viewport=1]
+// Démo window.name
+//
+// Démo window.name
 
 [slide=text]
 Web Storage : `localStorage` et `sessionStorage`
@@ -1026,12 +1042,12 @@ Web Storage : `localStorage` et `sessionStorage`
 // [slide=blank]
 // Démo Web Storage
 
-[slide=question]
-Que dit la CNIL ?
-
-image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
-
-image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
+// [slide=question]
+// Que dit la CNIL ?
+//
+// image::img/screenshots/cnil-cookies-conformite.jpg[url="https://www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"]
+//
+// image::img/screenshots/cnil-cookies-la-loi.jpg[url="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"]
 
 [contenteditable=true, data-viewport=5]
 == Point de vue : celui/celle qui veut  "tracer" ses visiteurs
@@ -1052,76 +1068,76 @@ image::img/screenshots/caniuse-referer.jpg[url="https://caniuse.com/#search=refe
 
 image::img/screenshots/w3c-referrer-policy.jpg[url="https://www.w3.org/TR/referrer-policy/"]
 
-[slide=question]
-C'est quoi un supercookie ?
-
-[slide=text]
-Traçage sans JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
-// redirect ?
-
-[slide=blank, data-viewport=1]
-Démo tracking etag avec referer
-
-Démo tracking etag avec referer
-
-[slide=text]
-Traçage avec JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
-
-[slide=text]
-Traçage avec JavaScript : (CSS :visited)...
-
-[slide=text]
-Traçage JavaScript : (Flash, Silverlight)...
-
-image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
-
-image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
-
-== Point de vue : celui/celle  qui est soucieux  de sa vie privée
-
-[slide=question]
-Comment régler  mon navigateur ?
-
-[slide=text]
-Bloquer les cookies tiers
-
-// [slide=blank]
-// Démo du réglage des cookies tiers
-
-[slide=text]
-Bloquer l'en-tête `referer`
-
-// [slide=blank]
-// Démo du réglage des referers
-
 // [slide=question]
-// Ils sont où les cookies ?
+// C'est quoi un supercookie ?
+//
+// [slide=text]
+// Traçage sans JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
+// // redirect ?
+//
+// [slide=blank, data-viewport=1]
+// Démo tracking etag avec referer
+//
+// Démo tracking etag avec referer
+//
+// [slide=text]
+// Traçage avec JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
+//
+// [slide=text]
+// Traçage avec JavaScript : (CSS :visited)...
+//
+// [slide=text]
+// Traçage JavaScript : (Flash, Silverlight)...
+//
+// image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
+//
+// image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
-// [slide=blank]
-// Démo du fichier contenant les cookies
-
-[slide=question]
-Faut-il installer des  extensions navigateur  en plus ?
-
-image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/fr/https-everywhere"]
-
-//uBlock
-
-image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
-
-image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
-
-image::img/screenshots/addons-mozilla-firefox-container.jpg[url="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"]
-
-image::img/screenshots/disconnect-me.jpg[url="https://disconnect.me/"]
-
-image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/fr/privacybadger"]
-
-image::img/screenshots/noscript.jpg[url="https://noscript.net/"]
-
-image::img/screenshots/panopticlick.jpg[url="https://panopticlick.eff.org/about"]
-
-image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/torbrowser.html.en"]
+// == Point de vue : celui/celle  qui est soucieux  de sa vie privée
+//
+// [slide=question]
+// Comment régler  mon navigateur ?
+//
+// [slide=text]
+// Bloquer les cookies tiers
+//
+// // [slide=blank]
+// // Démo du réglage des cookies tiers
+//
+// [slide=text]
+// Bloquer l'en-tête `referer`
+//
+// // [slide=blank]
+// // Démo du réglage des referers
+//
+// // [slide=question]
+// // Ils sont où les cookies ?
+//
+// // [slide=blank]
+// // Démo du fichier contenant les cookies
+//
+// [slide=question]
+// Faut-il installer des  extensions navigateur  en plus ?
+//
+// image::img/screenshots/https-everywhere.jpg[url="https://www.eff.org/fr/https-everywhere"]
+//
+// //uBlock
+//
+// image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
+//
+// image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
+//
+// image::img/screenshots/addons-mozilla-firefox-container.jpg[url="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"]
+//
+// image::img/screenshots/disconnect-me.jpg[url="https://disconnect.me/"]
+//
+// image::img/screenshots/privacybadger.jpg[url="https://www.eff.org/fr/privacybadger"]
+//
+// image::img/screenshots/noscript.jpg[url="https://noscript.net/"]
+//
+// image::img/screenshots/panopticlick.jpg[url="https://panopticlick.eff.org/about"]
+//
+// image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/torbrowser.html.en"]
 
 // [slide=question]
 // Que fait la navigation privée  dans tout ça ?
@@ -1135,9 +1151,36 @@ image::img/screenshots/torbrowser.jpg[url="https://www.torproject.org/projects/t
 image::img/1994-2018.svg[]
 
 Ça fait 24 ans qu'on se plain des cookies mais après toute cette enquête,
-je me pose la question "est-ce que le Web en serait pas là aujourd'hui si on avait pas eu de bannières publicitaires à base de texte clignotant et de gif animés".
-Les navigateurs et les annonceurs jouent au chat et à la souris,
-une course sans fin qui ne résoud pas le problème à long terme.
+je me pose la question "est-ce que le Web en serait pas là aujourd'hui si on avait pas eu de
+
+[slide=text]
+[.blink]`<blink>` : la meilleure balise de tous les temps !
+
+bannières publicitaires à base de texte clignotant et
+
+video::videos/no.mp4[]
+
+de gif animés".
+
+[slide=blank]
+outro
+
+Les utilisateurs, les navigateurs et les annonceurs jouent au chat et à la souris,
+Côté utilisateurs, certains bloquent les cookies et ajoute des
+
+image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
+
+bloqueurs de pub ou des
+
+image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
+
+bloqueurs de tracker.
+
+[slide=blank]
+outro
+
+Pendant que Firefox et particulièrement Safari essaye par défaut de protéger leurs utilisateurs.
+C'est une course sans fin qui ne résoud malheureusement pas le problème à long terme.
 
 // Lou
 // The answer is pretty simple:
@@ -1169,25 +1212,27 @@ We *can* identify when it smells!
 
 Avec tout ces facts John,
 Nous avons toutes les bases pour comprendre les cookies et se prémunir des attaques.
-On *peut* savoir savoir quand est-ce que ça pue (dans nos projets) !
+On *PEUT* savoir savoir quand est-ce que ça pue (dans nos projets) !
 
 [quote, Sherlock]
 We *should* spread  the knowledge!
 
 Avec tout ces facts John,
-On *devrait* pouvoir partager ce savoir à nos amis et notre famille,
+On *DEVRAIT* pouvoir partager ce savoir à nos amis et notre famille,
 leur expliquer ce qu'il se passe dans leur navigateur.
 
 [quote, Sherlock]
 We *must* debate about  the future of the Web!
 
 Avec tout ces facts John,
-On *doit* absoluement élever le débat et discuter ensemble du futur du Web.
-Entre avoir plein de contenus gratuits, ne pas payer, refuser d'être tracé et avoir des publicités, il va falloir choisir et pousser ensemble les nouveaux modèles économiques vers lesquels nous voulons que notre société évolue...
+On *DOIT* absoluement élever le débat et discuter ensemble du futur du Web.
+Entre avoir plein de contenus gratuits, ne pas payer, refuser d'être tracé et refuser d'avoir des publicités, il va falloir choisir et trouver ensemble les nouveaux modèles économiques du Web vers lesquels nous voulons que notre société évolue...
 
 .Merci bcp !
 [slide=poster]
 Outro
+
+Je vous remercie bcp.
 
 [slide=question]
 Des questions ?
