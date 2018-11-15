@@ -5,13 +5,11 @@ Hubert Sablonnière
 :author-company: Clever Cloud
 :author-company-logo: img/clever-cloud-logo.svg
 :hashtags: #CookiesRocks
-:event: VoxxedBristol
-:date: October 25th 2018
+:event: DevoxxBE
+:date: November 15th 2018
+:city: Antwerp
 
-//[slide=poster]
-//Intro
-
-[slide=poster-bristol]
+[slide=poster]
 Intro
 
 [.time]#00:00:00#
@@ -41,7 +39,7 @@ What's up Sherlock?
 What's your problem this time?
 
 [quote, Watson]
-What are we doing in bloody Bristol?
+What are we doing in bloody {city}?
 
 What are we doing in this wonderful city?
 
@@ -107,8 +105,6 @@ yes but...
 #hesitation#
 you know, he looks a bit like us, doesn't he?
 
-//image::img/devoxx-uk-banner.png[role=devoxx-uk-banner]
-
 [quote, Sherlock]
 #BackToBasics
 
@@ -125,7 +121,7 @@ Interesting...
 
 Hum, I'm intrigued...
 
-[slide=poster-bristol]
+[slide=poster]
 Hello everyone!
 
 [.time]#00:02:00#
@@ -216,8 +212,6 @@ For those who don't know about Lynx, it looks pretty simple but it's suuuuuper-f
 I can browse the DevoxxUK CFP website,
 I can search for "cookies" and find information about this presentation.
 I have to admit, I don't use it everyday but each time I realize how much content and accessibility is important on a Website.
-
-// image::img/screenshots/wikipedia-lynx.jpg[url="https://en.wikipedia.org/wiki/Lynx_(web_browser)"]
 
 [slide=blank]
 Intro <blink>
@@ -414,6 +408,9 @@ This behaviour was invented by Lou Montulli in 1994.
 image::img/screenshots/cookie-patent.jpg[url="https://patents.google.com/patent/US5774670A/en"]
 
 I you look at the patent, you can check!
+* Lou
+* Netscape
+* Facebook ?
 
 image::img/rfcs-02.svg[]
 
@@ -538,6 +535,38 @@ The browser
 
 .Attribute: `Domain=`
 [source, cookies]
+Set-Cookie: id=42; Domain=cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+🙈 Set-Cookie: no-domain=no
+🙈 Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+🙈 Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+Set-Cookie: root-domain=root; Domain=cookies.rocks
+🙈 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
+Set-Cookie: no-domain=no
+Set-Cookie: root-domain=root; Domain=cookies.rocks
+Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
+🙈 Set-Cookie: green-subdomain=green; Domain=green.cookies.rocks
+
+.http://cookies.rocks/
+[source, cookies]
 Set-Cookie: no-domain=no
 Set-Cookie: root-domain=root; Domain=cookies.rocks
 Set-Cookie: blue-subdomain=blue; Domain=blue.cookies.rocks
@@ -628,8 +657,12 @@ video::videos/no.mp4#t=4[]
 [source, url, suffix="TLD"]
 http://big.blue.cookies.rocks:80/page.html
 
+[.one]#&# [.three]#TLD#
+
 [source, url, suffix="TLD"]
 http://big.blue.cookies.co.uk:80/page.html
+
+[.one]#&# [.three]#TLD#
 
 image::img/screenshots/mozilla-issue-252342.jpg[url="https://bugzilla.mozilla.org/show_bug.cgi?id=252342"]
 
@@ -706,6 +739,8 @@ http://www.metro.tokyo.jp/
 https://hsablonniere.gitlab.io/babbler/
 https://foobar.cleverapps.io/
 
+[.one]#&# [.three]#TLD#
+
 [slide=question]
 A cookie with `Domain=localhost` ?
 
@@ -767,7 +802,7 @@ V https://cookies.rocks/some-page.html
 `Secure` : restricts the range of a cookie  to secured requests
 
 .HSTS header (warning!)
-[source, http, slide=code]
+[source, bash, slide=code]
 Strict-Transport-Security: max-age=86400;
                            includeSubDomains
 
@@ -781,7 +816,7 @@ V https://cookies.rocks/some-page.html
 image::img/screenshots/draft-ietf-httpbis-cookie-alone.jpg[url="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-alone-01", width="1024"]
 
 .Received by the server
-[source, http, slide=code]
+[source, bash, slide=code]
 Cookie: id=42
 
 image::img/rfcs-05.svg[]
@@ -790,9 +825,13 @@ image::img/rfcs-05.svg[]
 [source, cookies]
 Set-Cookie: __Secure-id=42; Secure
 
+[.three]#prefix#
+
 .Cookie prefix: `__Host`
 [source, cookies]
 Set-Cookie: __Host-id=42; Secure; Path=/
+
+[.three]#prefix#
 
 [source, url]
 http://blue.cookies.rocks:80/page.html
@@ -808,49 +847,52 @@ SOP : Same Origin Policy
 [source, url]
 http://blue.cookies.rocks:80/page.html
 
+[.one]#&# [.two]#&# [.three]#Origin#
+[.one]#&# [.three]#&# [.four]#Cookies#
+
 image::img/screenshots/draft-west-origin-cookies.jpg[url="https://tools.ietf.org/html/draft-west-origin-cookies-01", width="1024"]
 
-[slide=text]
-AJAX : Asynchronous JavaScript & XML
-
-.XHR on the same origin
-[source, js, slide=code]
-----
-const xhr = new XMLHttpRequest();
-xhr.open('GET', '/url', true);
-xhr.responseType = 'json';
-
-
-
-xhr.send();
-----
-
-.XHR on a different origin
-[source, js, slide=code]
-----
-const xhr = new XMLHttpRequest();
-xhr.open('GET', '/url', true);
-xhr.responseType = 'json';
-
-xhr.withCredentials = true;
-
-xhr.send();
-----
-
-.CORS headers to save the day
-[source, http, slide=code]
-Access-Control-Allow-Credentials: true
-
-
-[slide=text]
-fetch : "Better AJAX"
-
-[source, js, slide=code]
-fetch('/url', { credentials: 'same-origin' })
-fetch('/url', { credentials: 'omit' })
-fetch('/url', { credentials: 'include' })
-
-image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
+//[slide=text]
+//AJAX : Asynchronous JavaScript & XML
+//
+//.XHR on the same origin
+//[source, js, slide=code]
+//----
+//const xhr = new XMLHttpRequest();
+//xhr.open('GET', '/url', true);
+//xhr.responseType = 'json';
+//
+//
+//
+//xhr.send();
+//----
+//
+//.XHR on a different origin
+//[source, js, slide=code]
+//----
+//const xhr = new XMLHttpRequest();
+//xhr.open('GET', '/url', true);
+//xhr.responseType = 'json';
+//
+//xhr.withCredentials = true;
+//
+//xhr.send();
+//----
+//
+//.CORS headers to save the day
+//[source, http, slide=code]
+//Access-Control-Allow-Credentials: true
+//
+//
+//[slide=text]
+//fetch : "Better AJAX"
+//
+//[source, js, slide=code]
+//fetch('/url', { credentials: 'same-origin' })
+//fetch('/url', { credentials: 'omit' })
+//fetch('/url', { credentials: 'include' })
+//
+//image::img/screenshots/caniuse-fetch.jpg[url="https://caniuse.com/#feat=fetch"]
 
 image::img/cookies-csrf-01.svg[]
 
@@ -953,6 +995,9 @@ Set-Cookie: __Host-id=42;
             HttpOnly;
             SameSite
 
+[.three]#prefix#
+[.one]#attributs#
+
 [slide=question]
 What alternatives  to store data locally?
 
@@ -996,30 +1041,30 @@ image::img/screenshots/caniuse-referer.jpg[url="https://caniuse.com/#search=refe
 
 image::img/screenshots/w3c-referrer-policy.jpg[url="https://www.w3.org/TR/referrer-policy/"]
 
-[slide=question]
-What is a supercookie?
-
-[slide=text]
-Tracking without JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
-// redirect ?
-
-[slide=blank, data-viewport=1]
-Demo tracking etag avec referer
-
-Demo tracking etag avec referer
-
-[slide=text]
-Tracking with JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
-
-[slide=text]
-Tracking without JavaScript : (CSS :visited)...
-
-[slide=text]
-Tracking with JavaScript : (Flash, Silverlight)...
-
-image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
-
-image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
+//[slide=question]
+//What is a supercookie?
+//
+//[slide=text]
+//Tracking without JavaScript : ETag, Date, HSTS Pinning, 301 Redirect...
+//// redirect ?
+//
+//[slide=blank, data-viewport=1]
+//Demo tracking etag avec referer
+//
+//Demo tracking etag avec referer
+//
+//[slide=text]
+//Tracking with JavaScript : Cache, Web Storage, IndexedDB,  window.name, Canvas...
+//
+//[slide=text]
+//Tracking without JavaScript : (CSS :visited)...
+//
+//[slide=text]
+//Tracking with JavaScript : (Flash, Silverlight)...
+//
+//image::img/screenshots/evrcookie.jpg[url="https://github.com/samyk/evercookie"]
+//
+//image::img/screenshots/evrcookie-browser-storage-mechanisms.jpg[url="https://github.com/samyk/evercookie#browser-storage-mechanisms"]
 
 == Point of view : those concerned by  online privacy
 
@@ -1080,10 +1125,37 @@ image::img/1994-2018.svg[]
 
 We've all been complaining about cookies, their limitations and their misuse for the past 24 years but,
 after all this investigation,
-I have to ask the question "would we have the open and standard World Wide Web we use today without banner ads using blinkink text and animated gifs"
+I have to ask the question "would we have the open and standard World Wide Web we use today
+
+[slide=text]
+[.blink]`<blink>` : best HTML tag ever!
+
+without banner ads using blinkink text
+
+video::videos/no.mp4[]
+
+and animated gifs"
+
+[slide=blank]
+outro
+
 I mean, it also spread because lots of sites relied on advertisement to make a revenue and because users had access to lots of contents for free.
 Nowadays, advertisers and browser makers have been playing a cat and mouse game.
-and in those cases, it's an endless race.
+
+image::img/screenshots/adblockplus.jpg[url="https://adblockplus.org/fr/"]
+
+Users try to block ads...
+
+image::img/screenshots/ghostery.jpg[url="https://www.ghostery.com/fr/"]
+
+And trackers with extensions...
+
+[slide=blank]
+outro
+
+While Firefox & Safari are the one really trying to protect their users' privacy
+we're in the middle of an endless race,
+an endless technical fight that should also be fought with debates and legislations.
 
 // Lou
 // The answer is pretty simple:
@@ -1131,8 +1203,8 @@ With all those facts,
 We absolutely *must* rise the debate and discussion together about the futur of the Web and it's model.
 Between having everything for free, not paying and blocking every ads and trackers, we'll have to chose and push together new economic models towards which we want our society to evolve.
 
-.Thanks!
-[slide=poster-bristol]
+.Thanks! Dank u!
+[slide=poster]
 Outro
 
 [slide=question]

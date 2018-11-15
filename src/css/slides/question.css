@@ -29,7 +29,7 @@
 }
 
 [data-slide="question"][data-position="current"] .text {
-  transform: scale(1.15);
+  transform: scale(1.2);
   transition-duration: 15s;
 }
 

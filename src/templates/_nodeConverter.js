@@ -9,7 +9,6 @@ const listing = require('./listing');
 const location = require('./location');
 const media = require('./media');
 const poster = require('./poster');
-const posterBristol = require('./poster-bristol');
 const question = require('./question');
 const section = require('./section');
 const text = require('./text');
@@ -29,9 +28,6 @@ module.exports = {
     const attrs = node.getAttributes();
     if (attrs.slide === 'poster') {
       return poster(node);
-    }
-    if (attrs.slide === 'poster-bristol') {
-      return posterBristol(node);
     }
     if (attrs.slide === 'question') {
       return question(node);
